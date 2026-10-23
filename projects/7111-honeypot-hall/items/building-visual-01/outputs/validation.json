@@ -1,0 +1,17 @@
+{
+  "vertices": 20842,
+  "surface_faces": 5217,
+  "groups": 158,
+  "materials": 8,
+  "units": "metres",
+  "obj_up_axis": "Y",
+  "bounds_xyz_internal": [
+    -0.0975,
+    -0.09748152492861718,
+    0.0,
+    37.85341727755,
+    22.531142448703694,
+    12.85
+  ],
+  "validation": "finite coordinates, valid nondegenerate polygon faces, local MTL references"
+}

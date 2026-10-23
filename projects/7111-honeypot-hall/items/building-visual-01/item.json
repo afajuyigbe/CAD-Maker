@@ -1,0 +1,177 @@
+{
+  "item_id": "building-visual-01",
+  "project_reference": "7111",
+  "name": "Honeypot Hall whole-building visual mesh",
+  "workflow": "whole-building approximate visual reconstruction",
+  "output_selection": {
+    "confirmed": true,
+    "obj_surface_mesh": true,
+    "mtl_material_library": true,
+    "pdf": false,
+    "dwg": false,
+    "dimensioned_views": false
+  },
+  "accuracy": "Approximate visual proportions; not dimensionally accurate survey geometry",
+  "format": {
+    "geometry": "OBJ with polygon faces, not edge-only line records",
+    "materials": "Companion MTL linked by mtllib/usemtl; simple material colours to avoid missing texture dependencies",
+    "wireframe": "Displayed by receiving software; retain meaningful architectural edges and avoid individual brick geometry"
+  },
+  "existing_sources": [
+    {
+      "type": "GA existing plan",
+      "pdf_page": 5,
+      "drawing_number": "200",
+      "revision": "1A"
+    },
+    {
+      "type": "GA existing north-east elevation",
+      "pdf_page": 7,
+      "drawing_number": "300",
+      "revision": "1A"
+    },
+    {
+      "type": "previous inline exterior photos",
+      "count": 3,
+      "coverage": "Glazed stair enclosure and portions of adjacent facades; photos visually available but original files not local"
+    },
+    {
+      "type": "chimney model",
+      "path": "../chimney-01/model-parameters.json",
+      "note": "Use measured brickwork where relevant; cap remains estimated"
+    }
+  ],
+  "footprint_reference": {
+    "path": [
+      [
+        96.494007,
+        61.851432
+      ],
+      [
+        96.497309,
+        -0.089261
+      ],
+      [
+        1.2e-05,
+        -0.353599
+      ],
+      [
+        -1e-05,
+        289.000033
+      ],
+      [
+        97.09483,
+        288.942156
+      ],
+      [
+        96.908063,
+        187.675086
+      ],
+      [
+        345.412313,
+        187.722438
+      ],
+      [
+        345.361842,
+        257.352587
+      ],
+      [
+        438.704033,
+        257.48667
+      ],
+      [
+        438.728511,
+        221.418743
+      ],
+      [
+        486.146636,
+        221.396236
+      ],
+      [
+        486.02691,
+        87.894422
+      ],
+      [
+        439.516705,
+        87.812947
+      ],
+      [
+        439.610486,
+        61.974593
+      ],
+      [
+        96.494007,
+        61.851432
+      ]
+    ],
+    "coordinate_status": "GA graphic outline; not survey model coordinates"
+  },
+  "ga_written_levels_m": {
+    "roof_above_ground": 8.4,
+    "equipment_room_level_above_ground": 10.8,
+    "source": "Visible written level labels on existing GA elevation, p7",
+    "interpretation": "Cross-check level associations against additional photographs; do not assume 10.8 is a flat roof plane"
+  },
+  "requested_additional_evidence": [
+    "Remaining exterior facades",
+    "Corner views tying adjacent facades together",
+    "Roof-level structures and changes of height"
+  ],
+  "pending": [],
+  "approximation_policy": "Engineer expressly permits approximate whole-building visual reconstruction. Keep estimated proportions separate from measured roof-support and bespoke-item model records; do not reuse this mesh as dimensioned engineering evidence.",
+  "scope": {
+    "included": [
+      "building external envelope",
+      "roof forms and level changes",
+      "windows and entrances",
+      "glazed stair enclosure",
+      "chimney",
+      "simplified visible telecom equipment and rails"
+    ],
+    "excluded": [
+      "internal flat partitions",
+      "survey-grade or structural-analysis geometry",
+      "landscape, cars and neighbouring buildings"
+    ]
+  },
+  "additional_photos": [
+    {
+      "id": "VIS-PH-04",
+      "description": "Exterior wing and corner with rooftop frame, trees/car in foreground",
+      "file_path": null
+    },
+    {
+      "id": "VIS-PH-05",
+      "description": "Courtyard, glazed stair and long facade with mixed window groups, chimney/rooftop room",
+      "file_path": null
+    },
+    {
+      "id": "VIS-PH-06",
+      "description": "Rear corner, roof guardrails, freestanding antennas and windows; neighbouring pitched house excluded",
+      "file_path": null
+    },
+    {
+      "id": "VIS-PH-07",
+      "description": "Overhead chimney and roof view showing cap centre slab, rooflights and roof arrangement",
+      "file_path": null
+    }
+  ],
+  "modelling_decisions": {
+    "roof_equipment": "Engineer authorises basic renderings, not detailed connections",
+    "material_assets": "Flat colour MTL, no external bitmap textures required",
+    "mesh_style": "Architectural surface polygons; no individual-brick mesh",
+    "dimensions": "Approximate visual reconstruction expressly authorised; preserve separate accurate survey records"
+  },
+  "status": "first_visual_model_generated_for_review",
+  "deliverables": {
+    "folder": "outputs",
+    "obj": "7111-honeypot-building-visual-01.obj",
+    "mtl": "7111-honeypot-building-visual-01.mtl",
+    "package": "7111-honeypot-building-visual-01.zip"
+  },
+  "approximate_features": [
+    "Unseen windows represented with repeated representative openings",
+    "Equipment positions and rooftop room proportions approximate",
+    "No individual brickwork or hidden construction"
+  ]
+}
