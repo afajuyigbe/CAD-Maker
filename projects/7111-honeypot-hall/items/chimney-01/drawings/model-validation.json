@@ -1,0 +1,18 @@
+{
+  "units": "mm",
+  "body_envelope": {
+    "x": 1500.0000002,
+    "y": 1050.0000002,
+    "z": 2300.0000001999997
+  },
+  "cap": {
+    "x": 1300.0,
+    "y": 1120.0,
+    "z": 75.0
+  },
+  "cap_status": "authorised schematic estimate",
+  "step_solids": 2,
+  "body_valid": true,
+  "cap_valid": true,
+  "measured_masonry_volume_claimed": false
+}

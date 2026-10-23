@@ -1,0 +1,21 @@
+{
+  "units": "mm",
+  "base_x_mm": 1500,
+  "base_y_mm": 1050,
+  "top_brick_x_mm": 1200,
+  "top_brick_y_mm": 1020,
+  "measured_height_mm": 2300,
+  "height_reference": "top_of_brickwork",
+  "brickwork_height_mm": 2300,
+  "top_offset_x_mm": 0,
+  "top_offset_y_mm": 0,
+  "cap": {
+    "thickness_mm": 75,
+    "projection_x_mm": 50,
+    "projection_y_mm": 50,
+    "status": "schematic_estimate_authorised_by_engineer",
+    "basis": "Visual indication of overhanging cap in photos; dimensions are presentation estimates, not photo-scaled measurements"
+  },
+  "model_purpose": "External survey geometry; no internal construction or capacity inference",
+  "render_only_brick_pattern": "Indicative finish; not measured brick bond or course dimensions"
+}

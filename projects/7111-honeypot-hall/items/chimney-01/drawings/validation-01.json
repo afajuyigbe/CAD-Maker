@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "step_solids": 2,
+  "step_overall_envelope_mm": [
+    1500.0000002,
+    1120.0,
+    2375.0000001
+  ],
+  "brickwork_height_mm": 2300,
+  "cap_thickness_mm": 75,
+  "cap_projection_mm_each_side": 50,
+  "cap_dimensions": "Authorised estimates, not measured",
+  "drawing_scale": "2D 1:25, verified source/embedding paper dimensions; 3D NTS",
+  "dwg_entities": {
+    "LINE": 3521,
+    "SOLID": 5246,
+    "TEXT": 67
+  },
+  "dwg_text_and_entity_roundtrip": "identical",
+  "dwg_audit_errors": 0,
+  "dwg_format": "AutoCAD 2000",
+  "dwg_coordinates": "A3 sheet-space millimetres, 2D views plotted at 1:25",
+  "step_coordinates": "Full-size millimetres",
+  "capacity_or_internal_construction_verified": false
+}

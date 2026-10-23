@@ -1,0 +1,283 @@
+{
+  "workflow_id": "ka.bespoke-site-items",
+  "workflow_version": "0.2",
+  "project_reference": "7111",
+  "item_id": "chimney-01",
+  "item_type": "chimney",
+  "item_name": "Honeypot Hall chimney",
+  "scope": {
+    "existing_or_proposed": "existing",
+    "included_features": [
+      "chimney brickwork external envelope",
+      "cap"
+    ],
+    "excluded_features": [
+      "telecom mounting steelwork",
+      "antenna/mast",
+      "adjacent pipe/cowl",
+      "roof/access enclosure",
+      "unsurveyed internal voids"
+    ]
+  },
+  "sources": [
+    {
+      "id": "SK-01",
+      "path": "../../sources/Survey Notes.pdf",
+      "page": 3,
+      "role": "Dimensioned sketch and engineer-confirmed overall values"
+    },
+    {
+      "id": "PH-01",
+      "role": "Inline overhead photo",
+      "file_path": null,
+      "observations": [
+        "Rectangular overhanging cap visible",
+        "Surface joints/patches visible; no internal dimensions established"
+      ]
+    },
+    {
+      "id": "PH-02",
+      "role": "Inline overall side photograph",
+      "file_path": null,
+      "observations": [
+        "Brick masonry shaft",
+        "Overhanging cap",
+        "Telecom brackets and mast",
+        "Adjacent access enclosure/roof obscures part of chimney"
+      ]
+    },
+    {
+      "id": "PH-03",
+      "role": "Inline pipe-side close view",
+      "file_path": null,
+      "observations": [
+        "Brick masonry corner and face",
+        "Adjacent separate pipe/cowl",
+        "Galvanised mounting steel and visible fasteners",
+        "No hidden anchorage dimensions established"
+      ]
+    },
+    {
+      "id": "PH-04",
+      "role": "Inline upper corner photo",
+      "file_path": null,
+      "observations": [
+        "Two adjacent masonry faces and cap overhang visible",
+        "Telecom brackets and pipe/cowl visible",
+        "Photo does not establish taper offsets or cap thickness"
+      ]
+    }
+  ],
+  "photo_face_map": [],
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "Centre of measured chimney base",
+    "axes": {
+      "X": "1500 base / 1200 top brickwork direction",
+      "Y": "1050 base / 1020 top brickwork direction",
+      "Z": "vertical, positive upwards"
+    },
+    "level_datum": "Base of measured 2300 height; absolute roof level not established",
+    "site_orientation": "Not required for item face dimensions; GA orientation remains unconfirmed"
+  },
+  "features": [],
+  "dimensions": [
+    {
+      "id": "TOP-X",
+      "value": 1200,
+      "units": "mm",
+      "status": "engineer_confirmed_value",
+      "reference": "Outer faces of brickwork immediately below cap; engineer confirmed"
+    },
+    {
+      "id": "TOP-Y",
+      "value": 1020,
+      "units": "mm",
+      "status": "engineer_confirmed_value",
+      "reference": "Outer faces of brickwork immediately below cap; engineer confirmed"
+    },
+    {
+      "id": "BASE-X",
+      "value": 1500,
+      "units": "mm",
+      "status": "engineer_confirmed_value"
+    },
+    {
+      "id": "BASE-Y",
+      "value": 1050,
+      "units": "mm",
+      "status": "engineer_confirmed_value"
+    },
+    {
+      "id": "HEIGHT",
+      "value": 2300,
+      "units": "mm",
+      "status": "engineer_confirmed_value",
+      "reference": "Base datum to top of brickwork, excludes cap; engineer confirmed"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "CENTRED-TOP",
+      "value": true,
+      "status": "engineer_confirmed",
+      "source": "Engineer answer: Top centred over base"
+    },
+    {
+      "id": "TAPER-X-EACH-SIDE",
+      "value_mm": 150,
+      "status": "derived",
+      "calculation": "(1500 - 1200) / 2",
+      "note": "Offsets, not face slope; height datum awaiting clarification"
+    },
+    {
+      "id": "TAPER-Y-EACH-SIDE",
+      "value_mm": 15,
+      "status": "derived",
+      "calculation": "(1050 - 1020) / 2"
+    }
+  ],
+  "geometry_model": {
+    "file": "drawings/7111-chimney-01.step",
+    "format": "STEP",
+    "coordinate_space": "actual units",
+    "parts": [
+      "Brickwork external envelope",
+      "Schematic cap (estimated)"
+    ],
+    "unresolved_geometry": [
+      "Cap dimensions are authorised estimates, not measured",
+      "Internal voids/wall thickness remain unmodelled; external envelope only"
+    ],
+    "source_files": [
+      "model.py",
+      "model-parameters.json"
+    ]
+  },
+  "views": {
+    "plan": [
+      {
+        "source": "shared CadQuery geometry model",
+        "sheet": "7111-02",
+        "scale": "1:25"
+      }
+    ],
+    "elevations": [
+      {
+        "source": "shared CadQuery geometry model",
+        "sheet": "7111-02",
+        "scale": "1:25"
+      }
+    ],
+    "sections": [],
+    "rendered_3d": [
+      {
+        "source": "shared CadQuery geometry model",
+        "sheet": "7111-02",
+        "scale": "NTS"
+      }
+    ]
+  },
+  "sheet_plan": {
+    "combine_2d_and_3d_when_legible": true,
+    "sheets": [
+      {
+        "drawing_number": "7111-02",
+        "contents": [
+          "plan",
+          "X-face elevation",
+          "Y-face elevation",
+          "technical 3D view"
+        ],
+        "size": "A3 landscape",
+        "scale_2d": "1:25",
+        "scale_3d": "NTS"
+      }
+    ]
+  },
+  "sheet_profile": {
+    "drawing_title": "Chimney - Plan, Elevations and 3D View",
+    "drawing_number": "7111-02",
+    "drawn_by": "AT",
+    "checked_by": "AF",
+    "revision": "01",
+    "date": "23-10-2026"
+  },
+  "decisions": [
+    {
+      "id": "CH-D001",
+      "question": "Top dimensions reference cap or brickwork?",
+      "exact_answer": "it is the brick",
+      "normalised": "1200 x 1020 are top brickwork dimensions; height endpoint remains unresolved"
+    },
+    {
+      "id": "CH-D002",
+      "question": "Centred top or vertical face?",
+      "exact_answer": "Top centred over base",
+      "normalised": "Same X/Y centre for upper and lower brick rectangles"
+    },
+    {
+      "id": "CH-D003",
+      "question": "Scope of attachments?",
+      "exact_answer": "Chimney brickwork and cap only",
+      "normalised": "Exclude telecom steelwork, antenna, pipe and other adjacent items"
+    },
+    {
+      "id": "CH-D004",
+      "exact_answer": "top of the brick, make an estimation for cap thickness",
+      "normalised": "2300 mm height ends at top of brickwork. Authorised estimated cap thickness."
+    },
+    {
+      "id": "CH-D005",
+      "exact_answer": "Not measured\u2014show a schematic cap",
+      "normalised": "Cap projection/profile may be shown schematically and must be labelled unmeasured."
+    }
+  ],
+  "questions": [],
+  "validation": {
+    "status": "passed",
+    "step_solids": 2,
+    "step_overall_envelope_mm": [
+      1500.0000002,
+      1120.0,
+      2375.0000001
+    ],
+    "brickwork_height_mm": 2300,
+    "cap_thickness_mm": 75,
+    "cap_projection_mm_each_side": 50,
+    "cap_dimensions": "Authorised estimates, not measured",
+    "drawing_scale": "2D 1:25, verified source/embedding paper dimensions; 3D NTS",
+    "dwg_entities": {
+      "LINE": 3521,
+      "SOLID": 5246,
+      "TEXT": 67
+    },
+    "dwg_text_and_entity_roundtrip": "identical",
+    "dwg_audit_errors": 0,
+    "dwg_format": "AutoCAD 2000",
+    "dwg_coordinates": "A3 sheet-space millimetres, 2D views plotted at 1:25",
+    "step_coordinates": "Full-size millimetres",
+    "capacity_or_internal_construction_verified": false
+  },
+  "deliverables": {
+    "pdf": "drawings/7111-chimney-01.pdf",
+    "dwg": "drawings/7111-chimney-01.dwg",
+    "render_image": "drawings/7111-chimney-01-render.png",
+    "editable_model": {
+      "required": true,
+      "format": "STEP + parametric CadQuery source",
+      "file": "drawings/7111-chimney-01.step"
+    }
+  },
+  "output_selection": {
+    "confirmed": true,
+    "engineer_answer": "Full package: 2D PDF/DWG, editable 3D model and render",
+    "pdf_required": true,
+    "dwg_required": true,
+    "views_2d_required": true,
+    "editable_model_required": true,
+    "render_required": true,
+    "model_format": "STEP + parametric source"
+  },
+  "status": "generated_and_validated_for_engineer_review"
+}
