@@ -65,3 +65,10 @@ Use an item-specific title, model-derived plan/elevations (and sections as neede
 and a matching technical 3D view. Combine the views when legible; otherwise use
 more sheets. Choose scales from the actual model. Roof-specific NTS sheet-space
 exports and mandatory compass placement are not universal bespoke-item requirements.
+
+
+## View captions
+
+Match the engineer's CAD sample: circled view number on the left, view title above
+a thin horizontal line, and scale beneath the title. Use this consistently for
+plans, elevations, sections and 3D views; mark 3D scale NTS where appropriate.
