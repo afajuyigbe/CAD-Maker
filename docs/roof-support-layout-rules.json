@@ -1,0 +1,190 @@
+{
+  "workflow_id": "ka.roof-support-layout",
+  "version": "1.0",
+  "agreed_date": "2026-10-23",
+  "status": "reusable working instructions, not an implemented general interpreter",
+  "workflow_document": "docs/roof-support-layout-workflow.md",
+  "separate_workflows": {
+    "chimney_elevation": "awaiting engineer definition",
+    "telecom_steelwork_details": "awaiting engineer definition"
+  },
+  "defaults": {
+    "sheet": "A3 landscape",
+    "drawing_title": "Roof Support Layout",
+    "dimension_units": "mm",
+    "dimension_colour": "black",
+    "dimension_suffixes": false,
+    "compass_position": "top-right drawing frame",
+    "new_project_engineering_values": null
+  },
+  "rules": [
+    {
+      "id": "RSL-001",
+      "topic": "scope",
+      "rule": "Roof Support Layout is the current workflow; chimney and telecom detail workflows are separate and await engineer definition.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-002",
+      "topic": "new_project",
+      "rule": "Create an independent project; do not reuse another site geometry, dimensions, sizes, classifications or metadata.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-003",
+      "topic": "sources",
+      "rule": "Register original sources, revisions and hashes; inspect visually, cache previews and retain source provenance.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-004",
+      "topic": "ga_boundary",
+      "rule": "Identify the actual existing building perimeter and wall faces before aligning overlays; check a connected, closed boundary.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-005",
+      "topic": "measurements",
+      "rule": "Written survey dimensions govern. Do not infer replacement dimensions from PDF/photo scale.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-006",
+      "topic": "dimension_datums",
+      "rule": "Record the two referenced entities and internal/external/centreline datum; wall thickness is local to its stated wall.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-007",
+      "topic": "external_notation",
+      "rule": "This engineer uses an under-dot to identify external measurements; check any conflicting source key.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-008",
+      "topic": "beam_datums",
+      "rule": "Established beam-to-beam convention is centre-to-centre unless current survey instructions conflict.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-009",
+      "topic": "face_attachment",
+      "rule": "External dimensions and external gaps must reach actual outer faces, not an inner face or provisional footprint.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-010",
+      "topic": "dimension_coverage",
+      "rule": "Account for every relevant source label; preserve corrections and explicit exclusions/unresolved values.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-011",
+      "topic": "dimension_style",
+      "rule": "Black numeric mm dimensions and thin extensions/arrowheads, no INT/EXT labels; align chains and place near the relevant geometry.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-012",
+      "topic": "topology",
+      "rule": "Validate joined room walls, complete corridors, separate communal/private hallways and correct stair/flat doorway destinations.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-013",
+      "topic": "survey_key",
+      "rule": "Interpret line types using this site key; dashed lines do not have a universal structural meaning.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-014",
+      "topic": "load_bearing",
+      "rule": "Confirmed load-bearing external and stair walls use heavy black lines; do not infer all new-site external walls are structural.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-015",
+      "topic": "specifications",
+      "rule": "Show supplied member sizes/specifications; query unclear values; probable sizes remain unverified and missing values are null.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-016",
+      "topic": "reference_plans",
+      "rule": "Estate-agent plans may inform topology/graphic fit, not metric surveyed interiors; apply latest confirmed orientation.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-017",
+      "topic": "photos",
+      "rule": "Correlate openings and access across photos and plans; do not move external windows to internal interfaces or infer hidden construction.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-018",
+      "topic": "levels",
+      "rule": "Keep plant-room-above and lower-level geometry distinct; omitted footprints still require accurate face references.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-019",
+      "topic": "clarifications",
+      "rule": "Inspect first, batch precise unanswered questions, retain exact answers and update all dependants without asking again.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-020",
+      "topic": "sheet",
+      "rule": "A3 landscape KA frame and project title block; roof title Roof Support Layout; no redundant plot title/banner/source footer.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-021",
+      "topic": "compass",
+      "rule": "Use KA compass at frame top-right, orientated by the GA north and the same plan transformation.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-022",
+      "topic": "legend",
+      "rule": "Key matches actual members/line weights, includes supplied specifications and omits Engineer-described survey line and removed clutter.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-023",
+      "topic": "branding",
+      "rule": "Use correct client/consultant artwork with provenance; no automatic redrawing or borrowing another client logo.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-024",
+      "topic": "export",
+      "rule": "Requested PDF and DWG agree; check CAD round-trip and visual output. Declare NTS sheet coordinates rather than implying full-size model geometry.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-025",
+      "topic": "cleanup",
+      "rule": "Clear scoped superseded deliverables when requested; preserve original sources and decisions, other projects and normal Git history.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-026",
+      "topic": "holds",
+      "rule": "Pause named regeneration/publication when told; record independent corrections and resume when authorised.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-027",
+      "topic": "speed",
+      "rule": "Cache source selection and reusable formatting; use one record, consolidated clarifications and batch exports; track time and rework.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    },
+    {
+      "id": "RSL-028",
+      "topic": "authority",
+      "rule": "Engineer corrections supersede mistaken readings; unknown concealed members and unmeasured openings must not become invented facts.",
+      "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
+    }
+  ]
+}
