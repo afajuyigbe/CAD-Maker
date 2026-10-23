@@ -194,5 +194,11 @@
       "roof overhang, eaves and gable fascia"
     ],
     "dimensions": "Unmeasured visual estimates; does not amend measured roof-support or chimney drawings"
+  },
+  "wireframe_cleanup": {
+    "roof_and_base": "Four nonoverlapping rectangular polygon faces each, replacing ear-clipped triangles",
+    "verification": "Panel area equals closed footprint area; no diagonal roof edges exported",
+    "graphic_regularisation": "Orthogonalised slight GA graphic skew, less than 40 mm; approximate visual model only",
+    "viewer_note": "Importer may triangulate polygons internally; select polygon or feature-edge display if necessary"
   }
 }

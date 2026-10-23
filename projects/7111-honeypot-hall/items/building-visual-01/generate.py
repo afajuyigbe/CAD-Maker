@@ -9,6 +9,11 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 P=Path(__file__).parent; O=P/'outputs'; O.mkdir(exist_ok=True)
 data=json.loads((P/'item.json').read_text()); scale=7.5/96.5
 outline=np.array(data['footprint_reference']['path'][:-1])*scale
+# Regularise tiny GA graphic skew (<40 mm) for this approximate visual mesh.
+# Architectural envelope is orthogonal; prevents sliver faces at panel joins.
+xgrid=np.array([0,96.8,345.4,439.1,486.1])*scale
+ygrid=np.array([0,61.9,87.85,187.7,221.4,257.4,289])*scale
+outline=np.array([(xgrid[np.argmin(abs(xgrid-x))],ygrid[np.argmin(abs(ygrid-y))]) for x,y in outline])
 V=[]; F=[]; G=[]; M=[]
 colors={'brick':(.48,.36,.25),'roof':(.16,.18,.19),'glass':(.39,.55,.61),'frame':(.87,.88,.85),'metal':(.52,.56,.57),'cap':(.59,.58,.52),'cladding':(.8,.81,.76),'door':(.3,.37,.38)}
 def face(points,group,mat):
@@ -56,18 +61,17 @@ for i,a in enumerate(outline):
     w=min(1.65,L/(n+1)*.68);t=(j+.5)*L/n-w/2
     if t>.18 and t+w<L-.18:wins.append((t,w,.95+2.8*level,1.25,3 if w>1.2 else 1))
  wall(a,b,wins,f'facade_{i:02}')
-# triangulate concave roof and ground with ear clipping
-from matplotlib.path import Path as MPath
-poly=outline.tolist();ids=list(range(len(poly)))
-area=sum(np.cross(outline[(i+1)%len(outline)],outline[i]) for i in range(len(outline)))
-if area>0:ids.reverse()
-while len(ids)>2:
- for k,j in enumerate(ids):
-  ia,ic=ids[k-1],ids[(k+1)%len(ids)];tri=np.array([outline[ia],outline[j],outline[ic]])
-  if np.cross(tri[1]-tri[0],tri[2]-tri[1])<=1e-8:continue
-  if any(MPath(tri).contains_point(outline[q],radius=-1e-7) for q in ids if q not in [ia,j,ic]):continue
-  face([(*p,8.4) for p in tri],'main_roof','roof');face([(*p,0) for p in tri[::-1]],'base','brick');ids.pop(k);break
- else:raise ValueError('roof triangulation failed')
+# Four nonoverlapping quads tile the stepped roof and base, with no diagonal
+# tessellation edges. Keep OBJ quads; a receiving viewer may triangulate internally.
+roof_rects=[(0,0,96.8,289),(96.8,61.9,439.1,187.7),(439.1,87.85,486.1,221.4),(345.4,187.7,439.1,257.4)]
+roof_area=0
+for xa,ya,xb,yb in roof_rects:
+ q=np.array([(xa,ya),(xb,ya),(xb,yb),(xa,yb)])*scale
+ face([(*p,8.4) for p in q],'main_roof','roof')
+ face([(*p,0) for p in q[::-1]],'base','brick')
+ roof_area+=(xb-xa)*(yb-ya)*scale**2
+polygon_area=abs(sum(outline[i,0]*outline[(i+1)%len(outline),1]-outline[(i+1)%len(outline),0]*outline[i,1] for i in range(len(outline))))/2
+assert abs(roof_area-polygon_area)<1e-7
 # rooftop room, pitched roof with white gable, proportions estimated from photos
 x,y=77.35*scale,127.27*scale;a,b=5.8,3.6
 # Brick shell with an actual opening on the chimney-side eaves wall.
@@ -181,7 +185,7 @@ selected=[i for i,g in enumerate(G) if g.startswith(('room_','pitched_roof','chi
 ax.add_collection3d(Poly3DCollection([[V[j-1] for j in F[i]] for i in selected],facecolors=[colors[M[i]] for i in selected],edgecolors='#333333',linewidths=.3))
 ax.set(xlim=(5.5,13.6),ylim=(-14,-8.8),zlim=(8.35,12.9));ax.set_box_aspect((8.1,5.2,4.55));ax.view_init(20,35);ax.set_axis_off();ax.set_title('Rooftop room — photo-based detail (approximate)')
 fig.savefig(O/(stem+'-rooftop-detail.png'),dpi=150,bbox_inches='tight');plt.close(fig)
-(O/'README.txt').write_text('Honeypot Hall / project 7111 / approximate visual model\n\nOpen the OBJ with its same-named MTL in the same folder. Select wireframe in your application. Units: metres. OBJ Y is up; ground at Y=0. OBJ X follows source-sheet right and OBJ Z follows source-sheet down. Handedness corrected from the first issue; face winding corrected with it. Polygon surface mesh, not line-only geometry. Materials use flat colours and require no textures.\n\nGA footprint and supplied photographs govern visual arrangement. Three-storey envelope, mixed windows, glazed staircase, stepped roof outline, pitched rooftop room with photo-based open access door, cladding and fascia, tapered chimney and simplified telecom frames/antenna/rails are included. Unseen openings are representative, and roof equipment placement and window spacing remain approximate. The model is for visual context, not measured drawings, structural analysis or fabrication. Cap dimensions remain schematic. Adjacent buildings, trees, cars and flat interiors are excluded.\n\nThe roof is triangulated to preserve the concave footprint. Wireframe display may show those tessellation edges. Window and frame surfaces remain separate named groups. Individual masonry joints are omitted for readability.\n')
+(O/'README.txt').write_text('Honeypot Hall / project 7111 / approximate visual model\n\nOpen the OBJ with its same-named MTL in the same folder. Select wireframe in your application. Units: metres. OBJ Y is up; ground at Y=0. OBJ X follows source-sheet right and OBJ Z follows source-sheet down. Handedness corrected from the first issue; face winding corrected with it. Polygon surface mesh, not line-only geometry. Materials use flat colours and require no textures.\n\nGA footprint and supplied photographs govern visual arrangement. Three-storey envelope, mixed windows, glazed staircase, stepped roof outline, pitched rooftop room with photo-based open access door, cladding and fascia, tapered chimney and simplified telecom frames/antenna/rails are included. Unseen openings are representative, and roof equipment placement and window spacing remain approximate. The model is for visual context, not measured drawings, structural analysis or fabrication. Cap dimensions remain schematic. Adjacent buildings, trees, cars and flat interiors are excluded.\n\nThe stepped roof and base use four rectangular surface panels, with no exported diagonal roof edges. Some importing applications triangulate polygon faces internally; use polygon/feature-edge display if available. Tiny GA graphic skew has been regularised to orthogonal corners (less than 40 mm in this approximate model). Window and frame surfaces remain separate named groups. Individual masonry joints are omitted for readability.\n')
 with zipfile.ZipFile(O/(stem+'.zip'),'w',zipfile.ZIP_DEFLATED) as z:
  for suffix in ['.obj','.mtl','-preview.png','-wireframe.png','-rooftop-detail.png']:z.write(O/(stem+suffix),stem+suffix)
  for name in ['README.txt','validation.json']:z.write(O/name,name)

@@ -1,16 +1,16 @@
 {
-  "vertices": 21335,
-  "surface_faces": 5340,
+  "vertices": 21295,
+  "surface_faces": 5324,
   "groups": 169,
   "materials": 8,
   "units": "metres",
   "obj_up_axis": "Y",
   "bounds_xyz_internal": [
     -0.0975,
-    -22.531142448703694,
+    -22.531139896373055,
     0.0,
-    37.85341727755,
-    0.09748152492861718,
+    37.84979274611399,
+    0.07,
     12.85
   ],
   "orientation": "source sheet Y-down reflected to world Y-up; polygon winding reversed; OBJ axis rotation determinant +1",
