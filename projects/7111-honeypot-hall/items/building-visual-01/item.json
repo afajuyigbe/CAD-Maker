@@ -173,5 +173,12 @@
     "Unseen windows represented with repeated representative openings",
     "Equipment positions and rooftop room proportions approximate",
     "No individual brickwork or hidden construction"
-  ]
+  ],
+  "orientation_correction": {
+    "date": "2026-10-23",
+    "cause": "Source drawing Y-down coordinates were extruded directly into a right-handed 3D scene; prior top-view inversion masked the reflection",
+    "fix": "Reflect source plan Y into world -Y before export; reverse surface winding; render from corrected mesh",
+    "verification": "Signed orientation of frame A, frame B and chimney agrees with north-up GA",
+    "supersedes": "First model export orientation"
+  }
 }

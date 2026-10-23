@@ -108,7 +108,12 @@ for px,py in [(7.58,18),(12,14.68),(23,14.68),(-.06,5),(-.06,17)]:
  beam((px,py,.2),(px,py,8.3),.075,'rainwater_pipes','roof')
 # Visible shallow raised central slab on the chimney cap (unmeasured).
 box(cx-.30,cy-.43,10.775,.6,.86,.06,'chimney_cap_centre_schematic','cap')
-# OBJ uses Y-up, face winding preserved by proper rotation
+# Source annotations use image coordinates: X right, Y down.
+# Convert to right-handed world coordinates: X right, Y up the source sheet,
+# Z height. This reflection requires reversing every face winding.
+V=[(x,-y,z) for x,y,z in V]
+F=[list(reversed(ids)) for ids in F]
+# OBJ uses Y-up after a proper rotation of the corrected world geometry.
 stem='7111-honeypot-building-visual-01'
 with (O/(stem+'.obj')).open('w') as f:
  f.write('# Approximate visual reconstruction; metres; Y up\nmtllib '+stem+'.mtl\n')
@@ -123,14 +128,25 @@ with (O/(stem+'.mtl')).open('w') as f:
 assert all(np.isfinite(V).flat)
 for ids in F:
  p=np.array([V[i-1] for i in ids]);assert np.linalg.norm(np.cross(p[1]-p[0],p[2]-p[0]))>1e-9
-report={'vertices':len(V),'surface_faces':len(F),'groups':len(set(G)),'materials':len(colors),'units':'metres','obj_up_axis':'Y','bounds_xyz_internal':np.array(V).min(0).tolist()+np.array(V).max(0).tolist(),'validation':'finite coordinates, valid nondegenerate polygon faces, local MTL references'}
+report={'vertices':len(V),'surface_faces':len(F),'groups':len(set(G)),'materials':len(colors),'units':'metres','obj_up_axis':'Y','bounds_xyz_internal':np.array(V).min(0).tolist()+np.array(V).max(0).tolist(),'orientation':'source sheet Y-down reflected to world Y-up; polygon winding reversed; OBJ axis rotation determinant +1','validation':'finite coordinates, valid nondegenerate polygon faces, local MTL references'}
+# Orientation regression: three asymmetric landmarks must retain handedness
+# relative to the north-up GA, not an image-axis top-view display.
+landmarks=np.array([[1.2,6.4],[6.2,1.2],[12.32,12.70]])
+west=np.array([-277.20,82.98]);west/=np.linalg.norm(west)
+right=np.array([-west[1],west[0]])
+ga_display=landmarks[:,0,None]*right-landmarks[:,1,None]*west
+ga_world=ga_display*np.array([1,-1])
+export_top=landmarks*np.array([1,-1]) # OBJ X / minus OBJ Z; +Y vertical
+signed=lambda p:float(np.linalg.det(np.stack([p[1]-p[0],p[2]-p[0]])))
+assert signed(ga_world)*signed(export_top)>0
+report['orientation_check']={'landmarks':['Frame A','Frame B','chimney'],'ga_world_signed_area2':signed(ga_world),'obj_top_signed_area2':signed(export_top),'status':'same handedness'}
 (O/'validation.json').write_text(json.dumps(report,indent=2))
 for wire in [False,True]:
  fig=plt.figure(figsize=(14,9));ax=fig.add_subplot(projection='3d');polys=[[V[i-1] for i in ids] for ids in F]
  coll=Poly3DCollection(polys,facecolors=[(*colors[m],1) for m in M] if not wire else (1,1,1,.03),edgecolors='#252a2c',linewidths=.22 if not wire else .28)
- ax.add_collection3d(coll);ax.set(xlim=(-1,39),ylim=(-1,24),zlim=(0,14));ax.set_box_aspect((40,25,14));ax.view_init(25,125);ax.set_axis_off();ax.set_title('Honeypot Hall — approximate visual surface model'+(' / wireframe' if wire else ''),fontsize=13)
+ ax.add_collection3d(coll);ax.set(xlim=(-1,39),ylim=(-24,1),zlim=(0,14));ax.set_box_aspect((40,25,14));ax.view_init(25,-125);ax.set_axis_off();ax.set_title('Honeypot Hall — approximate visual surface model'+(' / wireframe' if wire else ''),fontsize=13)
  fig.savefig(O/(stem+('-wireframe.png' if wire else '-preview.png')),dpi=150,bbox_inches='tight');plt.close(fig)
-(O/'README.txt').write_text('Honeypot Hall / project 7111 / approximate visual model\n\nOpen the OBJ with its same-named MTL in the same folder. Select wireframe in your application. Units: metres. OBJ Y is up; ground at Y=0. Polygon surface mesh, not line-only geometry. Materials use flat colours and require no textures.\n\nGA footprint and supplied photographs govern visual arrangement. Three-storey envelope, mixed windows, glazed staircase, stepped roof outline, pitched rooftop room, tapered chimney and simplified telecom frames/antenna/rails are included. Unseen openings are representative, and roof equipment placement and window spacing remain approximate. The model is for visual context, not measured drawings, structural analysis or fabrication. Cap dimensions remain schematic. Adjacent buildings, trees, cars and flat interiors are excluded.\n\nThe roof is triangulated to preserve the concave footprint. Wireframe display may show those tessellation edges. Window and frame surfaces remain separate named groups. Individual masonry joints are omitted for readability.\n')
+(O/'README.txt').write_text('Honeypot Hall / project 7111 / approximate visual model\n\nOpen the OBJ with its same-named MTL in the same folder. Select wireframe in your application. Units: metres. OBJ Y is up; ground at Y=0. OBJ X follows source-sheet right and OBJ Z follows source-sheet down. Handedness corrected from the first issue; face winding corrected with it. Polygon surface mesh, not line-only geometry. Materials use flat colours and require no textures.\n\nGA footprint and supplied photographs govern visual arrangement. Three-storey envelope, mixed windows, glazed staircase, stepped roof outline, pitched rooftop room, tapered chimney and simplified telecom frames/antenna/rails are included. Unseen openings are representative, and roof equipment placement and window spacing remain approximate. The model is for visual context, not measured drawings, structural analysis or fabrication. Cap dimensions remain schematic. Adjacent buildings, trees, cars and flat interiors are excluded.\n\nThe roof is triangulated to preserve the concave footprint. Wireframe display may show those tessellation edges. Window and frame surfaces remain separate named groups. Individual masonry joints are omitted for readability.\n')
 with zipfile.ZipFile(O/(stem+'.zip'),'w',zipfile.ZIP_DEFLATED) as z:
  for suffix in ['.obj','.mtl','-preview.png','-wireframe.png']:z.write(O/(stem+suffix),stem+suffix)
  for name in ['README.txt','validation.json']:z.write(O/name,name)

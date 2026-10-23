@@ -7,11 +7,22 @@
   "obj_up_axis": "Y",
   "bounds_xyz_internal": [
     -0.0975,
-    -0.09748152492861718,
+    -22.531142448703694,
     0.0,
     37.85341727755,
-    22.531142448703694,
+    0.09748152492861718,
     12.85
   ],
-  "validation": "finite coordinates, valid nondegenerate polygon faces, local MTL references"
+  "orientation": "source sheet Y-down reflected to world Y-up; polygon winding reversed; OBJ axis rotation determinant +1",
+  "validation": "finite coordinates, valid nondegenerate polygon faces, local MTL references",
+  "orientation_check": {
+    "landmarks": [
+      "Frame A",
+      "Frame B",
+      "chimney"
+    ],
+    "ga_world_signed_area2": -89.32400000000005,
+    "obj_top_signed_area2": -89.32400000000005,
+    "status": "same handedness"
+  }
 }
