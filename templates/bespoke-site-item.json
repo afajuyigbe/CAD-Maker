@@ -1,6 +1,6 @@
 {
   "workflow_id": "ka.bespoke-site-items",
-  "workflow_version": "0.1",
+  "workflow_version": "0.2",
   "project_reference": null,
   "item_id": null,
   "item_type": null,
@@ -55,9 +55,19 @@
     "dwg": null,
     "render_image": null,
     "editable_model": {
-      "required": true,
+      "required": null,
       "format": null,
       "file": null
     }
+  },
+  "output_selection": {
+    "confirmed": false,
+    "engineer_answer": null,
+    "pdf_required": null,
+    "dwg_required": null,
+    "views_2d_required": null,
+    "editable_model_required": null,
+    "render_required": null,
+    "model_format": null
   }
 }

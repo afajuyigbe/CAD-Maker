@@ -14,16 +14,18 @@ reusable; prior site records are examples, not evidence for the new site.
 
 For bespoke items (chimneys, tripods, buildings, water towers and similar), read
 `docs/bespoke-site-items-workflow.md` and `docs/bespoke-site-items-rules.json`.
-Use `templates/bespoke-site-item.json` for a new item. Its model supplies the plan,
-elevations/sections and matching technical 3D view; combine views on a sheet when
-legible. The scope is distinct from Roof Support Layout. Specialist connection
+Use `templates/bespoke-site-item.json` for a new item. Before starting each item, ask which outputs are needed unless already explicit.
+Record the answer before interpretation/modelling/drafting/rendering; a 3D-model-only
+request does not require 2D views, sheets or renders. Where requested, the same model
+supplies the plan/elevations/sections and matching technical 3D view; combine views
+on a sheet when legible. The scope is distinct from Roof Support Layout. Specialist connection
 or analysis requirements still need their own evidence/instructions.
 
 Shared KA presentation conventions transfer, but the roof-specific title, NTS
 sheet-space geometry and mandatory site compass do not automatically apply to an
 item drawing. Do not assume a page number identifies a particular drawing type.
-Editable 3D model delivery is required alongside PDF/DWG and the render; select a
-suitable model format for the actual item and engineer's software.
+Deliver only the confirmed PDF/DWG/model/render outputs. Select a suitable model
+format when an editable model is requested; never assume the previous item package.
 
 Use current engineer corrections; do not repeat answered questions. Inspect source
 labels, keys and attachments before asking. Batch precise unresolved questions and

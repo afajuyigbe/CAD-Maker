@@ -1,6 +1,6 @@
 {
   "workflow_id": "ka.bespoke-site-items",
-  "version": "0.1",
+  "version": "0.2",
   "definition_date": "2026-10-23",
   "status": "Initial workflow definition from engineer; not a general implemented modelling engine",
   "workflow_document": "docs/bespoke-site-items-workflow.md",
@@ -9,20 +9,11 @@
     "dimensioned sketches",
     "supplementary references when supplied"
   ],
-  "required_views": [
-    "plan",
-    "elevation",
-    "3D rendered view"
-  ],
+  "required_views": [],
   "additional_views": "As needed to describe actual structure",
   "sheet_policy": "Combine views when size and legibility allow; otherwise additional sheets",
-  "baseline_deliverables": [
-    "PDF drawing",
-    "DWG drawing",
-    "editable 3D model",
-    "3D rendered view"
-  ],
-  "editable_model_requirement": "required; engineer confirmed",
+  "baseline_deliverables": [],
+  "editable_model_requirement": "According to confirmed output selection; model-only is explicitly supported",
   "editable_model_format": null,
   "model_scale": "1:1 actual units when geometry is established",
   "default_model_units": "mm",
@@ -78,7 +69,7 @@
     {
       "id": "BES-009",
       "topic": "views",
-      "rule": "Minimum outputs are plan and elevation; add orthogonal elevations, different-level plans or sections when necessary.",
+      "rule": "When 2D views are requested, select plan/elevation and any necessary additional views from the brief. Skip 2D views for model-only work.",
       "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
     },
     {
@@ -132,7 +123,7 @@
     {
       "id": "BES-018",
       "topic": "delivery",
-      "rule": "Deliver PDF and DWG drawings, an editable 3D geometry model and matching rendered view. Choose and validate the model format for the item/software.",
+      "rule": "Deliver only the confirmed outputs: PDF, DWG, editable model and/or rendered view. Model-only does not imply drawings or rendering.",
       "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
     },
     {
@@ -146,6 +137,35 @@
       "topic": "efficiency",
       "rule": "Reuse one model and sheet tools; batch exports; clear scoped superseded deliverables when requested, retaining evidence.",
       "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-021",
+      "topic": "confirm_outputs_before_start",
+      "rule": "Ask what is required before starting each item unless already explicit; record the selection and wait for an answer before dependent work. Never assume the previous item package.",
+      "authority": "Engineer clarification: occasionally 3D model only; ask what is required before starting"
     }
-  ]
+  ],
+  "available_views": [
+    "plan",
+    "elevation",
+    "section where needed",
+    "3D rendered view"
+  ],
+  "available_deliverables": [
+    "PDF drawing",
+    "DWG drawing",
+    "editable 3D model",
+    "3D rendered view"
+  ],
+  "output_selection": {
+    "required_before_start": true,
+    "confirmed": false,
+    "choices": [
+      "editable 3D model only",
+      "editable 3D model plus rendered view",
+      "full 2D/3D package",
+      "specific engineer selection"
+    ],
+    "previous_item_defaults_allowed": false
+  }
 }
