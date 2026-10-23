@@ -1,0 +1,151 @@
+{
+  "workflow_id": "ka.bespoke-site-items",
+  "version": "0.1",
+  "definition_date": "2026-10-23",
+  "status": "Initial workflow definition from engineer; not a general implemented modelling engine",
+  "workflow_document": "docs/bespoke-site-items-workflow.md",
+  "inputs": [
+    "photographs",
+    "dimensioned sketches",
+    "supplementary references when supplied"
+  ],
+  "required_views": [
+    "plan",
+    "elevation",
+    "3D rendered view"
+  ],
+  "additional_views": "As needed to describe actual structure",
+  "sheet_policy": "Combine views when size and legibility allow; otherwise additional sheets",
+  "baseline_deliverables": [
+    "PDF drawing",
+    "DWG drawing",
+    "editable 3D model",
+    "3D rendered view"
+  ],
+  "editable_model_requirement": "required; engineer confirmed",
+  "editable_model_format": null,
+  "model_scale": "1:1 actual units when geometry is established",
+  "default_model_units": "mm",
+  "rules": [
+    {
+      "id": "BES-001",
+      "topic": "scope",
+      "rule": "Separate bespoke-item workflow covers chimneys, tripods, buildings, water towers and other site structures.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-002",
+      "topic": "inputs",
+      "rule": "Photos and written dimensioned sketches define the item; supplementary GA/details are optional evidence.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-003",
+      "topic": "examples",
+      "rule": "Supplied example images guide presentation, not new-item geometry, dimensions or specifications.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-004",
+      "topic": "units",
+      "rule": "Use written measurements and actual-unit model coordinates, normally mm; do not infer dimensions by scaling photos/PDFs.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-005",
+      "topic": "evidence",
+      "rule": "Link features/dimensions to source regions, photo directions and exact engineer answers.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-006",
+      "topic": "datums",
+      "rule": "Identify faces, edges, centrelines and levels; external/internal datum determines dimension extension origins.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-007",
+      "topic": "uncertainty",
+      "rule": "Keep measured, confirmed, derived, estimated and unknown information distinct in geometry and drawings.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-008",
+      "topic": "geometry",
+      "rule": "Build one coherent dimension-controlled geometry model; all 2D views and the 3D render derive from it.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-009",
+      "topic": "views",
+      "rule": "Minimum outputs are plan and elevation; add orthogonal elevations, different-level plans or sections when necessary.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-010",
+      "topic": "hidden_features",
+      "rule": "Do not invent hidden construction, symmetry, tapers, reinforcement, connections or member specifications.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-011",
+      "topic": "cad_style",
+      "rule": "Use black CAD dimensions/text, clear extensions, line weights and appropriate hatching; show supplied specifications.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-012",
+      "topic": "render",
+      "rule": "Technical 3D view uses clean background, clear edges and restrained material appearance; geometry must match 2D.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-013",
+      "topic": "cutaways",
+      "rule": "Use labelled sections/cutaways to explain internal geometry when appropriate; distinguish from physical openings.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-014",
+      "topic": "sheet_layout",
+      "rule": "Combine 2D and 3D views on one sheet when legible; use extra sheets when size/detail requires.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-015",
+      "topic": "sheet_identity",
+      "rule": "Reuse KA sheet branding and current project metadata, but use an item-specific title/identifier.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-016",
+      "topic": "clarifications",
+      "rule": "Inspect first, batch precise unresolved questions, retain answers and update dependent geometry once.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-017",
+      "topic": "qa",
+      "rule": "Check dimension closure, datums, levels, cross-view consistency, readability and actual exported files.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-018",
+      "topic": "delivery",
+      "rule": "Deliver PDF and DWG drawings, an editable 3D geometry model and matching rendered view. Choose and validate the model format for the item/software.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-019",
+      "topic": "coordinate_space",
+      "rule": "Distinguish true-size model geometry from scaled sheet views and NTS sheet-space CAD; label actual export space.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    },
+    {
+      "id": "BES-020",
+      "topic": "efficiency",
+      "rule": "Reuse one model and sheet tools; batch exports; clear scoped superseded deliverables when requested, retaining evidence.",
+      "authority": "Engineer bespoke-item instruction; shared KA drawing/interpretation conventions"
+    }
+  ]
+}

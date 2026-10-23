@@ -40,7 +40,7 @@ interpretation process. Prior site examples are not new-project engineering data
 ## Deliverables and separation
 
 One dedicated roof-layout sheet. Chimney elevations and telecom/connection details
-are separate workflows awaiting instructions; do not automatically bundle them
+use the separate `bespoke-site-items-workflow.md`; do not automatically bundle them
 into future roof-layout exports. Existing worked detail sheets remain separate.
 
 PDF and requested DWG must agree in content, units, personnel and revision. PNG is
@@ -56,3 +56,12 @@ canonical output names and clear scoped superseded generated files when requeste
 placement support this format. The site renderer determines engineering geometry;
 the formatter does not interpret surveys. Older Asmer colours, beam counts and
 metadata are historical example settings, not the current global presentation.
+
+
+## Applying shared presentation to bespoke items
+
+Use the same KA branding, black CAD dimensions/linework and metadata conventions.
+Use an item-specific title, model-derived plan/elevations (and sections as needed),
+and a matching technical 3D view. Combine the views when legible; otherwise use
+more sheets. Choose scales from the actual model. Roof-specific NTS sheet-space
+exports and mandatory compass placement are not universal bespoke-item requirements.

@@ -2,8 +2,9 @@
 
 Current roof-layout entry point: [Roof Support Layout workflow](../roof-support-layout-workflow.md).
 Its scope and current KA presentation supersede older example-specific instructions.
-Chimney/detail interpretation is retained as evidence handling only; its generation
-workflow awaits the engineer and is not part of roof-layout delivery.
+Bespoke-item drawing/model workflow is defined separately in
+[the bespoke process](../bespoke-site-items-workflow.md) and is not a dependency
+of roof-layout delivery.
 
 ## Purpose
 Interpret GA drawings, handwritten survey notes and photographs for any site into an evidence-linked structural interpretation. This procedure precedes positioned geometry and professional drawing generation. No default site dimensions, member counts, roof shape or support topology are permitted.
@@ -41,7 +42,8 @@ Record decision id, project, exact answer, question, affected claim ids, normali
 
 ## Component coverage
 Use the same evidence format for roof supports and any separately requested details.
-Tripod, EMA, chimney and connection drawing workflows are not yet defined.
+The bespoke-item process now covers model-derived plan/elevation and rendered
+3D outputs; specialist connection/analysis requirements need separate instructions.
 Do not make those detail outputs a dependency of the roof-layout sheet. Identify components from source evidence, not a required template. For each supported detail, seek dimensions, member descriptions, connectivity, anchorage, orientation and position; leave unavailable properties unresolved. Do not invent expansion of unfamiliar abbreviations.
 
 ## Evidence and learning boundaries
