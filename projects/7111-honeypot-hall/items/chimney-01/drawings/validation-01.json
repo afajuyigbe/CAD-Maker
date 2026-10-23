@@ -12,9 +12,9 @@
   "cap_dimensions": "Authorised estimates, not measured",
   "drawing_scale": "2D 1:25, verified source/embedding paper dimensions; 3D NTS",
   "dwg_entities": {
-    "LINE": 3521,
+    "LINE": 4037,
     "SOLID": 5246,
-    "TEXT": 67
+    "TEXT": 75
   },
   "dwg_text_and_entity_roundtrip": "identical",
   "dwg_audit_errors": 0,

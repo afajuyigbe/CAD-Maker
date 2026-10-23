@@ -7,6 +7,8 @@ No internal voids/wall thickness or structural capacity is established. The bric
 Telecom steelwork, antenna, adjacent pipe and surrounding building are excluded.
 
 FILES
+View captions use the engineer sample: circled number, underlined title and scale beneath.
+Project drawing set: drawing 01 Roof Support Layout; drawing 02 Chimney. The combined DWG has a named A3 paper layout for each drawing and the same two sheet blocks side by side in modelspace.
 PDF: A3 drawing with plan, X/Y elevations and 3D view. Print at actual size for 2D scale 1:25; 3D is NTS.
 DWG: AutoCAD 2000, self-contained editable sheet artwork. Coordinates are A3 paper millimetres, with 2D geometry plotted at 1:25. Dimension text gives actual item sizes.
 STEP: full-size millimetre exterior-envelope geometry, with separate brickwork and estimated cap components. Import into a STEP-compatible CAD application to edit geometry. STEP does not retain a native feature/history tree.

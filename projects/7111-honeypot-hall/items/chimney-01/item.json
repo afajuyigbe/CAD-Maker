@@ -248,9 +248,9 @@
     "cap_dimensions": "Authorised estimates, not measured",
     "drawing_scale": "2D 1:25, verified source/embedding paper dimensions; 3D NTS",
     "dwg_entities": {
-      "LINE": 3521,
+      "LINE": 4037,
       "SOLID": 5246,
-      "TEXT": 67
+      "TEXT": 75
     },
     "dwg_text_and_entity_roundtrip": "identical",
     "dwg_audit_errors": 0,
@@ -279,5 +279,12 @@
     "render_required": true,
     "model_format": "STEP + parametric source"
   },
-  "status": "generated_and_validated_for_engineer_review"
+  "status": "generated_and_validated_for_engineer_review",
+  "view_caption_style": "Circled number, title above underline, scale below; engineer sample",
+  "project_drawing_set": {
+    "sheet_01": "Roof Support Layout",
+    "sheet_02": "Chimney - Layout and 3D View",
+    "pdf": "../../drawings/7111-honeypot-review-set-01.pdf",
+    "dwg": "../../drawings/7111-honeypot-drawing-set-01.dwg"
+  }
 }
