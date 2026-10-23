@@ -20,7 +20,8 @@ See the [bespoke-item workflow](docs/bespoke-site-items-workflow.md),
 [rules](docs/bespoke-site-items-rules.json) and
 [empty item record](templates/bespoke-site-item.json). Photographs and dimensioned
 sketches inform one model, which supplies plan/elevation drawings and a matching
-3D rendered view. Deliver PDF, DWG and an editable 3D model. Combine views on one
-sheet where legible. This is a separate
+3D rendered view when requested. Confirm outputs before starting each item: a
+3D-model-only commission is supported. Deliver only the selected PDF/DWG/model/render
+outputs. Combine views on one sheet where legible. This is a separate
 process from Roof Support Layout; it is a process definition, not an implemented
 general modelling engine.

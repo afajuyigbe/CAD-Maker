@@ -1,6 +1,6 @@
 # Bespoke site items: 2D drawings and 3D views
 
-Version 0.1 — initial process definition, 23 October 2026.
+Version 0.2 — output selection required before starting, 23 October 2026.
 Authority: engineer's instruction and two supplied presentation examples.
 This specifies the workflow; it does not claim that a general modelling engine
 has been implemented or that a real item has already been modelled.
@@ -21,6 +21,23 @@ vertical views, plus a clean technical 3D view. Their geometry, materials, dimen
 scale and connections are not facts for any new item. The first example also
 illustrates different-level plans and a section: provide those additional views
 when necessary to describe the actual structure, rather than copying its view count.
+
+## 0. Confirm outputs before starting each item
+
+Ask the engineer what is required before starting item interpretation, modelling,
+drafting or rendering. Do not assume the full package from a previous item. Offer
+3D model only, 3D model plus rendered view, or a combined 2D/3D drawing package;
+allow a specific selection of outputs. If the current instruction already states
+the required outputs clearly, record that answer without asking it again.
+
+Record whether PDF, DWG, plans/elevations/sections, editable 3D model and rendered
+image are requested. Confirm the model/export format and sheet arrangement only
+where applicable. An editable model and a rendered image are different outputs:
+"3D model only" does not request drawings or a rendered image.
+
+Do not begin the item work until the output selection is confirmed. Perform only
+the stages needed for that selection. For model-only work, omit 2D views, drawing
+sheets, PDF/DWG drawing exports and rendering unless separately requested.
 
 ## 1. Register and reconcile the evidence
 
@@ -78,7 +95,8 @@ geometry. Use appropriate CAD/modelling and rendering tools for these outputs.
 
 ## 4. Generate the dimensioned 2D views
 
-Required minimum: plan and elevation. Choose the elevation that best explains the
+When 2D drawings are requested, the usual starting views are plan and elevation,
+subject to the confirmed brief. Skip this stage for model-only work. Choose the elevation that best explains the
 item; add the opposite/orthogonal face, additional level plan, or section when the
 geometry cannot be communicated clearly in the minimum pair.
 
@@ -94,7 +112,9 @@ geometry cannot be communicated clearly in the minimum pair.
 - Choose a legible scale for the view and sheet. Dimension values remain true model
   measurements. Never label a schematic/unknown geometry view as accurately scaled.
 
-## 5. Produce the matching technical 3D view
+## 5. Produce the matching technical 3D view — when requested
+
+Skip rendering when only an editable model is requested.
 
 Render an isometric/axonometric or suitable perspective view from the same model.
 Use the supplied example's technical character: clean white background, defined
@@ -107,7 +127,9 @@ arrangement; do not depict it as an actual physical opening. Do not hide a criti
 member solely to improve the appearance. Do not infer material strength or structural
 capacity from the render. Dimensions are read from the 2D views, not from perspective.
 
-## 6. Compose the KA sheet(s)
+## 6. Compose the KA sheet(s) — when drawings are requested
+
+Skip sheet composition for model-only work.
 
 Reuse the KA border, client/consultant branding, notes/revision area and title block.
 Use an item-specific title and drawing identifier; do not title a chimney or water
@@ -124,6 +146,9 @@ A 3D view is not required to be on a separate sheet.
 
 Verify the following before issuing:
 
+Apply the following checks to the selected outputs; cross-view and sheet checks
+are not applicable when those outputs were not requested.
+
 1. All supplied dimensions/features are represented, explicitly unresolved or
    excluded with a reason, and refer to the right datum.
 2. Shared measurements, overall/component sums, levels, thicknesses and offsets
@@ -135,8 +160,10 @@ Verify the following before issuing:
 5. Check the actual PDF, CAD export and 3D render for clipping, missing geometry,
    readability and external asset dependencies. Audit a conversion round-trip where used.
 
-Standard deliverables, confirmed by the engineer, are **PDF drawings, DWG drawings,
-an editable 3D model, and the 3D rendered view**. Embed the rendered view on the
+Deliver **only the outputs confirmed for this item**. Available outputs are PDF
+drawings, DWG drawings, an editable 3D model and a 3D rendered view. A full package
+contains all four; a model-only commission contains only the editable model.
+When drawings and rendering are requested, embed the rendered view on the
 sheet where appropriate; provide its image separately when useful. The model
 must retain editable geometry, not just a flattened image or a viewer-only file.
 Retain native/source geometry where available. Select a suitable editable/exchange
@@ -154,8 +181,8 @@ single dimension/model record and batch downstream exports to minimise rework.
 
 ## Initial worked-item milestone
 
-Use one actual item with its photos and dimensioned sketch to complete the whole
-chain: evidence register -> resolved geometry -> plan/elevation -> matching 3D view
+First confirm the outputs for one actual item. If the full package is selected,
+use its photos and dimensioned sketch to complete the chain: evidence register -> resolved geometry -> plan/elevation -> matching 3D view
 -> composed sheet and requested exports. Establish acceptance on that final product
 before building a broad application or testing many unrelated items. The presentation
 examples alone are not sufficient evidence to generate a new site's geometry.
