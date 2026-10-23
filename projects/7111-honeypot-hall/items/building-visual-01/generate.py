@@ -70,10 +70,39 @@ while len(ids)>2:
  else:raise ValueError('roof triangulation failed')
 # rooftop room, pitched roof with white gable, proportions estimated from photos
 x,y=77.35*scale,127.27*scale;a,b=5.8,3.6
-box(x,y,8.4,a,b,1.65,'rooftop_room','brick')
-for yy in [y,y+b]:face([(x,yy,10.05),(x+a,yy,10.05),(x+a/2,yy,10.8)],'room_gable','cladding')
-face([(x,y,10.05),(x+a/2,y,10.8),(x+a/2,y+b,10.8),(x,y+b,10.05)],'pitched_roof','roof')
-face([(x+a/2,y,10.8),(x+a,y,10.05),(x+a,y+b,10.05),(x+a/2,y+b,10.8)],'pitched_roof','roof')
+# Brick shell with an actual opening on the chimney-side eaves wall.
+# Door/panel sizes are visual estimates; not surveyed dimensions.
+door_y=y+.18; door_w=.88; door_top=10.0
+face([(x,y,8.4),(x,y+b,8.4),(x,y+b,10.05),(x,y,10.05)],'room_side_wall','brick')
+for yy in [y,y+b]:
+ face([(x,yy,8.4),(x+a,yy,8.4),(x+a,yy,10.05),(x,yy,10.05)],'room_gable_wall','brick')
+ face([(x,yy,10.05),(x+a,yy,10.05),(x+a/2,yy,10.8)],'room_gable','cladding')
+for lo,hi in [(y,door_y),(door_y+door_w,y+b)]:
+ face([(x+a,lo,8.4),(x+a,hi,8.4),(x+a,hi,10.05),(x+a,lo,10.05)],'room_door_wall','brick')
+face([(x+a,door_y,door_top),(x+a,door_y+door_w,door_top),(x+a,door_y+door_w,10.05),(x+a,door_y,10.05)],'room_door_lintel','brick')
+# Recess is a dark visual backing, not inferred interior geometry.
+face([(x+a-.10,door_y,8.43),(x+a-.10,door_y+door_w,8.43),(x+a-.10,door_y+door_w,door_top),(x+a-.10,door_y,door_top)],'room_door_recess','door')
+for yy in [door_y,door_y+door_w]:beam((x+a+.025,yy,8.43),(x+a+.025,yy,door_top),.065,'room_door_frame','frame')
+for zz in [8.43,door_top]:beam((x+a+.025,door_y,zz),(x+a+.025,door_y+door_w,zz),.065,'room_door_frame','frame')
+# Open outward door leaf, as photographed; angle approximate.
+hinge=np.array([x+a+.045,door_y,8.46]); tip=hinge+np.array([door_w*.94,door_w*.342,0])
+face([hinge,tip,tip+[0,0,1.5],hinge+[0,0,1.5]],'room_open_door','frame')
+for aa,bb in [(hinge,tip),(hinge+[0,0,1.5],tip+[0,0,1.5]),(hinge,hinge+[0,0,1.5]),(tip,tip+[0,0,1.5])]:beam(aa,bb,.045,'room_door_leaf_edges','frame')
+# Large white horizontal-clad panel on the gable towards the frames.
+px0,px1=x+.35,x+a-.35; panel_y=y-.025
+face([(px0,panel_y,8.7),(px1,panel_y,8.7),(px1,panel_y,10.05),(x+a/2,panel_y,10.70),(px0,panel_y,10.05)],'room_white_cladding','cladding')
+for zz in np.arange(8.85,10.65,.17):
+ half=(a/2-.35) if zz<=10.05 else (a/2-.35)*(10.7-zz)/.65
+ beam((x+a/2-half,panel_y-.012,zz),(x+a/2+half,panel_y-.012,zz),.014,'room_cladding_joints','frame')
+# Slight roof overhang, with pale eaves and gable fascia.
+ox=.12;oy=.12
+face([(x-ox,y-oy,10.05),(x+a/2,y-oy,10.8),(x+a/2,y+b+oy,10.8),(x-ox,y+b+oy,10.05)],'pitched_roof','roof')
+face([(x+a/2,y-oy,10.8),(x+a+ox,y-oy,10.05),(x+a+ox,y+b+oy,10.05),(x+a/2,y+b+oy,10.8)],'pitched_roof','roof')
+for xx in [x-ox,x+a+ox]:
+ face([(xx,y-oy,9.89),(xx,y+b+oy,9.89),(xx,y+b+oy,10.05),(xx,y-oy,10.05)],'room_eaves_fascia','frame')
+for yy in [y-oy,y+b+oy]:
+ for left,right in [((x-ox,yy,10.05),(x+a/2,yy,10.8)),((x+a/2,yy,10.8),(x+a+ox,yy,10.05))]:
+  face([left,right,(right[0],right[1],right[2]-.13),(left[0],left[1],left[2]-.13)],'room_gable_fascia','frame')
 # measured tapered chimney body, top brick at roof+2.3m; cap schematic
 cx,cy=x+a+.35,y+1.8
 low=[(cx-.75,cy-.525,8.4),(cx+.75,cy-.525,8.4),(cx+.75,cy+.525,8.4),(cx-.75,cy+.525,8.4)]
@@ -146,8 +175,14 @@ for wire in [False,True]:
  coll=Poly3DCollection(polys,facecolors=[(*colors[m],1) for m in M] if not wire else (1,1,1,.03),edgecolors='#252a2c',linewidths=.22 if not wire else .28)
  ax.add_collection3d(coll);ax.set(xlim=(-1,39),ylim=(-24,1),zlim=(0,14));ax.set_box_aspect((40,25,14));ax.view_init(25,-125);ax.set_axis_off();ax.set_title('Honeypot Hall — approximate visual surface model'+(' / wireframe' if wire else ''),fontsize=13)
  fig.savefig(O/(stem+('-wireframe.png' if wire else '-preview.png')),dpi=150,bbox_inches='tight');plt.close(fig)
-(O/'README.txt').write_text('Honeypot Hall / project 7111 / approximate visual model\n\nOpen the OBJ with its same-named MTL in the same folder. Select wireframe in your application. Units: metres. OBJ Y is up; ground at Y=0. OBJ X follows source-sheet right and OBJ Z follows source-sheet down. Handedness corrected from the first issue; face winding corrected with it. Polygon surface mesh, not line-only geometry. Materials use flat colours and require no textures.\n\nGA footprint and supplied photographs govern visual arrangement. Three-storey envelope, mixed windows, glazed staircase, stepped roof outline, pitched rooftop room, tapered chimney and simplified telecom frames/antenna/rails are included. Unseen openings are representative, and roof equipment placement and window spacing remain approximate. The model is for visual context, not measured drawings, structural analysis or fabrication. Cap dimensions remain schematic. Adjacent buildings, trees, cars and flat interiors are excluded.\n\nThe roof is triangulated to preserve the concave footprint. Wireframe display may show those tessellation edges. Window and frame surfaces remain separate named groups. Individual masonry joints are omitted for readability.\n')
+# Detail camera exposes the chimney-side door and frame-facing cladding.
+fig=plt.figure(figsize=(10,8));ax=fig.add_subplot(projection='3d')
+selected=[i for i,g in enumerate(G) if g.startswith(('room_','pitched_roof','chimney_'))]
+ax.add_collection3d(Poly3DCollection([[V[j-1] for j in F[i]] for i in selected],facecolors=[colors[M[i]] for i in selected],edgecolors='#333333',linewidths=.3))
+ax.set(xlim=(5.5,13.6),ylim=(-14,-8.8),zlim=(8.35,12.9));ax.set_box_aspect((8.1,5.2,4.55));ax.view_init(20,35);ax.set_axis_off();ax.set_title('Rooftop room — photo-based detail (approximate)')
+fig.savefig(O/(stem+'-rooftop-detail.png'),dpi=150,bbox_inches='tight');plt.close(fig)
+(O/'README.txt').write_text('Honeypot Hall / project 7111 / approximate visual model\n\nOpen the OBJ with its same-named MTL in the same folder. Select wireframe in your application. Units: metres. OBJ Y is up; ground at Y=0. OBJ X follows source-sheet right and OBJ Z follows source-sheet down. Handedness corrected from the first issue; face winding corrected with it. Polygon surface mesh, not line-only geometry. Materials use flat colours and require no textures.\n\nGA footprint and supplied photographs govern visual arrangement. Three-storey envelope, mixed windows, glazed staircase, stepped roof outline, pitched rooftop room with photo-based open access door, cladding and fascia, tapered chimney and simplified telecom frames/antenna/rails are included. Unseen openings are representative, and roof equipment placement and window spacing remain approximate. The model is for visual context, not measured drawings, structural analysis or fabrication. Cap dimensions remain schematic. Adjacent buildings, trees, cars and flat interiors are excluded.\n\nThe roof is triangulated to preserve the concave footprint. Wireframe display may show those tessellation edges. Window and frame surfaces remain separate named groups. Individual masonry joints are omitted for readability.\n')
 with zipfile.ZipFile(O/(stem+'.zip'),'w',zipfile.ZIP_DEFLATED) as z:
- for suffix in ['.obj','.mtl','-preview.png','-wireframe.png']:z.write(O/(stem+suffix),stem+suffix)
+ for suffix in ['.obj','.mtl','-preview.png','-wireframe.png','-rooftop-detail.png']:z.write(O/(stem+suffix),stem+suffix)
  for name in ['README.txt','validation.json']:z.write(O/name,name)
 print(json.dumps(report))

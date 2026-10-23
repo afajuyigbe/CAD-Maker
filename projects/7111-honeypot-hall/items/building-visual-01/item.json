@@ -154,6 +154,11 @@
       "id": "VIS-PH-07",
       "description": "Overhead chimney and roof view showing cap centre slab, rooflights and roof arrangement",
       "file_path": null
+    },
+    {
+      "id": "VIS-PH-08",
+      "description": "Close rooftop room photo: open access door beside chimney, large white horizontal cladding panel, pitched felt roof and pale fascia; freestanding frames beyond",
+      "file_path": null
     }
   ],
   "modelling_decisions": {
@@ -180,5 +185,14 @@
     "fix": "Reflect source plan Y into world -Y before export; reverse surface winding; render from corrected mesh",
     "verification": "Signed orientation of frame A, frame B and chimney agrees with north-up GA",
     "supersedes": "First model export orientation"
+  },
+  "rooftop_refinement": {
+    "status": "photo-based approximate geometry",
+    "features": [
+      "chimney-side opening and outward-open door leaf",
+      "white panel and horizontal cladding joints on frame-facing gable",
+      "roof overhang, eaves and gable fascia"
+    ],
+    "dimensions": "Unmeasured visual estimates; does not amend measured roof-support or chimney drawings"
   }
 }

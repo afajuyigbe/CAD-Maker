@@ -1,7 +1,7 @@
 {
-  "vertices": 20842,
-  "surface_faces": 5217,
-  "groups": 158,
+  "vertices": 21335,
+  "surface_faces": 5340,
+  "groups": 169,
   "materials": 8,
   "units": "metres",
   "obj_up_axis": "Y",
