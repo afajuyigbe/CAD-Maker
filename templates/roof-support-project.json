@@ -1,0 +1,61 @@
+{
+  "workflow_id": "ka.roof-support-layout",
+  "workflow_version": "1.0",
+  "project_reference": null,
+  "project_name": null,
+  "site_address": [],
+  "client": {
+    "name": null,
+    "logo_asset": null,
+    "source": null
+  },
+  "sheet_profile": {
+    "format": "A3 landscape",
+    "drawing_title": "Roof Support Layout",
+    "drawing_number": null,
+    "drawn_by": null,
+    "checked_by": null,
+    "revision": null,
+    "issue_date": null,
+    "scale_status": null
+  },
+  "sources": [],
+  "scope": {
+    "included": [
+      "roof support layout"
+    ],
+    "excluded_or_deferred": [
+      "chimney elevation workflow",
+      "telecom steelwork detail workflow"
+    ],
+    "site_specific_limits": []
+  },
+  "ga_reference": {
+    "source_id": null,
+    "pdf_page": null,
+    "drawing_revision": null,
+    "north_reference": null,
+    "graphic_transform": null
+  },
+  "entities": [],
+  "claims": [],
+  "dimensions": [],
+  "decisions": [],
+  "questions": [],
+  "unresolved_items": [],
+  "validation": {},
+  "performance": {
+    "started_at": null,
+    "first_review_at": null,
+    "issued_at": null,
+    "clarification_rounds": 0,
+    "rework_reasons": []
+  },
+  "deliverables": {
+    "pdf": null,
+    "dwg": null,
+    "preview": null,
+    "cad_coordinate_space": null,
+    "superseded_outputs": []
+  }
+}

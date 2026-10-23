@@ -1,3 +1,16 @@
 # KA Engineering Agent
 
 AI-assisted structural survey interpretation and CAD drawing generation.
+
+## Roof Support Layout process
+
+Start with the [saved workflow](docs/roof-support-layout-workflow.md),
+[reusable rules](docs/roof-support-layout-rules.json),
+[KA sheet standard](docs/drawing-sheet-standard.md) and
+[empty project template](templates/roof-support-project.json).
+Agent entry instructions are in [AGENTS.md](AGENTS.md).
+
+The workflow applies to any site. Previous project dimensions and geometry are
+not defaults. Chimney elevations and telecom steelwork detail drawings are separate
+processes awaiting engineer instructions. The saved procedure does not imply that
+a general automatic survey interpreter has already been implemented.
