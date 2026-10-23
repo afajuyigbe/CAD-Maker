@@ -25,8 +25,7 @@
       "roof support layout"
     ],
     "excluded_or_deferred": [
-      "chimney elevation workflow",
-      "telecom steelwork detail workflow"
+      "bespoke-item drawings/models are a separate workflow"
     ],
     "site_specific_limits": []
   },

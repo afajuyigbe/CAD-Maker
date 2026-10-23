@@ -12,11 +12,18 @@ site's dimensions, building geometry, structural classifications, member sizes,
 flat numbers, personnel, client or revision as defaults. The template and rules are
 reusable; prior site records are examples, not evidence for the new site.
 
-The current agreed workflow is **Roof Support Layout only**. Chimney elevations,
-telecom frame/connection details, tripods and EMA details belong to separate
-workflows awaiting the engineer's instructions. Retain their evidence without
-letting detail generation become a dependency of roof-layout delivery. Do not
-assume a page number always identifies a particular drawing type.
+For bespoke items (chimneys, tripods, buildings, water towers and similar), read
+`docs/bespoke-site-items-workflow.md` and `docs/bespoke-site-items-rules.json`.
+Use `templates/bespoke-site-item.json` for a new item. Its model supplies the plan,
+elevations/sections and matching technical 3D view; combine views on a sheet when
+legible. The scope is distinct from Roof Support Layout. Specialist connection
+or analysis requirements still need their own evidence/instructions.
+
+Shared KA presentation conventions transfer, but the roof-specific title, NTS
+sheet-space geometry and mandatory site compass do not automatically apply to an
+item drawing. Do not assume a page number identifies a particular drawing type.
+Editable 3D model delivery is required alongside PDF/DWG and the render; select a
+suitable model format for the actual item and engineer's software.
 
 Use current engineer corrections; do not repeat answered questions. Inspect source
 labels, keys and attachments before asking. Batch precise unresolved questions and

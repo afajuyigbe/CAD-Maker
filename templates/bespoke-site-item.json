@@ -1,0 +1,63 @@
+{
+  "workflow_id": "ka.bespoke-site-items",
+  "workflow_version": "0.1",
+  "project_reference": null,
+  "item_id": null,
+  "item_type": null,
+  "item_name": null,
+  "scope": {
+    "existing_or_proposed": null,
+    "included_features": [],
+    "excluded_features": []
+  },
+  "sources": [],
+  "photo_face_map": [],
+  "coordinate_system": {
+    "units": "mm",
+    "origin": null,
+    "axes": null,
+    "level_datum": null,
+    "site_orientation": null
+  },
+  "features": [],
+  "dimensions": [],
+  "constraints": [],
+  "geometry_model": {
+    "file": null,
+    "format": null,
+    "coordinate_space": "actual units",
+    "parts": [],
+    "unresolved_geometry": []
+  },
+  "views": {
+    "plan": [],
+    "elevations": [],
+    "sections": [],
+    "rendered_3d": []
+  },
+  "sheet_plan": {
+    "combine_2d_and_3d_when_legible": true,
+    "sheets": []
+  },
+  "sheet_profile": {
+    "drawing_title": null,
+    "drawing_number": null,
+    "drawn_by": null,
+    "checked_by": null,
+    "revision": null,
+    "date": null
+  },
+  "decisions": [],
+  "questions": [],
+  "validation": {},
+  "deliverables": {
+    "pdf": null,
+    "dwg": null,
+    "render_image": null,
+    "editable_model": {
+      "required": true,
+      "format": null,
+      "file": null
+    }
+  }
+}

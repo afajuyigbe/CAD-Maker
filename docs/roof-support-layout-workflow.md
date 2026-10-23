@@ -11,12 +11,12 @@ of the handwritten sketch is an intermediate interpretation, not the final produ
 The final product places the interpreted support information and written dimensions
 on the correct GA building outline in the KA sheet format.
 
-This workflow covers the roof layout only. Chimney elevations and telecom steelwork
-or connection details are separate processes that the engineer will describe.
-Existing detail examples do not define those future processes. They must not delay
-or automatically add sheets to the roof-layout deliverable. Retain roof-level
-positions of such features when supported and relevant. Recognise document content
-rather than assuming "page 2" or any other page number has a universal meaning.
+This workflow covers the roof layout only. The separate process for chimneys,
+tripods, buildings, water towers and similar items is now defined in
+`bespoke-site-items-workflow.md`. Existing examples do not supply geometry for a
+new item. Bespoke details must not delay or automatically add sheets to a roof
+layout. Retain roof-level positions when supported and relevant. Recognise document
+content rather than assuming a page number has a universal meaning.
 
 ## 1. Intake once
 

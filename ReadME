@@ -11,6 +11,16 @@ Start with the [saved workflow](docs/roof-support-layout-workflow.md),
 Agent entry instructions are in [AGENTS.md](AGENTS.md).
 
 The workflow applies to any site. Previous project dimensions and geometry are
-not defaults. Chimney elevations and telecom steelwork detail drawings are separate
-processes awaiting engineer instructions. The saved procedure does not imply that
-a general automatic survey interpreter has already been implemented.
+not defaults. The saved procedure does not imply that a general automatic survey
+interpreter has already been implemented.
+
+## Bespoke site items
+
+See the [bespoke-item workflow](docs/bespoke-site-items-workflow.md),
+[rules](docs/bespoke-site-items-rules.json) and
+[empty item record](templates/bespoke-site-item.json). Photographs and dimensioned
+sketches inform one model, which supplies plan/elevation drawings and a matching
+3D rendered view. Deliver PDF, DWG and an editable 3D model. Combine views on one
+sheet where legible. This is a separate
+process from Roof Support Layout; it is a process definition, not an implemented
+general modelling engine.

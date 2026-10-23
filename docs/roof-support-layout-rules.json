@@ -5,8 +5,8 @@
   "status": "reusable working instructions, not an implemented general interpreter",
   "workflow_document": "docs/roof-support-layout-workflow.md",
   "separate_workflows": {
-    "chimney_elevation": "awaiting engineer definition",
-    "telecom_steelwork_details": "awaiting engineer definition"
+    "bespoke_site_items": "docs/bespoke-site-items-workflow.md",
+    "specialist_connections_or_analysis": "Not specified by the initial bespoke workflow"
   },
   "defaults": {
     "sheet": "A3 landscape",
@@ -21,7 +21,7 @@
     {
       "id": "RSL-001",
       "topic": "scope",
-      "rule": "Roof Support Layout is the current workflow; chimney and telecom detail workflows are separate and await engineer definition.",
+      "rule": "Roof Support Layout is separate from the bespoke-item plan/elevation/3D workflow; detail output is not a dependency of roof-layout delivery.",
       "authority": "Engineer workflow discussion and reviewed Asmer/Honeypot corrections"
     },
     {
