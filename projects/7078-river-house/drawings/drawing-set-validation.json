@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "drawing_set_pdf_pages": 2,
+  "paper": "A3 landscape",
+  "dwg": "AutoCAD 2000 / AC1015; two named paper layouts",
+  "dwg_roundtrip_audit_errors": 0,
+  "block_entity_counts": {
+    "SHEET_01_ROOF": {
+      "LINE": 18404,
+      "SOLID": 1669,
+      "TEXT": 70
+    },
+    "SHEET_02_BUILDING_3D": {
+      "LINE": 16002,
+      "SOLID": 1643,
+      "TEXT": 48,
+      "CIRCLE": 2
+    },
+    "BUILDING_SURFACE_METRES": {
+      "3DFACE": 2607
+    }
+  },
+  "text_and_rotation_retention": "exact match",
+  "line_geometry_retention": "matched to 0.000001 sheet units",
+  "vertical_dimensions": "rotated and checked in PDF and CAD",
+  "obj": {
+    "vertices": 9924,
+    "surface_faces": 2445,
+    "materials": 17,
+    "units": "metres",
+    "up_axis": "Y",
+    "ground_y": 0,
+    "external_textures": false
+  },
+  "geometry_limits": "Facade grids, enclosure details and unmeasured equipment are visual approximations; see model record",
+  "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm"
+}

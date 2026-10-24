@@ -40,3 +40,8 @@ is a specification and reusable working instruction, not a claim that arbitrary
 site interpretation is already automated. Preserve original sources and decisions.
 When asked to clear superseded documents, clear the scoped generated deliverables;
 do not erase evidence, other projects or rewrite Git history without instruction.
+
+For whole-building visual models, read `docs/whole-building-visual-model-workflow.md`.
+Submit the 3D geometry/rooftop review for engineer approval before finalising or
+issuing OBJ/MTL. This is the engineer's explicit review gate, not a default approval
+requirement for other work. Preserve measured facts and qualify photographic estimates.

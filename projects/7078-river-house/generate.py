@@ -25,15 +25,15 @@ def rect(x,y,w,h,lw=.18,layer='SHEET',fill=False):
  if fill:
   pg.draw_rect(fitz.Rect(x*PT,y*PT,(x+w)*PT,(y+h)*PT),color=None,fill=(0,0,0))
   ms.add_solid([dv(p) for p in [pts[0],pts[1],pts[3],pts[2]]],dxfattribs={'layer':layer})
-def text(x,y,s,h=2.2,bold=False,align='left',layer='TEXT'):
- TEXT_QUEUE.append((x,y,s,h,bold,align,layer))
+def text(x,y,s,h=2.2,bold=False,align='left',layer='TEXT',angle=0):
+ TEXT_QUEUE.append((x,y,s,h,bold,align,layer,angle))
 def finish_text():
  # Actual CAD line gaps avoid unreliable white-mask conversion to DWG.
  bounds_all=[]
- for x,y,s,h,bold,align,layer in TEXT_QUEUE:
+ for x,y,s,h,bold,align,layer,angle in TEXT_QUEUE:
   width=fitz.get_text_length(s,fontname='hebo' if bold else 'helv',fontsize=h*PT)/PT
   left=x-(width/2 if align=='center' else width if align=='right' else 0)
-  bounds_all.append((left-.4,y-h*1.08-.1,left+width+.4,y+.25))
+  bounds_all.append((x-h*1.08-.1,y-width/2-.4,x+.25,y+width/2+.4) if angle==90 else (left-.4,y-h*1.08-.1,left+width+.4,y+.25))
  def interval(a,b,r):
   dx=b[0]-a[0];dy=b[1]-a[1];lo=0.;hi=1.
   for pp,qq in [(-dx,a[0]-r[0]),(dx,r[2]-a[0]),(-dy,a[1]-r[1]),(dy,r[3]-a[1])]:
@@ -67,14 +67,14 @@ def finish_text():
    aa=(a[0]+(b[0]-a[0])*lo,a[1]+(b[1]-a[1])*lo);bb=(a[0]+(b[0]-a[0])*hi,a[1]+(b[1]-a[1])*hi)
    ms.add_line(dv(aa),dv(bb),dxfattribs=attrs)
  # PDF clearances remain white; CAD geometry already has corresponding gaps.
- for x,y,s,h,bold,align,layer in TEXT_QUEUE:
+ for x,y,s,h,bold,align,layer,angle in TEXT_QUEUE:
   width=fitz.get_text_length(s,fontname='hebo' if bold else 'helv',fontsize=h*PT)/PT
   left=x-(width/2 if align=='center' else width if align=='right' else 0)
-  bounds=(left-.4,y-h*1.08-.1,left+width+.4,y+.25)
+  bounds=(x-h*1.08-.1,y-width/2-.4,x+.25,y+width/2+.4) if angle==90 else (left-.4,y-h*1.08-.1,left+width+.4,y+.25)
   pg.draw_rect(fitz.Rect(*(v*PT for v in bounds)),color=None,fill=(1,1,1))
   x0,y0,x1,y1=bounds
-  pg.insert_text((left*PT,y*PT),s,fontname='hebo' if bold else 'helv',fontsize=h*PT,color=(0,0,0))
-  t=ms.add_text(s,dxfattribs={'height':h,'layer':layer,'style':'Standard'})
+  pg.insert_text((x*PT,(y+width/2)*PT) if angle==90 else (left*PT,y*PT),s,fontname='hebo' if bold else 'helv',fontsize=h*PT,color=(0,0,0),rotate=angle)
+  t=ms.add_text(s,dxfattribs={'height':h,'layer':layer,'style':'Standard','rotation':angle})
   t.set_placement(dv((x,y)),align={'left':TextEntityAlignment.LEFT,'center':TextEntityAlignment.CENTER,'right':TextEntityAlignment.RIGHT}[align])
 def wrap(x,y,s,widthchars=45,h=2.05):
  import textwrap
@@ -137,7 +137,8 @@ text(345,271,'Drawn: AT    Checked: KS',2);text(345,276,'Scale: NTS / DO NOT SCA
 text(345,283,'Project: 7078',2.3);text(380,283,'Drawing: 7078-01',2.1);text(345,288,'Revision: TBC',2.1)
 # Survey coordinate X across width; Y along length, top end of supplied sketch.
 S=.0060
-def m(x,y):return (38+y*S,77+(14600-x)*S)
+PLAN_SHIFT=35
+def m(x,y):return (38+y*S,77+PLAN_SHIFT+(14600-x)*S)
 # GA vector graphic alignment, with separate surveyed dimension labels.
 origin=np.array([608.34,317.0]);across=np.array([-54.78,-66.84]);along=np.array([194.58,-159.48]);inv=np.linalg.inv(np.column_stack([across,along]))
 def gapt(p):
@@ -188,8 +189,8 @@ for yy in [11650,17150]:
   line((cx-1.2,cy-1.2),(cx+1.2,cy+1.2),.42,'COLUMNS')
   line((cx-1.2,cy+1.2),(cx+1.2,cy-1.2),.42,'COLUMNS')
 # Label roof levels beside plan, not over GA equipment.
-text(38,61,'MAIN ROOF +38.00 m',2.6,bold=True)
-text(108,175,'PLANT-ROOM ROOF ABOVE +41.57 m',2.3,bold=True)
+text(38,52+PLAN_SHIFT,'MAIN ROOF +38.00 m',2.6,bold=True)
+text(108,175+PLAN_SHIFT,'PLANT-ROOM ROOF ABOVE +41.57 m',2.3,bold=True)
 # Dimension arrow helper: no INT / EXT suffixes.
 def dim(a,b,offset,label):
  a=np.array(a);b=np.array(b);v=b-a;L=np.linalg.norm(v);u=v/L;n=np.array([-u[1],u[0]]);aa=a+n*offset;bb=b+n*offset
@@ -200,9 +201,9 @@ def dim(a,b,offset,label):
  mid=(aa+bb)/2
  if abs(u[1])>.9:
   side=1 if n[0]*offset>0 else -1
-  text(mid[0]+side*1.7,mid[1]+.7,label,2.05,align='left' if side>0 else 'right')
+  text(mid[0]+(3.2 if side>0 else -1.5),mid[1],label,2.05,align='center',angle=90)
  else:text(mid[0],mid[1]-1.2,label,2.05,align='center')
-for ya,yb in zip(ys,ys[1:]):dim(m(14600,ya),m(14600,yb),-8,str(yb-ya))
+for ya,yb in zip(ys,ys[1:]):dim(m(14600,ya),m(14600,yb),-15,str(yb-ya))
 dim(m(0,44650),m(7300,44650),9,'7300');dim(m(7300,44650),m(14600,44650),9,'7300')
 # Upper secondary framing spacing (representative interval, repeat as noted).
 dim(m(725,11650),m(6575,11650),-14,'5850');dim(m(1200,11650),m(2400,11650),-4,'1200');dim(m(14600,12850),m(14600,14050),-5,'1200')
@@ -227,9 +228,8 @@ assert np.allclose(nn,expected_north)
 orientation_check={'source_to_sheet_determinant':float(np.linalg.det(source_to_sheet)),'north_sheet_xy':nn.tolist(),'status':'orientation preserved','central_column_count':len(ys),'central_column_positions_mm':ys}
 (W/'orientation-check.json').write_text(json.dumps(orientation_check,indent=2)+'\n')
 # Central/perimeter column identification; full C2 section is not established.
-text(43,126,'C1',2.3,bold=True)
-text(43,162,'C2',2.3,bold=True)
-text(38,191,'C2 shown by exposed section; embedded portion / full size unverified.',2.0)
+text(43,126+PLAN_SHIFT,'C1',2.3,bold=True)
+text(43,162+PLAN_SHIFT,'C2',2.3,bold=True)
 finish_text()
 # Store explicit draft limits outside the engineering plotting area.
 pg.set_rotation(0);doc.set_metadata({'title':'7078 River House - Roof Support Layout - Review','author':'KA Engineering Group','subject':'Review draft; issue metadata and local support details to confirm'})

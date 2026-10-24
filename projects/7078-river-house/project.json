@@ -43,6 +43,36 @@
       "type": "inline engineer-annotated photograph",
       "description": "Main roof panorama with perimeter vertical members marked columns; plant-room/tower visible at far end",
       "local_original": null
+    },
+    {
+      "id": "PHOTO-03",
+      "type": "inline exterior photograph",
+      "description": "Street curtain-wall facade and largely blank end wall"
+    },
+    {
+      "id": "PHOTO-04",
+      "type": "inline exterior photograph",
+      "description": "Rear horizontal window banks and pale central service spine"
+    },
+    {
+      "id": "PHOTO-05",
+      "type": "inline exterior photograph",
+      "description": "Opposite street corner, blank end cladding and upper vents"
+    },
+    {
+      "id": "PHOTO-06",
+      "type": "inline roof photograph",
+      "description": "Wide rooftop view with access cabin, HVAC units and perimeter panels"
+    },
+    {
+      "id": "PHOTO-07",
+      "type": "inline roof photograph",
+      "description": "Close plant-room facade and circular-ring lattice stub tower/grillage"
+    },
+    {
+      "id": "PHOTO-08",
+      "type": "inline roof photograph",
+      "description": "Opposite rooftop equipment view, paired panel supports and access platform"
     }
   ],
   "scope": {
@@ -224,6 +254,30 @@
         "Clear labels from lines",
         "Prepared inline Ancore branding asset registered"
       ]
+    },
+    {
+      "source": "Latest engineer request and output selection",
+      "sheet_01": [
+        "Vertical dimensions read along dimension lines",
+        "Separate 1200 short dimension from 5500 bay chain",
+        "Delete C2 note below plot",
+        "Centre roof plan vertically"
+      ],
+      "sheet_02": "Entire-building 3D view including rooftop structure",
+      "model_exports": [
+        "OBJ",
+        "MTL"
+      ],
+      "additional_evidence_needed": "Exterior building facades/corner views and rooftop overview to model full building without inventing facade details"
+    },
+    {
+      "source": "Supplied exterior and roof photographs",
+      "whole_building": "Photographic facade patterns, service spine, rooftop enclosures, cabin and equipment modelled with explicitly approximate unmeasured details",
+      "presentation": "Page 2 uses street/rear orthographic 3D views from same OBJ geometry; native DWG stores matching editable visible-edge projections and an uninserted metre-scale 3D surface block"
+    },
+    {
+      "source": "Engineer process clarification",
+      "approval_gate": "Approve whole-building 3D geometry and rooftop arrangement before finalising and delivering OBJ/MTL. Current issue is PDF/DWG review sheets only."
     }
   ],
   "questions": [],
@@ -284,7 +338,49 @@
     "dwg": "drawings/7078-river-house-roof-review.dwg",
     "preview": "drawings/7078-river-house-roof-review.png",
     "cad_coordinate_space": "A3 paper millimetres, NTS",
-    "superseded_outputs": []
+    "superseded_outputs": [],
+    "page_2_3d_status": "Whole-building model and second-sheet street/rear views generated for review",
+    "obj_mtl_status": "Held pending engineer approval of 3D geometry",
+    "drawing_set_pdf": "drawings/7078-river-house-drawing-set-review.pdf",
+    "drawing_set_dwg": "drawings/7078-river-house-drawing-set-review.dwg",
+    "model_preview": "drawings/7078-river-house-3d-sheet-review.png"
   },
-  "status": "review draft generated; local engineering details and revision pending"
+  "status": "review draft generated; local engineering details and revision pending",
+  "drawing_set_validation": {
+    "status": "passed",
+    "drawing_set_pdf_pages": 2,
+    "paper": "A3 landscape",
+    "dwg": "AutoCAD 2000 / AC1015; two named paper layouts",
+    "dwg_roundtrip_audit_errors": 0,
+    "block_entity_counts": {
+      "SHEET_01_ROOF": {
+        "LINE": 18404,
+        "SOLID": 1669,
+        "TEXT": 70
+      },
+      "SHEET_02_BUILDING_3D": {
+        "LINE": 16002,
+        "SOLID": 1643,
+        "TEXT": 48,
+        "CIRCLE": 2
+      },
+      "BUILDING_SURFACE_METRES": {
+        "3DFACE": 2607
+      }
+    },
+    "text_and_rotation_retention": "exact match",
+    "line_geometry_retention": "matched to 0.000001 sheet units",
+    "vertical_dimensions": "rotated and checked in PDF and CAD",
+    "obj": {
+      "vertices": 9924,
+      "surface_faces": 2445,
+      "materials": 17,
+      "units": "metres",
+      "up_axis": "Y",
+      "ground_y": 0,
+      "external_textures": false
+    },
+    "geometry_limits": "Facade grids, enclosure details and unmeasured equipment are visual approximations; see model record",
+    "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm"
+  }
 }

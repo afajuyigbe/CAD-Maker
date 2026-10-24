@@ -1,0 +1,33 @@
+{
+  "scope": "Entire building with rooftop support zone, plant room, tower, antennas and indicative roof equipment",
+  "measured_roof_values_m": {
+    "length": 44.65,
+    "width": 14.6,
+    "main_roof": 38,
+    "upper_roof_parapet": 41.57,
+    "grillage_connections": [
+      5.5,
+      5.85
+    ]
+  },
+  "visual_estimates": [
+    "Facade grid and rear band spacing",
+    "End cladding joints and upper vents",
+    "Core projection, entrances and cabin",
+    "Grillage profiles and tower/antenna geometry",
+    "HVAC/cable-tray locations and sizes"
+  ],
+  "roof_centre_columns": "Shown above main roof only in plant framing zone; extensions elsewhere not verified",
+  "C2": "Only exposed 380x300 portion shown in roof frame, hidden full section unverified",
+  "facade_mapping": "Glazed street long face; horizontal rear window banks and central service spine; two largely blank ends with upper vents, based on supplied photographs",
+  "omitted": [
+    "Neighbouring buildings, street furniture, trees and foreground fence",
+    "Unverified lower adjacent roof at +7m",
+    "Hidden internal floors and connections"
+  ],
+  "model_format": "OBJ polygon surface mesh + flat-colour MTL, metres, Y up, ground at Y=0",
+  "faces": 2445,
+  "vertices": 9924,
+  "groups": 113,
+  "validation": "Finite coordinates, nondegenerate polygons, no texture dependencies; mostly quads"
+}

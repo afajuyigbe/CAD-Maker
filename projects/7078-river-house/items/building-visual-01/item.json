@@ -1,0 +1,50 @@
+{
+  "item_id": "building-visual-01",
+  "project_reference": "7078",
+  "name": "River House entire building including rooftop structure",
+  "workflow": "whole-building visual reconstruction",
+  "output_selection": {
+    "confirmed": true,
+    "page_2_rendered_3d": true,
+    "drawing_set_pdf": true,
+    "drawing_set_dwg": true,
+    "obj_surface_mesh": true,
+    "mtl_material_library": true
+  },
+  "evidence_available": [
+    "GA page 8 building/roof outline",
+    "GA page 9 RF elevations",
+    "Dimensioned survey sketch",
+    "Two roof-level photographs"
+  ],
+  "confirmed_levels_m": {
+    "main_roof": 38,
+    "plant_room_roof": 41.57
+  },
+  "geometry_status": "Roof geometry plus photograph-based facade and rooftop visual details generated",
+  "pending_evidence": [],
+  "model_conventions": {
+    "obj_up_axis": "Y",
+    "units": "metres",
+    "whole_building_datum": "ground level",
+    "geometry": "Surface polygon model suitable for wireframe; clean quads where feasible",
+    "materials": "Companion MTL; flat material colours, no texture dependencies"
+  },
+  "accuracy": "Use written dimensions/levels where available; qualify visually estimated facade details. Do not infer hidden structure.",
+  "status": "3D review ready; OBJ/MTL release awaiting engineer approval",
+  "deliverables": {
+    "pdf": "../../drawings/7078-river-house-drawing-set-review.pdf",
+    "dwg": "../../drawings/7078-river-house-drawing-set-review.dwg",
+    "obj": "outputs/7078-river-house-building.obj",
+    "mtl": "outputs/7078-river-house-building.mtl",
+    "street_preview": "outputs/7078-river-house-building-street.png",
+    "rear_preview": "outputs/7078-river-house-building-rear.png",
+    "obj_status": "Local working export only; not issued",
+    "mtl_status": "Local working export only; not issued"
+  },
+  "approximations_record": "outputs/model-record.json",
+  "approval_gate": {
+    "required_before_obj_mtl_delivery": true,
+    "approved": false
+  }
+}
