@@ -13,7 +13,7 @@
     "SHEET_02_BUILDING_3D": {
       "LINE": 15766,
       "SOLID": 1643,
-      "TEXT": 48,
+      "TEXT": 30,
       "CIRCLE": 2
     },
     "BUILDING_SURFACE_METRES": {
@@ -33,5 +33,10 @@
     "obj_mtl_status": "Issued from authorised corrected geometry"
   },
   "geometry_limits": "Facade grids, enclosure details and unmeasured equipment are visual approximations; see model record",
-  "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm"
+  "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm",
+  "revision": "1",
+  "removed_3d_panels": [
+    "3D Model Notes",
+    "Model Content"
+  ]
 }

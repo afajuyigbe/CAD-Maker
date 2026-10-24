@@ -8,15 +8,6 @@ source=fitz.open(O/'7078-river-house-roof-review.pdf');out=fitz.open();out.inser
 for r in [(15.3,20.3,330.7,279.7),(343,16,414,164),(343,237,414,247),(378,280,414,287)]:pg.add_redact_annot(fitz.Rect(*(v*PT for v in r)),fill=(1,1,1))
 pg.apply_redactions(images=0,graphics=2,text=0)
 def pdftext(x,y,s,h=2.2,bold=False):pg.insert_text((x*PT,y*PT),s,fontsize=h*PT,fontname='hebo' if bold else 'helv',color=(0,0,0))
-pdftext(345,21,'3D MODEL NOTES:',2.5,True)
-notes=['1. Entire-building visual model from GA, survey and supplied photographs.','2. Main roof +38.00 m; upper roof / parapet +41.57 m.','3. Facade grids and unmeasured equipment details are approximate.','4. Hidden connections and structural capacity are not established.','5. OBJ / MTL matches corrected model. Metres; Y up; ground at Y=0.']
-import textwrap
-y=28
-for note in notes:
- for row in textwrap.wrap(note,43):pdftext(345,y,row,1.95);y+=2.8
- y+=2
-pdftext(345,110,'MODEL CONTENT',2.5,True)
-for yy,s in [(117,'Glazed street frontage'),(123,'Rear bands and service spine'),(129,'End cladding and roof vents'),(135,'Roof support / plant-room zone'),(141,'Simplified tower and antennas'),(147,'Indicative HVAC and access cabin')]:pdftext(345,yy,s,2)
 pdftext(345,240,'Drawing Title:',1.9);pdftext(345,245,'Building 3D Model',3,True);pdftext(380,283,'Drawing: 7078-02',2.1)
 rects={'street':(20,55,172,248.454545),'rear':(176,55,328,248.454545)}
 for name,r in rects.items():pg.insert_image(fitz.Rect(*(v*PT for v in r)),filename=str(B/f'7078-river-house-building-{name}.png'),keep_proportion=True)
@@ -24,7 +15,7 @@ for name,r in rects.items():pg.insert_image(fitz.Rect(*(v*PT for v in r)),filena
 for num,x,title in [(1,28,'Street frontage and roof'),(2,184,'Rear elevation and roof')]:
  pg.draw_circle((x*PT,265*PT),2.5*PT,color=(0,0,0),width=.15*PT);pdftext(x-.8,265.8,str(num),2.1)
  pdftext(x+5,264.5,title,2.4);pg.draw_line(((x+5)*PT,266*PT),((x+120)*PT,266*PT),width=.15*PT);pdftext(x+5,269,'3D View / NTS',1.9)
-out.set_metadata({'title':'7078 River House - Roof Support Layout and Building 3D Model','author':'AT','subject':'Checked KS; review draft, revision TBC; 3D facade/equipment details approximate'})
+out.set_metadata({'title':'7078 River House - Roof Support Layout and Building 3D Model','author':'AT','subject':'Checked KS; revision 1; 3D facade/equipment details approximate'})
 out.save(O/'7078-river-house-drawing-set-review.pdf',garbage=4,deflate=True);out.close();source.close()
 preview=fitz.open(O/'7078-river-house-drawing-set-review.pdf');preview[1].get_pixmap(matrix=fitz.Matrix(1.7,1.7)).save(O/'7078-river-house-3d-sheet-review.png');preview.close()
 # CAD sheet blocks and named paper layouts. Drawing 02 uses depth-tested visible
@@ -56,12 +47,6 @@ for e in roof:
   model.add_entity(e.copy())
  elif layer=='BRANDING':model.add_entity(e.copy())
 addtext(345,12,'ALL DIMENSIONS IN mm UNLESS STATED OTHERWISE',1.8)
-addtext(345,21,'3D MODEL NOTES:',2.5);y=28
-for note in notes:
- for row in textwrap.wrap(note,43):addtext(345,y,row,1.95);y+=2.8
- y+=2
-addtext(345,110,'MODEL CONTENT',2.5)
-for yy,s in [(117,'Glazed street frontage'),(123,'Rear bands and service spine'),(129,'End cladding and roof vents'),(135,'Roof support / plant-room zone'),(141,'Simplified tower and antennas'),(147,'Indicative HVAC and access cabin')]:addtext(345,yy,s,2)
 if 'MODEL_3D_VIEW' not in cad.layers:cad.layers.new('MODEL_3D_VIEW',dxfattribs={'color':7,'lineweight':9})
 for name,r in rects.items():
  x0,y0,x1,y1=r

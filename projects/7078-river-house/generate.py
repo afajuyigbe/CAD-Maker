@@ -99,7 +99,7 @@ for a,b,d,w in key:
 for yy in [165,171,178,185,212,235,248,266,278,290]:line((342,yy),(415,yy))
 for xx in [351,376,386,396]:line((xx,165),(xx,185))
 for xx,s in [(344,'Rev'),(353,'Issue'),(378,'Drawn'),(388,'Chkd'),(398,'Date')]:text(xx,184,s,1.7)
-for xx,s in [(344,'TBC'),(353,'REVIEW'),(378,'AT'),(388,'KS'),(398,'24-10-26')]:text(xx,176,s,1.8)
+for xx,s in [(344,'1'),(353,'REVIEW'),(378,'AT'),(388,'KS'),(398,'24-10-26')]:text(xx,176,s,1.8)
 text(345,190,'Consultant:',1.9)
 logo=Path('assets/branding/ka-logo-survey-source.jpeg')
 if logo.exists():
@@ -134,7 +134,7 @@ text(345,240,'Drawing Title:',1.9);text(345,245,'Roof Support Layout',3,bold=Tru
 text(345,253,'Site / Address:',1.9)
 for yy,s in [(258,'RIVER HOUSE'),(261,'48 HIGH STREET, BELFAST'),(264,'COUNTY ANTRIM, BT1 2DR')]:text(345,yy,s,2.2)
 text(345,271,'Drawn: AT    Checked: KS',2);text(345,276,'Scale: NTS / DO NOT SCALE',2)
-text(345,283,'Project: 7078',2.3);text(380,283,'Drawing: 7078-01',2.1);text(345,288,'Revision: TBC',2.1)
+text(345,283,'Project: 7078',2.3);text(380,283,'Drawing: 7078-01',2.1);text(345,288,'Revision: 1',2.1)
 # Survey coordinate X across width; Y along length, top end of supplied sketch.
 S=.0060
 PLAN_SHIFT=35

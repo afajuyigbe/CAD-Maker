@@ -1,5 +1,5 @@
 7078 River House – review drawing set and whole-building surface model
-Client Ancore | Author AT | Checker KS | Revision TBC
+Client Ancore | Author AT | Checker KS | Revision 1
 
 DRAWINGS
 Sheet 01 / 7078-01: Roof Support Layout. Vertical dimension values rotated, 1200 dimension separated from 5500 chain, C2 note below plan removed and plan centred.
