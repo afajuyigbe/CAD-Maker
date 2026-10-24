@@ -28,14 +28,51 @@ def rect(x,y,w,h,lw=.18,layer='SHEET',fill=False):
 def text(x,y,s,h=2.2,bold=False,align='left',layer='TEXT'):
  TEXT_QUEUE.append((x,y,s,h,bold,align,layer))
 def finish_text():
- # Draw every label last, with a small opaque clearance to avoid line collisions.
+ # Actual CAD line gaps avoid unreliable white-mask conversion to DWG.
+ bounds_all=[]
+ for x,y,s,h,bold,align,layer in TEXT_QUEUE:
+  width=fitz.get_text_length(s,fontname='hebo' if bold else 'helv',fontsize=h*PT)/PT
+  left=x-(width/2 if align=='center' else width if align=='right' else 0)
+  bounds_all.append((left-.4,y-h*1.08-.1,left+width+.4,y+.25))
+ def interval(a,b,r):
+  dx=b[0]-a[0];dy=b[1]-a[1];lo=0.;hi=1.
+  for pp,qq in [(-dx,a[0]-r[0]),(dx,r[2]-a[0]),(-dy,a[1]-r[1]),(dy,r[3]-a[1])]:
+   if abs(pp)<1e-12:
+    if qq<0:return None
+   elif pp<0:lo=max(lo,qq/pp)
+   else:hi=min(hi,qq/pp)
+   if lo>hi:return None
+  return lo,hi
+ for e in list(ms.query('LINE')):
+  a=(e.dxf.start.x,297-e.dxf.start.y);b=(e.dxf.end.x,297-e.dxf.end.y)
+  xmin,xmax=sorted([a[0],b[0]]);ymin,ymax=sorted([a[1],b[1]])
+  ranges=[]
+  for r in bounds_all:
+   if r[2]<xmin or r[0]>xmax or r[3]<ymin or r[1]>ymax:continue
+   hit=interval(a,b,r)
+   if hit and hit[1]-hit[0]>1e-9:ranges.append(hit)
+  if not ranges:continue
+  merged=[]
+  for lo,hi in sorted(ranges):
+   if merged and lo<=merged[-1][1]:merged[-1][1]=max(hi,merged[-1][1])
+   else:merged.append([lo,hi])
+  attrs=e.dxf.all_existing_dxf_attribs();attrs={k:v for k,v in attrs.items() if k not in ['handle','owner','start','end']}
+  cursor=0.;kept=[]
+  for lo,hi in merged:
+   if lo>cursor+1e-8:kept.append((cursor,lo))
+   cursor=max(cursor,hi)
+  if cursor<1-1e-8:kept.append((cursor,1.))
+  ms.delete_entity(e)
+  for lo,hi in kept:
+   aa=(a[0]+(b[0]-a[0])*lo,a[1]+(b[1]-a[1])*lo);bb=(a[0]+(b[0]-a[0])*hi,a[1]+(b[1]-a[1])*hi)
+   ms.add_line(dv(aa),dv(bb),dxfattribs=attrs)
+ # PDF clearances remain white; CAD geometry already has corresponding gaps.
  for x,y,s,h,bold,align,layer in TEXT_QUEUE:
   width=fitz.get_text_length(s,fontname='hebo' if bold else 'helv',fontsize=h*PT)/PT
   left=x-(width/2 if align=='center' else width if align=='right' else 0)
   bounds=(left-.4,y-h*1.08-.1,left+width+.4,y+.25)
   pg.draw_rect(fitz.Rect(*(v*PT for v in bounds)),color=None,fill=(1,1,1))
   x0,y0,x1,y1=bounds
-  ms.add_solid([dv(q) for q in [(x0,y0),(x1,y0),(x0,y1),(x1,y1)]],dxfattribs={'layer':layer,'true_color':0xffffff})
   pg.insert_text((left*PT,y*PT),s,fontname='hebo' if bold else 'helv',fontsize=h*PT,color=(0,0,0))
   t=ms.add_text(s,dxfattribs={'height':h,'layer':layer,'style':'Standard'})
   t.set_placement(dv((x,y)),align={'left':TextEntityAlignment.LEFT,'center':TextEntityAlignment.CENTER,'right':TextEntityAlignment.RIGHT}[align])

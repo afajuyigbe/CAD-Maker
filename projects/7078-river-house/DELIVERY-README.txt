@@ -11,7 +11,7 @@ Orientation corrected: source-to-sheet mapping preserves handedness; the compass
 
 GA page 8 grayscale plan vectors extracted independently of RF circles/annotations and graphically fitted to the survey frame. This fit does not supply engineering measurements. Survey dimensions govern. Main roof graphic fit is NTS. Main rectangle only; GA internal/reference geometry stays light and is not reclassified as structure.
 
-PDF is A3 landscape. DWG is editable A3 sheet artwork in millimetres, NTS; not a full-size building model and not a native associative dimension model. Black numeric dimensions and extensions identify the graphic references; survey face/centreline datums still require confirmation. Upper roof members use dashed black lines; main-roof beams and columns are solid. Level/continuity diagram removed at engineer request. B1 uses long-dash and B2 dash-dot lines, matching the legend. Labels have opaque clearances and dimension text is offset from dimension lines.
+PDF is A3 landscape. DWG is editable A3 sheet artwork in millimetres, NTS; not a full-size building model and not a native associative dimension model. Black numeric dimensions and extensions identify the graphic references; survey face/centreline datums still require confirmation. Upper roof members use dashed black lines; main-roof beams and columns are solid. Level/continuity diagram removed at engineer request. B1 uses long-dash and B2 dash-dot lines, matching the legend. PDF labels have opaque clearances; CAD linework is trimmed around labels so no white fill masks are needed. Dimension text is offset from dimension lines.
 
 REVIEW ITEMS
 - Member material and local bearing/connection arrangements are unconfirmed.

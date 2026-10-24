@@ -233,6 +233,7 @@
     "Revision unassigned",
     "Revision unassigned",
     "Full embedded C2 section not verified; nominal equality with C1 remains engineer hypothesis",
+    "Revision unassigned",
     "Revision unassigned"
   ],
   "validation": {
@@ -242,8 +243,8 @@
     "roundtrip_audit_errors": 0,
     "roundtrip_audit_fixes": 3,
     "entity_counts": {
-      "LINE": 18641,
-      "SOLID": 1740,
+      "LINE": 18405,
+      "SOLID": 1669,
       "TEXT": 71
     },
     "editable_text_retention": "exact match",
