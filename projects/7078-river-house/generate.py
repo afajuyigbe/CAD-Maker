@@ -74,7 +74,7 @@ text(345,271,'Drawn: AT    Checked: KS',2);text(345,276,'Scale: NTS / DO NOT SCA
 text(345,283,'Project: 7078',2.3);text(380,283,'Drawing: 7078-01',2.1);text(345,288,'Revision: TBC',2.1)
 # Survey coordinate X across width; Y along length, top end of supplied sketch.
 S=.0060
-def m(x,y):return (38+y*S,77+x*S)
+def m(x,y):return (38+y*S,77+(14600-x)*S)
 # GA vector graphic alignment, with separate surveyed dimension labels.
 origin=np.array([608.34,317.0]);across=np.array([-54.78,-66.84]);along=np.array([194.58,-159.48]);inv=np.linalg.inv(np.column_stack([across,along]))
 def gapt(p):
@@ -103,9 +103,10 @@ shape.finish(color=(.80,.80,.80),width=.07*PT);shape.commit()
 # Main perimeter beams; retain measured survey frame without inventing walls.
 for xx in [0,14600]:line(m(xx,0),m(xx,44650),.55,'MAIN_ROOF')
 for yy in [0,44650]:line(m(0,yy),m(14600,yy),.55,'MAIN_ROOF')
-# Columns shown only at survey symbols; C1/C2 assignment remains unresolved.
+# Central column spine repeats all perimeter bay positions, per engineer correction.
+# Individual C1/C2 section assignments remain unresolved.
 ys=[0,6150,11650,17150,22650,28150,33650,39150,44650]
-for xx,rows in [(0,ys),(14600,[q for q in ys if q!=17150]),(7300,[0,11650,17150,22650,44650])]:
+for xx,rows in [(0,ys),(14600,[q for q in ys if q!=17150]),(7300,ys)]:
  for yy in rows:
   cx,cy=m(xx,yy);rect(cx-1.05,cy-1.05,2.1,2.1,.25,'COLUMNS',fill=True)
 # Blue upper framing converted to black dashed linework.
@@ -135,12 +136,12 @@ def dim(a,b,offset,label):
   for side in [-1,1]:line(tip,tip+dr*1.4+n*side*.42,.12,'DIMENSIONS')
  mid=(aa+bb)/2
  text(mid[0],mid[1]-.9,label,2.05,align='center')
-for ya,yb in zip(ys,ys[1:]):dim(m(0,ya),m(0,yb),-8,str(yb-ya))
-dim(m(0,44650),m(7300,44650),-9,'7300');dim(m(7300,44650),m(14600,44650),-9,'7300')
+for ya,yb in zip(ys,ys[1:]):dim(m(14600,ya),m(14600,yb),-8,str(yb-ya))
+dim(m(0,44650),m(7300,44650),9,'7300');dim(m(7300,44650),m(14600,44650),9,'7300')
 # Upper secondary framing spacing (representative interval, repeat as noted).
-dim(m(725,11650),m(6575,11650),-14,'5850');dim(m(1200,11650),m(2400,11650),-4,'1200');dim(m(14600,12850),m(14600,14050),5,'1200')
+dim(m(725,11650),m(6575,11650),-14,'5850');dim(m(1200,11650),m(2400,11650),-4,'1200');dim(m(14600,12850),m(14600,14050),-5,'1200')
 # Compass from GA north transformed by same affine graphic fit.
-n=np.array(gapt(origin+np.array([0,-10])))-np.array(gapt(origin));nn=np.array([n[1],n[0]]);nn/=np.linalg.norm(nn);cc=np.array([316,36]);side=np.array([-nn[1],nn[0]])
+n=np.array(gapt(origin+np.array([0,-10])))-np.array(gapt(origin));nn=np.array([n[1],-n[0]]);nn/=np.linalg.norm(nn);cc=np.array([29,36]);side=np.array([-nn[1],nn[0]])
 # KA-style compass rose with cardinal labels and a fine ring.
 for j in range(32):
  ang1=2*math.pi*j/32;ang2=2*math.pi*(j+1)/32
@@ -150,6 +151,15 @@ for v,l in [(nn,'N'),(-nn,'S'),(side,'E'),(-side,'W')]:
  line(cc+perp*.85,tip,.13);line(tip,cc-perp*.85,.13);line(cc-perp*.85,cc+perp*.85,.10)
  if l in ['N','E']:line(cc,tip,.4)
  text(*(cc+v*8.2),l,2,align='center')
+# Regression: source PDF -> final sheet must preserve orientation (positive
+# determinant in the common image coordinate convention). North/east use that map.
+origin_sheet=np.array(m(*gapt(origin)))
+source_to_sheet=np.column_stack([np.array(m(*gapt(origin+[1,0])))-origin_sheet,np.array(m(*gapt(origin+[0,1])))-origin_sheet])
+assert np.linalg.det(source_to_sheet)>0, 'Mirrored GA transform'
+expected_north=source_to_sheet@np.array([0,-1.0]);expected_north/=np.linalg.norm(expected_north)
+assert np.allclose(nn,expected_north)
+orientation_check={'source_to_sheet_determinant':float(np.linalg.det(source_to_sheet)),'north_sheet_xy':nn.tolist(),'status':'orientation preserved','central_column_count':len(ys),'central_column_positions_mm':ys}
+(W/'orientation-check.json').write_text(json.dumps(orientation_check,indent=2)+'\n')
 # Short vertical load-path/continuity diagram; no hidden connection design implied.
 text(40,203,'LEVEL / COLUMN CONTINUITY',2.5,bold=True)
 for xx in [57,115]:line((xx,212),(xx,262),.5,'COLUMNS')

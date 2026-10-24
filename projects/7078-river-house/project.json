@@ -187,12 +187,30 @@
       "pair_spacing_mm": 5850,
       "derived_offset_mm": 725,
       "calculation": "(7300 - 5850) / 2"
+    },
+    {
+      "source": "Engineer GA orientation and central-column correction",
+      "correction": "Reverse survey width axis in the sheet map to remove reflection. Compass uses same transformation.",
+      "central_spine": "Centre columns repeat perimeter bay grid",
+      "central_positions_mm": [
+        0,
+        6150,
+        11650,
+        17150,
+        22650,
+        28150,
+        33650,
+        39150,
+        44650
+      ]
     }
   ],
   "questions": [],
   "unresolved_items": [
     "Material type not explicitly confirmed",
     "Bearing interfaces of plant-room roof B1/B2 to be checked with explanatory photograph",
+    "Revision unassigned",
+    "Ancore source logo file required; inline previews only",
     "Revision unassigned",
     "Ancore source logo file required; inline previews only"
   ],
@@ -203,13 +221,34 @@
     "roundtrip_audit_errors": 0,
     "roundtrip_audit_fixes": 3,
     "entity_counts": {
-      "LINE": 18630,
-      "SOLID": 1132,
+      "LINE": 18646,
+      "SOLID": 1136,
       "TEXT": 77
     },
     "editable_text_retention": "exact match",
     "external_assets": "No external CAD image dependencies; KA logo represented as scan-strip surfaces",
-    "review_limitations": "See DELIVERY-README.txt and project.json"
+    "orientation": {
+      "source_to_sheet_determinant": 1.0793852956292271,
+      "north_sheet_xy": [
+        0.652465539722721,
+        -0.7578183947848839
+      ],
+      "status": "orientation preserved",
+      "central_column_count": 9,
+      "central_column_positions_mm": [
+        0,
+        6150,
+        11650,
+        17150,
+        22650,
+        28150,
+        33650,
+        39150,
+        44650
+      ]
+    },
+    "review_limitations": "See DELIVERY-README.txt and project.json",
+    "line_geometry_retention": "coordinates and layers match to 0.00001 sheet mm"
   },
   "performance": {
     "started_at": null,

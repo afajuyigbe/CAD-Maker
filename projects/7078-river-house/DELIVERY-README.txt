@@ -4,8 +4,10 @@ Client Ancore. Author AT. Checker KS. Revision unassigned (TBC).
 Main roof +38.00 m and plant-room roof +41.57 m per engineer instruction.
 B1 380 x 380 mm. B2 380 wide x 180 deep. Main roof beams 325 wide x 300 deep.
 C1 380 x 380 mm; C2 380 x 300 mm. Column type assignments at individual survey symbols remain to be confirmed.
-Columns continue from ground through main roof to plant-room roof / parapet, not terminate on the main-roof perimeter beams.
+Columns continue from ground through main roof to plant-room roof / parapet, not terminate on the main-roof perimeter beams. The central spine repeats all nine perimeter bay-grid positions, per engineer correction.
 Grillage connection X symbols: 5850 mm apart, centred in the 7300 mm half-width; derived side offsets 725 mm. Connection pairs shown on the first two B1 lines from the survey sketch, 5500 mm apart.
+
+Orientation corrected: source-to-sheet mapping preserves handedness; the compass uses that same transform and is at the top-left to match the latest reference.
 
 GA page 8 grayscale plan vectors extracted independently of RF circles/annotations and graphically fitted to the survey frame. This fit does not supply engineering measurements. Survey dimensions govern. Main roof graphic fit is NTS. Main rectangle only; GA internal/reference geometry stays light and is not reclassified as structure.
 

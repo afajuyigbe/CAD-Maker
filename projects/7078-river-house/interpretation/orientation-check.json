@@ -1,0 +1,20 @@
+{
+  "source_to_sheet_determinant": 1.0793852956292271,
+  "north_sheet_xy": [
+    0.652465539722721,
+    -0.7578183947848839
+  ],
+  "status": "orientation preserved",
+  "central_column_count": 9,
+  "central_column_positions_mm": [
+    0,
+    6150,
+    11650,
+    17150,
+    22650,
+    28150,
+    33650,
+    39150,
+    44650
+  ]
+}
