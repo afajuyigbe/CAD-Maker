@@ -6,8 +6,8 @@ Sheet 01 / 7078-01: Roof Support Layout. Vertical dimension values rotated, 1200
 Sheet 02 / 7078-02: Building 3D Model. Street and rear views generated from the same geometry as the OBJ.
 PDF: two A3 landscape pages. DWG: AutoCAD 2000 with two named paper layouts. Paper geometry is A3 millimetres/NTS. Sheet 02 CAD views are editable visible-edge projections; the PDF views show material colours. An uninserted BUILDING_SURFACE_METRES block also contains editable 3D surface faces in METRES. It is not an associative/parametric solid model.
 
-OBJ + MTL – NOT INCLUDED IN THIS REVIEW ISSUE
-Engineer approval of the 3D model is required before these exports are finalised and issued.
+OBJ + MTL – INCLUDED
+Engineer authorised these exports subject to the final marked column corrections. Both roof-end central columns are restored and the marked rear column line is continuous; the corrections were checked before export.
 Keep the OBJ and its same-named MTL in the same folder. Units METRES; Y up; ground Y=0. OBJ X follows the roof length; negative OBJ Z follows the survey width. Surface polygons, not line-only geometry. Flat material colours, no external bitmap textures. Select wireframe or feature-edge display in the receiving application. Some importers triangulate polygons internally.
 
 EVIDENCE AND ACCURACY
@@ -17,4 +17,7 @@ Facade grids, cladding joints, service-core projection, entrances, roof cabin, H
 LATEST 3D REVIEW CORRECTIONS
 Perimeter columns now run from ground through the main roof to the upper perimeter level. Primary facade columns follow the survey bay grid and are differentiated from the three finer glazing subdivisions per bay. Tinted strips represent columns seen through the street glazing and aligned in the rear window bands; they do not represent new external pilasters. The 230mm curtain-wall stand-off is a visual estimate, not a surveyed dimension.
 Each of the three modelled corner antenna mounts now carries TWO panels on a shared yoke bracket with upright supports and braces. Bracket dimensions and orientation are approximate from the photographs.
-OBJ/MTL remain unissued until engineer approval. Current regeneration builds the working geometry and review views without generating those export files.
+OBJ/MTL issued after the engineer-authorised column corrections. Export validation binds the files to the corrected source geometry hash.
+
+FINAL COLUMN CORRECTION
+C1 upper columns at both roof-end wall centres have been restored to match the plan. The marked rear 17.15m column is present continuously to ground, with its facade register carried across spandrels. The corrected source geometry and paired-yoke arrangements were retained in the exports.

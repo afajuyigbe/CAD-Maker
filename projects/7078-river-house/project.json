@@ -83,6 +83,11 @@
       "id": "PHOTO-10",
       "type": "engineer-marked inline exterior photograph",
       "description": "Rear window bands with vertical column positions marked in red"
+    },
+    {
+      "id": "PHOTO-11",
+      "type": "engineer-marked inline model review",
+      "description": "Red marks identify roof-end central upper columns and the rear facade column at the 17.15m grid line"
     }
   ],
   "scope": {
@@ -295,6 +300,15 @@
       "perimeter_grid": "Use full repeating bay grid on both perimeter rows and central spine",
       "corner_antennas": "Each corner mount is a paired panel arrangement on a shared yoke bracket, not a single panel",
       "approval_gate": "Unchanged: no OBJ/MTL issue until 3D approval"
+    },
+    {
+      "source": "Engineer final marked correction and conditional export authorisation",
+      "authority": "Once corrected, you can make the ob/mtl",
+      "completed_corrections": [
+        "Restore central upper columns at both roof-end walls",
+        "Make marked rear 17.15m column line continuous through facade bands"
+      ],
+      "export_authorisation": "Conditions fulfilled and independently checked; OBJ/MTL exported from the corrected geometry without another approval round"
     }
   ],
   "questions": [],
@@ -357,12 +371,16 @@
     "cad_coordinate_space": "A3 paper millimetres, NTS",
     "superseded_outputs": [],
     "page_2_3d_status": "Whole-building model and second-sheet street/rear views generated for review",
-    "obj_mtl_status": "Held pending engineer approval of 3D geometry",
+    "obj_mtl_status": "Generated and validated under conditional engineer authorisation",
     "drawing_set_pdf": "drawings/7078-river-house-drawing-set-review.pdf",
     "drawing_set_dwg": "drawings/7078-river-house-drawing-set-review.dwg",
-    "model_preview": "drawings/7078-river-house-3d-sheet-review.png"
+    "model_preview": "drawings/7078-river-house-3d-sheet-review.png",
+    "obj": "items/building-visual-01/outputs/7078-river-house-building.obj",
+    "mtl": "items/building-visual-01/outputs/7078-river-house-building.mtl",
+    "package": "drawings/7078-river-house-delivery.zip",
+    "model_package": "items/building-visual-01/outputs/7078-river-house-building-obj-mtl.zip"
   },
-  "status": "review draft generated; local engineering details and revision pending",
+  "status": "Corrected drawing set and authorised whole-building visual model exported",
   "drawing_set_validation": {
     "status": "passed",
     "drawing_set_pdf_pages": 2,
@@ -376,28 +394,44 @@
         "TEXT": 70
       },
       "SHEET_02_BUILDING_3D": {
-        "LINE": 15696,
+        "LINE": 15766,
         "SOLID": 1643,
         "TEXT": 48,
         "CIRCLE": 2
       },
       "BUILDING_SURFACE_METRES": {
-        "3DFACE": 3059
+        "3DFACE": 3077
       }
     },
     "text_and_rotation_retention": "exact match",
     "line_geometry_retention": "matched to 0.000001 sheet units",
     "vertical_dimensions": "rotated and checked in PDF and CAD",
     "working_mesh": {
-      "vertices": 11732,
-      "surface_faces": 2897,
+      "vertices": 11804,
+      "surface_faces": 2915,
       "materials": 18,
       "ground_z": 0,
       "facade_columns_to_ground": 18,
       "corner_antenna_pairs": 3,
-      "obj_mtl_status": "Held pending engineer approval"
+      "obj_mtl_status": "Issued from authorised corrected geometry"
     },
     "geometry_limits": "Facade grids, enclosure details and unmeasured equipment are visual approximations; see model record",
     "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm"
+  },
+  "model_export_validation": {
+    "status": "passed",
+    "approved_geometry_sha256": "9d7074863ce22576d417651c64a53dee2f4952b85dbcabae2d185e6300fbe324",
+    "vertices": 11804,
+    "surface_faces": 2915,
+    "unit_normals": 2915,
+    "materials": 18,
+    "coordinate_readback": "matches approved mesh within 0.00000051 m",
+    "up_axis": "Y",
+    "units": "metres",
+    "ground_y": 0,
+    "external_textures": false,
+    "roof_end_central_columns": "both restored",
+    "rear_17_15m_column": "continuous to ground and visible across facade bands",
+    "corner_antenna_mounts": "3 paired yokes / 6 panels"
   }
 }

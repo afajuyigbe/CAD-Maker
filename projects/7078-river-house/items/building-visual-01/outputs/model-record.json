@@ -18,7 +18,7 @@
     "Grillage profiles and tower/antenna geometry",
     "HVAC/cable-tray locations and sizes"
   ],
-  "roof_centre_columns": "Shown above main roof only in plant framing zone; extensions elsewhere not verified",
+  "roof_centre_columns": "Shown above main roof in plant framing zone and at both roof-end wall centres, per final engineer markup; other upper central extensions not verified",
   "C2": "Only exposed 380x300 portion shown in roof frame, hidden full section unverified",
   "facade_mapping": "Glazed street long face; horizontal rear window banks and central service spine; two largely blank ends with upper vents, based on supplied photographs",
   "omitted": [
@@ -26,11 +26,13 @@
     "Unverified lower adjacent roof at +7m",
     "Hidden internal floors and connections"
   ],
-  "model_format": "Working polygon geometry; OBJ/MTL issue held pending approval; intended metres/Y up/ground 0",
+  "model_format": "Approved corrected polygon geometry; issued OBJ/MTL in metres, Y up, ground 0",
   "facade_column_expression": "Full-height perimeter and central columns follow the survey bay grid; tinted ribbons show perimeter columns through street glazing and rear window bands. Fine mullions remain distinct.",
   "facade_standoff": "230 mm illustrative curtain-wall stand-off from nominal column grid; not a surveyed dimension",
-  "faces": 2897,
-  "vertices": 11732,
-  "groups": 160,
-  "validation": "Finite coordinates, nondegenerate polygons, no texture dependencies; mostly quads"
+  "faces": 2915,
+  "vertices": 11804,
+  "groups": 163,
+  "validation": "Finite coordinates, nondegenerate polygons, no texture dependencies; mostly quads",
+  "export_validation": "export-validation.json",
+  "final_column_corrections": "Both roof-end central columns restored and marked rear column register continuous"
 }

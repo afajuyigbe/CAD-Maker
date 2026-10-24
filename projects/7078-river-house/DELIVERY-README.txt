@@ -1,23 +1,23 @@
-7078 – River House | Roof Support Layout | REVIEW DRAFT
-Client Ancore. Author AT. Checker KS. Revision unassigned (TBC).
+7078 River House – review drawing set and whole-building surface model
+Client Ancore | Author AT | Checker KS | Revision TBC
 
-Main roof +38.00 m and plant-room roof +41.57 m per engineer instruction.
-B1 380 x 380 mm. B2 380 wide x 180 deep. Main roof beams 325 wide x 300 deep.
-C1 central spine: 380 x 380 mm. C2 perimeter: 380 x 300 mm exposed section. Engineer suspects C2 full section matches C1, partly embedded in walls; the full C2 section remains unverified. Identification follows the latest engineer interpretation.
-Columns continue from ground through main roof to plant-room roof / parapet, not terminate on the main-roof perimeter beams. The central spine repeats all nine perimeter bay-grid positions, per engineer correction.
-Grillage connection X symbols: 5850 mm apart, centred in the 7300 mm half-width; derived side offsets 725 mm. Connection pairs shown on the first two B1 lines from the survey sketch, 5500 mm apart.
+DRAWINGS
+Sheet 01 / 7078-01: Roof Support Layout. Vertical dimension values rotated, 1200 dimension separated from 5500 chain, C2 note below plan removed and plan centred.
+Sheet 02 / 7078-02: Building 3D Model. Street and rear views generated from the same geometry as the OBJ.
+PDF: two A3 landscape pages. DWG: AutoCAD 2000 with two named paper layouts. Paper geometry is A3 millimetres/NTS. Sheet 02 CAD views are editable visible-edge projections; the PDF views show material colours. An uninserted BUILDING_SURFACE_METRES block also contains editable 3D surface faces in METRES. It is not an associative/parametric solid model.
 
-Orientation corrected: source-to-sheet mapping preserves handedness; the compass uses that same transform and is at the top-left to match the latest reference.
+OBJ + MTL – INCLUDED
+Engineer authorised these exports subject to the final marked column corrections. Both roof-end central columns are restored and the marked rear column line is continuous; the corrections were checked before export.
+Keep the OBJ and its same-named MTL in the same folder. Units METRES; Y up; ground Y=0. OBJ X follows the roof length; negative OBJ Z follows the survey width. Surface polygons, not line-only geometry. Flat material colours, no external bitmap textures. Select wireframe or feature-edge display in the receiving application. Some importers triangulate polygons internally.
 
-GA page 8 grayscale plan vectors extracted independently of RF circles/annotations and graphically fitted to the survey frame. This fit does not supply engineering measurements. Survey dimensions govern. Main roof graphic fit is NTS. Main rectangle only; GA internal/reference geometry stays light and is not reclassified as structure.
+EVIDENCE AND ACCURACY
+Nominal roof grid and member sizes use the survey/engineer clarifications. Main roof level +38.00m, plant-room roof / parapet +41.57m. Grillage connection pairs 5850mm apart, centred in 7300mm half-width. C1 central spine; C2 perimeter exposed portion 380x300mm, full embedded size unverified.
+Facade grids, cladding joints, service-core projection, entrances, roof cabin, HVAC sizes/positions and telecom profiles are photograph-based visual estimates, not survey measurements. The building envelope and rooftop arrangement are for review. Hidden floors, connections and capacity are not established. Adjacent buildings, street objects and unverified lower neighbouring roofs are excluded. The prepared Ancore branding asset is derived from the supplied inline logo reference, not original source artwork.
 
-PDF is A3 landscape. DWG is editable A3 sheet artwork in millimetres, NTS; not a full-size building model and not a native associative dimension model. Black numeric dimensions and extensions identify the graphic references; survey face/centreline datums still require confirmation. Upper roof members use dashed black lines; main-roof beams and columns are solid. Level/continuity diagram removed at engineer request. B1 uses long-dash and B2 dash-dot lines, matching the legend. PDF labels have opaque clearances; CAD linework is trimmed around labels so no white fill masks are needed. Dimension text is offset from dimension lines.
+LATEST 3D REVIEW CORRECTIONS
+Perimeter columns now run from ground through the main roof to the upper perimeter level. Primary facade columns follow the survey bay grid and are differentiated from the three finer glazing subdivisions per bay. Tinted strips represent columns seen through the street glazing and aligned in the rear window bands; they do not represent new external pilasters. The 230mm curtain-wall stand-off is a visual estimate, not a surveyed dimension.
+Each of the three modelled corner antenna mounts now carries TWO panels on a shared yoke bracket with upright supports and braces. Bracket dimensions and orientation are approximate from the photographs.
+OBJ/MTL issued after the engineer-authorised column corrections. Export validation binds the files to the corrected source geometry hash.
 
-REVIEW ITEMS
-- Member material and local bearing/connection arrangements are unconfirmed.
-- C1/C2 identification is engineer-provisional; full embedded C2 section and handwritten 3.8 ... to beam note remain unverified.
-- Survey colour interpretation B1/B2 follows engineer input; exact secondary member count/spacing arrangement requires review against the supplied sketch.
-- Revision is not supplied.
-- Ancore logo embedded using prepared artwork from the supplied inline reference; it is not the original source image. Provenance is recorded in the branding registry. KA registered logo retained.
-
-Source evidence and interpretation/decision register are stored separately; no dimensions, member sizes, client metadata or geometry have been borrowed from another site.
+FINAL COLUMN CORRECTION
+C1 upper columns at both roof-end wall centres have been restored to match the plan. The marked rear 17.15m column is present continuously to ground, with its facade register carried across spandrels. The corrected source geometry and paired-yoke arrangements were retained in the exports.

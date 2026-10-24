@@ -11,26 +11,26 @@
       "TEXT": 70
     },
     "SHEET_02_BUILDING_3D": {
-      "LINE": 15696,
+      "LINE": 15766,
       "SOLID": 1643,
       "TEXT": 48,
       "CIRCLE": 2
     },
     "BUILDING_SURFACE_METRES": {
-      "3DFACE": 3059
+      "3DFACE": 3077
     }
   },
   "text_and_rotation_retention": "exact match",
   "line_geometry_retention": "matched to 0.000001 sheet units",
   "vertical_dimensions": "rotated and checked in PDF and CAD",
   "working_mesh": {
-    "vertices": 11732,
-    "surface_faces": 2897,
+    "vertices": 11804,
+    "surface_faces": 2915,
     "materials": 18,
     "ground_z": 0,
     "facade_columns_to_ground": 18,
     "corner_antenna_pairs": 3,
-    "obj_mtl_status": "Held pending engineer approval"
+    "obj_mtl_status": "Issued from authorised corrected geometry"
   },
   "geometry_limits": "Facade grids, enclosure details and unmeasured equipment are visual approximations; see model record",
   "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm"

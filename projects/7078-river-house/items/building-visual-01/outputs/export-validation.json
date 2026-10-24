@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "approved_geometry_sha256": "9d7074863ce22576d417651c64a53dee2f4952b85dbcabae2d185e6300fbe324",
+  "vertices": 11804,
+  "surface_faces": 2915,
+  "unit_normals": 2915,
+  "materials": 18,
+  "coordinate_readback": "matches approved mesh within 0.00000051 m",
+  "up_axis": "Y",
+  "units": "metres",
+  "ground_y": 0,
+  "external_textures": false,
+  "roof_end_central_columns": "both restored",
+  "rear_17_15m_column": "continuous to ground and visible across facade bands",
+  "corner_antenna_mounts": "3 paired yokes / 6 panels"
+}

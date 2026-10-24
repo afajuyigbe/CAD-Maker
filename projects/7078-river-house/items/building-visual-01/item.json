@@ -31,7 +31,7 @@
     "materials": "Companion MTL; flat material colours, no texture dependencies"
   },
   "accuracy": "Use written dimensions/levels where available; qualify visually estimated facade details. Do not infer hidden structure.",
-  "status": "3D review ready; OBJ/MTL release awaiting engineer approval",
+  "status": "Corrected model conditionally authorised by engineer; OBJ/MTL generated and validated",
   "deliverables": {
     "pdf": "../../drawings/7078-river-house-drawing-set-review.pdf",
     "dwg": "../../drawings/7078-river-house-drawing-set-review.dwg",
@@ -39,14 +39,22 @@
     "mtl": "outputs/7078-river-house-building.mtl",
     "street_preview": "outputs/7078-river-house-building-street.png",
     "rear_preview": "outputs/7078-river-house-building-rear.png",
-    "obj_status": "Held; no OBJ generated in current review regeneration",
-    "mtl_status": "Held; no MTL generated in current review regeneration"
+    "obj_status": "Generated and validated",
+    "mtl_status": "Generated and validated",
+    "model_package": "outputs/7078-river-house-building-obj-mtl.zip"
   },
   "approximations_record": "outputs/model-record.json",
   "approval_gate": {
     "required_before_obj_mtl_delivery": true,
-    "approved": false,
-    "review_geometry_sha256": "57dc9c3376277f28e885e3391e51eaddcd0c45e288b241496d487f66c591d20f"
+    "approved": true,
+    "review_geometry_sha256": "57dc9c3376277f28e885e3391e51eaddcd0c45e288b241496d487f66c591d20f",
+    "approval_type": "Conditional engineer authorisation; requested missing-column corrections completed",
+    "authority": "User: Once corrected, you can make the ob/mtl",
+    "approved_geometry_sha256": "9d7074863ce22576d417651c64a53dee2f4952b85dbcabae2d185e6300fbe324",
+    "conditions_completed": [
+      "Both marked roof-end central columns restored",
+      "Marked rear 17.15m column register continuous"
+    ]
   },
   "review_corrections": {
     "facade_columns": "Full-height ground-to-roof continuity, expressed through glazing",
@@ -54,6 +62,9 @@
     "geometric_export_gate": "No OBJ/MTL generated during review regeneration",
     "perimeter_column_count": 18,
     "corner_antenna_mount_count": 3,
-    "panels_per_corner_mount": 2
-  }
+    "panels_per_corner_mount": 2,
+    "roof_end_central_columns": "Upper columns at both roof-end wall centres restored",
+    "rear_column_register": "Marked 17.15 m facade line continuous across window/spandrel bands"
+  },
+  "export_validation": "outputs/export-validation.json"
 }
