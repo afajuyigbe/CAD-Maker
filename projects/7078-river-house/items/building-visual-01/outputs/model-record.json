@@ -12,6 +12,7 @@
   },
   "visual_estimates": [
     "Facade grid and rear band spacing",
+    "Paired corner yoke brackets: dimensions and orientation photo-based",
     "End cladding joints and upper vents",
     "Core projection, entrances and cabin",
     "Grillage profiles and tower/antenna geometry",
@@ -25,9 +26,11 @@
     "Unverified lower adjacent roof at +7m",
     "Hidden internal floors and connections"
   ],
-  "model_format": "OBJ polygon surface mesh + flat-colour MTL, metres, Y up, ground at Y=0",
-  "faces": 2445,
-  "vertices": 9924,
-  "groups": 113,
+  "model_format": "Working polygon geometry; OBJ/MTL issue held pending approval; intended metres/Y up/ground 0",
+  "facade_column_expression": "Full-height perimeter and central columns follow the survey bay grid; tinted ribbons show perimeter columns through street glazing and rear window bands. Fine mullions remain distinct.",
+  "facade_standoff": "230 mm illustrative curtain-wall stand-off from nominal column grid; not a surveyed dimension",
+  "faces": 2897,
+  "vertices": 11732,
+  "groups": 160,
   "validation": "Finite coordinates, nondegenerate polygons, no texture dependencies; mostly quads"
 }

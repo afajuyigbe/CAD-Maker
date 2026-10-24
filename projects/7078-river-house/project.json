@@ -73,6 +73,16 @@
       "id": "PHOTO-08",
       "type": "inline roof photograph",
       "description": "Opposite rooftop equipment view, paired panel supports and access platform"
+    },
+    {
+      "id": "PHOTO-09",
+      "type": "inline exterior photograph",
+      "description": "Closer street curtain wall showing primary full-height structural column lines"
+    },
+    {
+      "id": "PHOTO-10",
+      "type": "engineer-marked inline exterior photograph",
+      "description": "Rear window bands with vertical column positions marked in red"
     }
   ],
   "scope": {
@@ -278,6 +288,13 @@
     {
       "source": "Engineer process clarification",
       "approval_gate": "Approve whole-building 3D geometry and rooftop arrangement before finalising and delivering OBJ/MTL. Current issue is PDF/DWG review sheets only."
+    },
+    {
+      "source": "Engineer facade-column and corner-antenna review, with marked photographs",
+      "facade_columns": "Express perimeter columns continuously to ground in structural bay positions, distinct from secondary glazing mullions; rear columns visible through window bands",
+      "perimeter_grid": "Use full repeating bay grid on both perimeter rows and central spine",
+      "corner_antennas": "Each corner mount is a paired panel arrangement on a shared yoke bracket, not a single panel",
+      "approval_gate": "Unchanged: no OBJ/MTL issue until 3D approval"
     }
   ],
   "questions": [],
@@ -297,9 +314,9 @@
     "roundtrip_audit_errors": 0,
     "roundtrip_audit_fixes": 3,
     "entity_counts": {
-      "LINE": 18405,
-      "SOLID": 1669,
-      "TEXT": 71
+      "LINE": 18408,
+      "SOLID": 1670,
+      "TEXT": 70
     },
     "editable_text_retention": "exact match",
     "line_geometry_retention": "coordinates and layers match to 0.00001 sheet mm",
@@ -354,31 +371,31 @@
     "dwg_roundtrip_audit_errors": 0,
     "block_entity_counts": {
       "SHEET_01_ROOF": {
-        "LINE": 18404,
-        "SOLID": 1669,
+        "LINE": 18408,
+        "SOLID": 1670,
         "TEXT": 70
       },
       "SHEET_02_BUILDING_3D": {
-        "LINE": 16002,
+        "LINE": 15696,
         "SOLID": 1643,
         "TEXT": 48,
         "CIRCLE": 2
       },
       "BUILDING_SURFACE_METRES": {
-        "3DFACE": 2607
+        "3DFACE": 3059
       }
     },
     "text_and_rotation_retention": "exact match",
     "line_geometry_retention": "matched to 0.000001 sheet units",
     "vertical_dimensions": "rotated and checked in PDF and CAD",
-    "obj": {
-      "vertices": 9924,
-      "surface_faces": 2445,
-      "materials": 17,
-      "units": "metres",
-      "up_axis": "Y",
-      "ground_y": 0,
-      "external_textures": false
+    "working_mesh": {
+      "vertices": 11732,
+      "surface_faces": 2897,
+      "materials": 18,
+      "ground_z": 0,
+      "facade_columns_to_ground": 18,
+      "corner_antenna_pairs": 3,
+      "obj_mtl_status": "Held pending engineer approval"
     },
     "geometry_limits": "Facade grids, enclosure details and unmeasured equipment are visual approximations; see model record",
     "dwg_model_block": "BUILDING_SURFACE_METRES: uninserted editable 3D face block, metre coordinates; drawing sheets are A3 mm"

@@ -5,8 +5,8 @@
   "roundtrip_audit_errors": 0,
   "roundtrip_audit_fixes": 3,
   "entity_counts": {
-    "LINE": 18404,
-    "SOLID": 1669,
+    "LINE": 18408,
+    "SOLID": 1670,
     "TEXT": 70
   },
   "editable_text_retention": "exact match",

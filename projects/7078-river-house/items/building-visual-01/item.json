@@ -39,12 +39,21 @@
     "mtl": "outputs/7078-river-house-building.mtl",
     "street_preview": "outputs/7078-river-house-building-street.png",
     "rear_preview": "outputs/7078-river-house-building-rear.png",
-    "obj_status": "Local working export only; not issued",
-    "mtl_status": "Local working export only; not issued"
+    "obj_status": "Held; no OBJ generated in current review regeneration",
+    "mtl_status": "Held; no MTL generated in current review regeneration"
   },
   "approximations_record": "outputs/model-record.json",
   "approval_gate": {
     "required_before_obj_mtl_delivery": true,
-    "approved": false
+    "approved": false,
+    "review_geometry_sha256": "57dc9c3376277f28e885e3391e51eaddcd0c45e288b241496d487f66c591d20f"
+  },
+  "review_corrections": {
+    "facade_columns": "Full-height ground-to-roof continuity, expressed through glazing",
+    "corner_antennas": "Paired panels on shared yokes at each of three modelled corner mounts",
+    "geometric_export_gate": "No OBJ/MTL generated during review regeneration",
+    "perimeter_column_count": 18,
+    "corner_antenna_mount_count": 3,
+    "panels_per_corner_mount": 2
   }
 }

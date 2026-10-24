@@ -170,7 +170,7 @@ for yy in [0,44650]:line(m(0,yy),m(14600,yy),.55,'MAIN_ROOF')
 # Central column spine repeats all perimeter bay positions, per engineer correction.
 # Individual C1/C2 section assignments remain unresolved.
 ys=[0,6150,11650,17150,22650,28150,33650,39150,44650]
-for xx,rows in [(0,ys),(14600,[q for q in ys if q!=17150]),(7300,ys)]:
+for xx,rows in [(0,ys),(14600,ys),(7300,ys)]:
  for yy in rows:
   cx,cy=m(xx,yy);rect(cx-1.05,cy-1.05,2.1,2.1,.25,'COLUMNS',fill=True)
 # Blue upper framing converted to black dashed linework.
