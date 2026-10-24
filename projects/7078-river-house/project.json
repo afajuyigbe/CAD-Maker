@@ -1,0 +1,229 @@
+{
+  "workflow_id": "ka.roof-support-layout",
+  "workflow_version": "1.0",
+  "project_reference": "7078",
+  "project_name": "River House",
+  "site_address": [],
+  "client": {
+    "name": "Ancore",
+    "logo_asset": null,
+    "source": "Engineer confirmed; logo forthcoming"
+  },
+  "sheet_profile": {
+    "format": "A3 landscape",
+    "drawing_title": "Roof Support Layout",
+    "drawing_number": "7078-01",
+    "drawn_by": "AT",
+    "checked_by": "KS",
+    "revision": null,
+    "issue_date": null,
+    "scale_status": null
+  },
+  "sources": [
+    {
+      "id": "GA-01",
+      "file": "sources/1219660_BEL020_10590_BT0824_M002_H3G_HRV_DD_A2.pdf",
+      "pages": 9,
+      "sha256": "e0bc361112e88ba6550b570a5adbbec76eaffe8d8d5065ed6b1ebf8f43cfc841"
+    },
+    {
+      "id": "SURVEY-01",
+      "type": "inline annotated survey photograph",
+      "local_original": null
+    },
+    {
+      "id": "PHOTO-01",
+      "type": "inline exterior photograph",
+      "description": "Stub tower and grillage above plant-room roof, viewed from main-roof access area",
+      "local_original": null
+    },
+    {
+      "id": "PHOTO-02",
+      "type": "inline engineer-annotated photograph",
+      "description": "Main roof panorama with perimeter vertical members marked columns; plant-room/tower visible at far end",
+      "local_original": null
+    }
+  ],
+  "scope": {
+    "included": [
+      "roof support layout"
+    ],
+    "excluded_or_deferred": [
+      "bespoke-item drawings/models are a separate workflow"
+    ],
+    "site_specific_limits": []
+  },
+  "ga_reference": {
+    "source_id": "GA-01",
+    "pdf_page": 8,
+    "drawing_revision": "A2",
+    "north_reference": "North-up symbol on GA page 8 transformed with plan",
+    "graphic_transform": "interpretation/ga-placement.json"
+  },
+  "entities": [
+    {
+      "id": "B1",
+      "level_m": 41.57,
+      "type": "plant-room roof beam",
+      "status": "engineer confirmed",
+      "section_mm": [
+        380,
+        380
+      ]
+    },
+    {
+      "id": "B2",
+      "level_m": 41.57,
+      "type": "plant-room roof beam",
+      "status": "engineer confirmed",
+      "section_mm": [
+        180,
+        380
+      ],
+      "dimension_order": "depth 180 mm; width 380 mm"
+    },
+    {
+      "id": "YELLOW-BEAM",
+      "level_m": 38,
+      "type": "main roof perimeter/longitudinal members",
+      "status": "engineer confirmed",
+      "section_mm": [
+        325,
+        300
+      ]
+    },
+    {
+      "id": "C1",
+      "type": "column",
+      "section_mm": [
+        380,
+        380
+      ],
+      "status": "engineer confirmed"
+    },
+    {
+      "id": "C2",
+      "type": "column",
+      "section_mm": [
+        380,
+        300
+      ],
+      "status": "engineer confirmed"
+    }
+  ],
+  "claims": [],
+  "dimensions": [
+    {
+      "id": "D-WIDTH-1",
+      "value_mm": 7300,
+      "source": "SURVEY-01 bottom left half",
+      "datum": "not yet confirmed"
+    },
+    {
+      "id": "D-WIDTH-2",
+      "value_mm": 7300,
+      "source": "SURVEY-01 bottom right half",
+      "datum": "not yet confirmed"
+    },
+    {
+      "id": "D-LENGTH-TOP",
+      "value_mm": 6150,
+      "source": "SURVEY-01 left chain upper bay",
+      "datum": "not yet confirmed"
+    },
+    {
+      "id": "D-LENGTH-REPEAT",
+      "value_mm": 5500,
+      "count_reading": 7,
+      "source": "SURVEY-01 remaining left chain",
+      "datum": "beam/column centreline references to confirm"
+    },
+    {
+      "id": "D-BLACK-SPAN",
+      "value_mm": 5850,
+      "source": "SURVEY-01 black horizontal dimension",
+      "status": "engineer confirmed",
+      "datum": "between grillage connection points"
+    },
+    {
+      "id": "D-BLUE-SPACING",
+      "value_mm": 1200,
+      "source": "SURVEY-01 blue c/c annotations",
+      "datum": "centre to centre",
+      "status": "as labelled; exact member family/count to reconcile"
+    }
+  ],
+  "decisions": [
+    {
+      "source": "engineer instruction",
+      "main_roof_level_m": 38.0,
+      "plant_room_roof_level_m": 41.57,
+      "scope": "Main roof support layout to show load path from plant-room roof beneath telecom grillage and stub tower",
+      "blue_members": "Plant-room roof beams B1 and B2"
+    },
+    {
+      "source": "PHOTO-02 engineer annotation",
+      "interpretation": "Marked perimeter vertical members identified as columns; use to cross-check survey red column marks. Photo does not resolve section sizes, concealed continuity or bearing interfaces."
+    },
+    {
+      "source": "engineer clarification",
+      "column_continuity": "Red columns extend from ground through main roof to parapet/plant-room roof level, forming plant-room corners. Do not depict columns as terminating on yellow main-roof beams.",
+      "awaiting": "Promised explanatory photograph; black X meaning still unanswered"
+    },
+    {
+      "source": "engineer clarification",
+      "ga_reference": "Extract full roof outline from GA page 8; no clean 14th-floor plan available"
+    },
+    {
+      "source": "engineer clarification",
+      "black_X": "Telecom grillage connection points",
+      "pair_spacing_mm": 5850,
+      "other_direction": "Pairs shown on first two B1 lines; existing bay spacing 5500, interpretation for review",
+      "perimeter_offset": "Not confirmed; centring query sent"
+    },
+    {
+      "source": "engineer confirmation",
+      "grillage_pair": "Centred within 7300 half-width",
+      "pair_spacing_mm": 5850,
+      "derived_offset_mm": 725,
+      "calculation": "(7300 - 5850) / 2"
+    }
+  ],
+  "questions": [],
+  "unresolved_items": [
+    "Material type not explicitly confirmed",
+    "Bearing interfaces of plant-room roof B1/B2 to be checked with explanatory photograph",
+    "Revision unassigned",
+    "Ancore source logo file required; inline previews only"
+  ],
+  "validation": {
+    "pdf": "A3 landscape, dimensions/member/title-block labels checked",
+    "dwg": "AutoCAD 2000 / AC1015",
+    "cad_coordinates": "A3 sheet-space millimetres; NTS",
+    "roundtrip_audit_errors": 0,
+    "roundtrip_audit_fixes": 3,
+    "entity_counts": {
+      "LINE": 18630,
+      "SOLID": 1132,
+      "TEXT": 77
+    },
+    "editable_text_retention": "exact match",
+    "external_assets": "No external CAD image dependencies; KA logo represented as scan-strip surfaces",
+    "review_limitations": "See DELIVERY-README.txt and project.json"
+  },
+  "performance": {
+    "started_at": null,
+    "first_review_at": null,
+    "issued_at": null,
+    "clarification_rounds": 0,
+    "rework_reasons": []
+  },
+  "deliverables": {
+    "pdf": "drawings/7078-river-house-roof-review.pdf",
+    "dwg": "drawings/7078-river-house-roof-review.dwg",
+    "preview": "drawings/7078-river-house-roof-review.png",
+    "cad_coordinate_space": "A3 paper millimetres, NTS",
+    "superseded_outputs": []
+  },
+  "status": "review draft generated; local engineering details and revision pending"
+}
