@@ -6,8 +6,9 @@
   "site_address": [],
   "client": {
     "name": "Ancore",
-    "logo_asset": null,
-    "source": "Engineer confirmed; logo forthcoming"
+    "logo_asset": "assets/branding/ancore-logo-prepared.png",
+    "source": "Engineer confirmed; logo forthcoming",
+    "logo_provenance": "Prepared from supplied inline reference; not original source artwork"
   },
   "sheet_profile": {
     "format": "A3 landscape",
@@ -99,7 +100,9 @@
         380,
         380
       ],
-      "status": "engineer confirmed"
+      "status": "engineer confirmed",
+      "location": "central spine",
+      "location_status": "engineer provisional identification"
     },
     {
       "id": "C2",
@@ -108,7 +111,14 @@
         380,
         300
       ],
-      "status": "engineer confirmed"
+      "status": "engineer confirmed",
+      "location": "perimeter",
+      "exposed_section_mm": [
+        380,
+        300
+      ],
+      "full_section_mm": null,
+      "full_section_note": "Engineer thinks same as C1 but embedded in wall; not confirmed"
     }
   ],
   "claims": [],
@@ -203,6 +213,17 @@
         39150,
         44650
       ]
+    },
+    {
+      "source": "Engineer review correction",
+      "C1": "Central column spine",
+      "C2": "Perimeter columns; 380 x 300 observed/exposed portion, engineer suspects full section matches 380 x 380 C1 but embedded portion not confirmed",
+      "presentation": [
+        "Remove level/continuity diagram",
+        "B1 long dash / B2 dash-dot",
+        "Clear labels from lines",
+        "Prepared inline Ancore branding asset registered"
+      ]
     }
   ],
   "questions": [],
@@ -210,9 +231,9 @@
     "Material type not explicitly confirmed",
     "Bearing interfaces of plant-room roof B1/B2 to be checked with explanatory photograph",
     "Revision unassigned",
-    "Ancore source logo file required; inline previews only",
     "Revision unassigned",
-    "Ancore source logo file required; inline previews only"
+    "Full embedded C2 section not verified; nominal equality with C1 remains engineer hypothesis",
+    "Revision unassigned"
   ],
   "validation": {
     "pdf": "A3 landscape, dimensions/member/title-block labels checked",
@@ -221,12 +242,13 @@
     "roundtrip_audit_errors": 0,
     "roundtrip_audit_fixes": 3,
     "entity_counts": {
-      "LINE": 18646,
-      "SOLID": 1136,
-      "TEXT": 77
+      "LINE": 18641,
+      "SOLID": 1740,
+      "TEXT": 71
     },
     "editable_text_retention": "exact match",
-    "external_assets": "No external CAD image dependencies; KA logo represented as scan-strip surfaces",
+    "line_geometry_retention": "coordinates and layers match to 0.00001 sheet mm",
+    "external_assets": "No external CAD image dependencies; KA and prepared Ancore logos represented as scan-strip surfaces",
     "orientation": {
       "source_to_sheet_determinant": 1.0793852956292271,
       "north_sheet_xy": [
@@ -247,8 +269,7 @@
         44650
       ]
     },
-    "review_limitations": "See DELIVERY-README.txt and project.json",
-    "line_geometry_retention": "coordinates and layers match to 0.00001 sheet mm"
+    "review_limitations": "See DELIVERY-README.txt and project.json"
   },
   "performance": {
     "started_at": null,

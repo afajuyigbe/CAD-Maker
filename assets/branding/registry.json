@@ -1,0 +1,26 @@
+{
+  "consultant": {
+    "name": "KA Engineering Group",
+    "logo_path": "assets/branding/ka-logo-survey-source.jpeg",
+    "source": "Existing KA logo embedded in Survey Notes (1).pdf, page 1",
+    "master_logo_status": "High-resolution chat image not available as a local attachment; replace this draft asset with supplied master when available."
+  },
+  "clients": {
+    "JET network solutions": {
+      "logo_path": "assets/branding/jet-logo-ga-source.jpeg",
+      "source": "Client GA 200 Rev A, PDF page 3",
+      "reuse": "Client-specific asset; use only on projects with confirmed client identity."
+    },
+    "Connect44": {
+      "logo_path": "assets/branding/connect44-logo-prepared.png",
+      "source": "Prepared image asset from user-supplied inline CONNECT44 logo using the image tool; visually matched to supplied reference",
+      "reuse": "Connect44 projects only",
+      "original_inline_reference": "User logo supplied in chat on 23 October 2026"
+    },
+    "Ancore": {
+      "logo_path": "assets/branding/ancore-logo-prepared.png",
+      "source": "Prepared from user-supplied inline Ancore logo reference using image tool on 24 October 2026; not original source pixels",
+      "reuse": "Ancore projects only"
+    }
+  }
+}
