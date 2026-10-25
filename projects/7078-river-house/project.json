@@ -439,5 +439,13 @@
     "roof_end_central_columns": "both restored",
     "rear_17_15m_column": "continuous to ground and visible across facade bands",
     "corner_antenna_mounts": "3 paired yokes / 6 panels"
-  }
+  },
+  "engineer_corrections": [
+    {
+      "date": "2026-10-25",
+      "instruction": "Extend the three B1 so they reach the end of the building",
+      "interpretation": "Three B1 at longitudinal axes 11650, 17150 and 22650 extend across the complete 14600 mm width, from one perimeter to the opposite perimeter, per marked plan. B2 and grillage connection positions unchanged.",
+      "revision": "1"
+    }
+  ]
 }

@@ -5,9 +5,9 @@
   "roundtrip_audit_errors": 0,
   "roundtrip_audit_fixes": 3,
   "entity_counts": {
-    "LINE": 18408,
+    "LINE": 18410,
     "SOLID": 1670,
-    "TEXT": 70
+    "TEXT": 73
   },
   "editable_text_retention": "exact match",
   "line_geometry_retention": "coordinates and layers match to 0.00001 sheet mm",

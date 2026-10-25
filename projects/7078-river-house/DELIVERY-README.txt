@@ -21,3 +21,5 @@ OBJ/MTL issued after the engineer-authorised column corrections. Export validati
 
 FINAL COLUMN CORRECTION
 C1 upper columns at both roof-end wall centres have been restored to match the plan. The marked rear 17.15m column is present continuously to ground, with its facade register carried across spandrels. The corrected source geometry and paired-yoke arrangements were retained in the exports.
+
+25 October correction: all three B1 beams extended across the full 14600 mm building width to the opposite perimeter in the plan, CAD surface model and OBJ. Revision remains 1.

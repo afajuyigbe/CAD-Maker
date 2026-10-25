@@ -50,10 +50,11 @@
     "review_geometry_sha256": "57dc9c3376277f28e885e3391e51eaddcd0c45e288b241496d487f66c591d20f",
     "approval_type": "Conditional engineer authorisation; requested missing-column corrections completed",
     "authority": "User: Once corrected, you can make the ob/mtl",
-    "approved_geometry_sha256": "9d7074863ce22576d417651c64a53dee2f4952b85dbcabae2d185e6300fbe324",
+    "approved_geometry_sha256": "500bd507c665c6422b57e6072d20097439bf4ddc0813ccc4bb6867c05e79088f",
     "conditions_completed": [
       "Both marked roof-end central columns restored",
-      "Marked rear 17.15m column register continuous"
+      "Marked rear 17.15m column register continuous",
+      "2026-10-25: engineer-directed three B1 extensions to opposite perimeter, full 14.6 m width"
     ]
   },
   "review_corrections": {
@@ -64,7 +65,8 @@
     "corner_antenna_mount_count": 3,
     "panels_per_corner_mount": 2,
     "roof_end_central_columns": "Upper columns at both roof-end wall centres restored",
-    "rear_column_register": "Marked 17.15 m facade line continuous across window/spandrel bands"
+    "rear_column_register": "Marked 17.15 m facade line continuous across window/spandrel bands",
+    "B1": "All three beams span full 14.6 m building width per 25 October marked plan"
   },
   "export_validation": "outputs/export-validation.json"
 }

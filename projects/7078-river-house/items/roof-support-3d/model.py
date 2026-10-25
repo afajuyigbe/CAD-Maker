@@ -22,7 +22,7 @@ for width,rows,mat,sw in [(0,ys,'C2_exposed',.3),(14.6,ys,'C2_exposed',.3),(7.3,
 for width in [0,14.6]:box(-.1625,width-.1625,-.3,44.975,.325,.3,f'main_longitudinal_{width}','main_beam')
 for y in [0,44.65]:box(y-.1625,0,-.3,.325,14.6,.3,f'main_end_{y}','main_beam')
 # Identified B1 beams and B2 secondary members at upper roof +41.57m.
-for y in [11.65,17.15,22.65]:box(y-.19,0,3.19,.38,7.3,.38,f'B1_{y}','B1')
+for y in [11.65,17.15,22.65]:box(y-.19,0,3.19,.38,14.6,.38,f'B1_{y}','B1')
 for width in [1.2,2.4,3.6,4.8,6.0]:box(11.65,width-.19,3.39,11,.38,.18,f'B2_left_{width}','B2')
 for i,y in enumerate(np.arange(11.65,22.651,1.2)):box(float(y)-.19,7.3,3.39,.38,7.3,.18,f'B2_right_{i}','B2')
 for y in [11.65,17.15]:

@@ -175,8 +175,9 @@ for xx,rows in [(0,ys),(14600,ys),(7300,ys)]:
   cx,cy=m(xx,yy);rect(cx-1.05,cy-1.05,2.1,2.1,.25,'COLUMNS',fill=True)
 # Blue upper framing converted to black dashed linework.
 for yy in [11650,17150,22650]:
- line(m(0,yy),m(7300,yy),.45,'UPPER_ROOF',dash=True)
- a=m(3600,yy);text(a[0]+2.3,a[1]-2.2,'B1',2.3,bold=True)
+ line(m(0,yy),m(14600,yy),.45,'UPPER_ROOF',dash=True)
+ for xx in [3600,11000]:
+  a=m(xx,yy);text(a[0]+2.3,a[1]-2.2,'B1',2.3,bold=True)
 for xx in [1200,2400,3600,4800,6000]:line(m(xx,11650),m(xx,22650),.18,'UPPER_ROOF',dash=True)
 for yy in range(11650,22651,1200):line(m(7300,yy),m(14600,yy),.18,'UPPER_ROOF',dash=True)
 for xx in [0,7300,14600]:line(m(xx,11650),m(xx,22650),.3,'UPPER_ROOF',dash=True)

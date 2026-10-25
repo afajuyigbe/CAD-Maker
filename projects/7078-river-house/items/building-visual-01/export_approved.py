@@ -33,16 +33,20 @@ assert {'C1_7.3_0','C1_7.3_8'}<=set(G)
 assert len([g for g in set(G) if '_antenna_pair_' in g])==6
 for group in ['C1_7.3_0','C1_7.3_8']:
  pts=np.array([V[i-1] for face,g in zip(F,G) if g==group for i in face]);assert np.isclose(pts[:,2].max(),41.57)
+# Engineer correction: all three B1 reach the opposite perimeter.
+for group in ['B1_11.65','B1_17.15','B1_22.65']:
+ pts=np.array([V[i-1] for face,g in zip(F,G) if g==group for i in face])
+ assert np.isclose(pts[:,1].min(),0) and np.isclose(pts[:,1].max(),14.6)
 # The marked rear column and its continuous facade register both exist.
 assert 'facade_column_to_ground_17.15_14.6' in G
 joints=[V[np.array(face)-1] for face,g in zip(F,G) if g=='rear_primary_column_axis_joints'];assert any(np.isclose(p[:,0].mean(),17.15) and p[:,2].min()==0 and np.isclose(p[:,2].max(),41.57) for p in joints)
-report={'status':'passed','approved_geometry_sha256':digest,'vertices':len(verts),'surface_faces':len(faces),'unit_normals':len(normals),'materials':len(materials),'coordinate_readback':'matches approved mesh within 0.00000051 m','up_axis':'Y','units':'metres','ground_y':0,'external_textures':False,'roof_end_central_columns':'both restored','rear_17_15m_column':'continuous to ground and visible across facade bands','corner_antenna_mounts':'3 paired yokes / 6 panels'}
+report={'status':'passed','approved_geometry_sha256':digest,'vertices':len(verts),'surface_faces':len(faces),'unit_normals':len(normals),'materials':len(materials),'coordinate_readback':'matches approved mesh within 0.00000051 m','up_axis':'Y','units':'metres','ground_y':0,'external_textures':False,'roof_end_central_columns':'both restored','rear_17_15m_column':'continuous to ground and visible across facade bands','B1_spans':'3 beams span full 14.6 m building width','corner_antenna_mounts':'3 paired yokes / 6 panels'}
 (O/'export-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 readme='''7078 River House – OBJ surface model + MTL
 
 Keep 7078-river-house-building.obj and 7078-river-house-building.mtl together in the same directory. Import units: METRES. Y is vertical; ground Y=0. X follows the building length; negative Z follows the survey width. The MTL uses flat opaque colours with no bitmap textures. Select wireframe/feature-edge display in your software as required. Explicit normals and polygon faces are supplied; some importers triangulate polygons internally.
 
-Geometry is exported from the corrected 3D model authorised by the engineer after the marked missing-column corrections. The roof-end central columns are restored; rear column continuity and paired corner yoke antennas are included. Facade grids and unmeasured equipment dimensions remain photograph-based approximations. The observed C2 section does not establish its hidden embedded full size. This is a visual surface model, not a structural analysis/fabrication model.
+Geometry is exported from the corrected 3D model authorised by the engineer after the marked missing-column corrections. All three B1 beams extend across the full 14.6 m building width per the engineer correction of 25 October 2026. The roof-end central columns are restored; rear column continuity and paired corner yoke antennas are included. Facade grids and unmeasured equipment dimensions remain photograph-based approximations. The observed C2 section does not establish its hidden embedded full size. This is a visual surface model, not a structural analysis/fabrication model.
 '''
 (O/'MODEL-README.txt').write_text(readme)
 with zipfile.ZipFile(O/(stem+'-obj-mtl.zip'),'w',zipfile.ZIP_DEFLATED) as z:

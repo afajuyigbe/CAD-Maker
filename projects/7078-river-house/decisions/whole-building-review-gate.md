@@ -5,3 +5,5 @@ Engineer clarification, 24 October 2026: submit the whole-building 3D review vie
 ## Conditional authorisation completed
 
 The engineer subsequently instructed: “Once corrected, you can make the ob/mtl.” The marked roof-end central columns were restored and the rear 17.15m column register made continuous. The geometry was checked, its SHA-256 recorded in the item approval record, and the OBJ/MTL issued from that exact corrected mesh. No additional approval round was required.
+
+25 October 2026: Engineer requested extending the three B1 beams to the opposite building perimeter. Applied the explicit correction to plan and shared model, retaining the existing export authorisation and revision 1. Each B1 now spans the full 14.6 m width; B2 and grillage points unchanged.
