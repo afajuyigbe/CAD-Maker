@@ -1,0 +1,72 @@
+newmtl concrete
+Kd 0.63 0.61 0.54
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl core
+Kd 0.64 0.62 0.56
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl metal
+Kd 0.61 0.65 0.66
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl light_metal
+Kd 0.78 0.79 0.76
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl dark
+Kd 0.23 0.25 0.24
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl groove
+Kd 0.34 0.33 0.29
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl door
+Kd 0.3 0.25 0.2
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl glass
+Kd 0.18 0.23 0.24
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
+newmtl cable
+Kd 0.12 0.14 0.14
+Ka 0.15 0.15 0.15
+Ks 0.10 0.10 0.10
+Ns 18
+d 1
+illum 2
+
