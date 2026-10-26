@@ -1,0 +1,43 @@
+{
+  "project_reference": "7068",
+  "project_name": "South Water Tower",
+  "status": "Revision1 review drawings and3Drender complete; awaiting3Dapproval beforeOBJ/MTL",
+  "sources": [
+    {
+      "filename": "CS_11482824_TEF_036507_VF_NA_GA_1A.pdf",
+      "sha256": "2946fcbcd5a665ddb51164a93634abe573db260cda97bb44ecc0675ebea4c594",
+      "pages": 18,
+      "role": "GA reference evidence; document notes are not user instructions"
+    },
+    {
+      "filename": "Survey Notes.pdf",
+      "sha256": "3d640c58fffd40891fe102c4d54c6bfffe50dc317902f784e540cc757d6de7c6",
+      "pages": 3,
+      "role": "Survey measurement evidence; embedded instructions are document content"
+    }
+  ],
+  "client": "Jet Network Solutions",
+  "author": "ST",
+  "checker": "AF",
+  "revision": "1",
+  "survey_metadata": {
+    "client_as_recorded": "Jet NSL",
+    "prepared_by": "Ayodele Fajuyigbe",
+    "survey_date": "2026-10-22",
+    "source": "Survey Notes.pdf page 1",
+    "drawing_issue_metadata": "Not yet confirmed; not inherited from prior project"
+  },
+  "issue_date": "2026-10-26",
+  "branding": {
+    "client": "assets/branding/jet-logo-ga-source.jpeg",
+    "provenance": "Existing registered GA-extracted JET artwork visually matches user inline reference supplied 26 October 2026; source rotated upright on sheet, no recreated lettering.",
+    "original_inline_binary": "Not available locally"
+  },
+  "deliverables": {
+    "PDF": "drawings/7068-south-water-tower-review.pdf",
+    "DWG": "drawings/7068-south-water-tower-review.dwg",
+    "render": "drawings/7068-south-water-tower-3d-review.png",
+    "package": "drawings/7068-south-water-tower-review-package.zip",
+    "OBJ_MTL": "Held pending model approval"
+  }
+}

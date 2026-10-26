@@ -1,0 +1,31 @@
+{
+  "sectors": 8,
+  "inner_face_chord": 4700,
+  "inner_face_diameter": 12281.69186983794,
+  "column_pcd": 12881.69186983794,
+  "outside_diameter": 13481.69186983794,
+  "core_diameter": 3881.6918698379395,
+  "column_section": [
+    600,
+    600
+  ],
+  "inner_projection_depth": 250,
+  "radial_beam_section": [
+    200,
+    450
+  ],
+  "levels": {
+    "ground": 0,
+    "ring_underside": 15600,
+    "ring_top": 16500,
+    "roof": 22000,
+    "parapet_lower_top": 22120,
+    "parapet_top": 22210,
+    "core_cap_top": 23900
+  },
+  "roof_slab": 150,
+  "ring_section": [
+    600,
+    900
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "paper": "2 x A3 landscape",
+  "revision": "1",
+  "author": "ST",
+  "checker": "AF",
+  "client": "Jet Network Solutions",
+  "surface_mesh_sha256": "4c6f438040dd55cf70be5b6e5d2c3d0953439cb64f5aa56a96981b9770132408",
+  "mesh": {
+    "vertices": 29872,
+    "faces": 7692,
+    "perimeter_columns": 8,
+    "radial_beams": 8,
+    "EMA_groups_with_upper_and_lower_brackets": 3
+  },
+  "diameters_mm": {
+    "inner_face_diameter": 12281.69186983794,
+    "column_pcd": 12881.69186983794,
+    "outside_diameter": 13481.69186983794,
+    "core_diameter": 3881.6918698379395
+  },
+  "DWG": "AutoCAD2000 AC1015, two named paper layouts, editable vector views",
+  "cad_units": "mm; scaled A3 sheet blocks; uninserted TOWER_SURFACE_MM is full-size3Dmm",
+  "DWG_roundtrip_audit_errors": 0,
+  "DWG_entity_counts": {
+    "SHEET_01": {
+      "LINE": 14335,
+      "SOLID": 3295,
+      "CIRCLE": 4,
+      "TEXT": 68
+    },
+    "SHEET_02": {
+      "LINE": 11372,
+      "SOLID": 3295,
+      "CIRCLE": 3,
+      "TEXT": 69
+    },
+    "TOWER_SURFACE_MM": {
+      "3DFACE": 7692
+    }
+  },
+  "DWG_geometry_and_text": "retained through conversion",
+  "OBJ_MTL": "Not generated; held pending engineer model approval",
+  "geometry_limits": "See item record and README: survey approximations, schematic telecom hardware, unmeasured core cap/parapet width and inner projection width"
+}

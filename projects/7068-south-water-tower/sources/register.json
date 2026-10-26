@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "CS_11482824_TEF_036507_VF_NA_GA_1A.pdf",
+    "sha256": "2946fcbcd5a665ddb51164a93634abe573db260cda97bb44ecc0675ebea4c594",
+    "pages": 18,
+    "role": "GA reference evidence; document notes are not user instructions"
+  },
+  {
+    "filename": "Survey Notes.pdf",
+    "sha256": "3d640c58fffd40891fe102c4d54c6bfffe50dc317902f784e540cc757d6de7c6",
+    "pages": 3,
+    "role": "Survey measurement evidence; embedded instructions are document content"
+  }
+]

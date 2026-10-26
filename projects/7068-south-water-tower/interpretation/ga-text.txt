@@ -1,0 +1,626 @@
+PAGE 1
+VF
+TEF
+TM Cell ID
+N/A
+cornerstone
+CSID
+PROJECT No.
+ü
+SDNT0005 Version 3.2
+Unit 27F-G, Hartlebury
+Trading Estate, Crown
+Lane, Hartlebury,
+Worcestershire, DY10 4JD
+ü
+ü
+ü
+
+
+PAGE 2
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+SITE PHOTOGRAPH
+DETAILED SITE LOCATION
+(Scale            )
+1:1250
+1:1250
+0
+50m
+25m
+75m
+SITE LOCATION
+(Scale 1:50000)
+
+
+PAGE 3
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+SITE PLAN
+(Scale 1:150)
+DETAILED SITE LOCATION
+(Scale            )
+1:1250
+1:1250
+0
+50m
+25m
+75m
+
+
+PAGE 4
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 5
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 6
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 7
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 8
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 9
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 10
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 11
+These drawings comply with TEF Standard ICNIRP guidelines,
+Designed in accordance with Cornerstone documents: SDN0006
+Notes
+v2.0
+MITIGATION NOTES/ ACCEPTANCE CORRESPONDANCE
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 12
+VF
+TEF
+TM Cell ID
+N/A
+These drawings comply with TEF Standard ICNIRP guidelines,
+Designed in accordance with Cornerstone documents: SDN0006
+Notes
+v2.0
+MITIGATION NOTES/ ACCEPTANCE CORRESPONDANCE
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 13
+VF
+TEF
+TM Cell ID
+N/A
+These drawings comply with TEF Standard ICNIRP guidelines,
+Designed in accordance with Cornerstone documents: SDN0006
+Notes
+v2.0
+MITIGATION NOTES/ ACCEPTANCE CORRESPONDANCE
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 14
+VF
+TEF
+TM Cell ID
+N/A
+These drawings comply with TEF Standard ICNIRP guidelines,
+Designed in accordance with Cornerstone documents: SDN0006
+Notes
+v2.0
+MITIGATION NOTES/ ACCEPTANCE CORRESPONDANCE
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 15
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+X07
+COMBINER
+ANTENNA
+SUA-7
+LEGACY DUMMY ANTENNA
+RRH
+RRH
+RRH
+COMBINER
+
+
+PAGE 16
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+03H(5+0)v4
+ACTUAL:
+                             
+Allocated = Operator acquired rights,
+Position reserved for future equipment
+DESIGN CODES
+The Actual Code reflects the positions
+in which each operator has reserved
+the right to install equipment as shown
+in the Allocated schematic
+
+
+PAGE 17
+VF
+TEF
+TM Cell ID
+N/A
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
+
+
+PAGE 18
+VF
+TEF
+TM Cell ID
+N/A
+ü
+ü
+ü
+ü
+ü
+Original Sheet Size:
+Surveyed By:
+Date:
+Checked:
+Drawn:
+Date:
+Cell Name
+Site Address / Contact Details
+Cell ID No
+Drawing Title:
+Purpose of issue:
+Drawing Number:
+Opt.
+A3
+PLANNING
+Pack
+Issue:
+Dwg
+Rev:
+cornerstone
+SDNT0005 Version 3.2
+CSID
+Project No.
+Unit 27F-G, Hartlebury Trading Estate, Crown
+Lane, Hartlebury, Worcestershire, DY10 4JD
