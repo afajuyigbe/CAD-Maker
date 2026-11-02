@@ -1,0 +1,105 @@
+# Project5166 TadworthHouse; flat colours; no external textures
+
+newmtl brick
+Ka 0.15 0.15 0.15
+Kd 0.58000000 0.39000000 0.28000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl band
+Ka 0.15 0.15 0.15
+Kd 0.87000000 0.86000000 0.80000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl roof
+Ka 0.15 0.15 0.15
+Kd 0.76000000 0.75000000 0.69000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl glass
+Ka 0.15 0.15 0.15
+Kd 0.27000000 0.39000000 0.44000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl frame
+Ka 0.15 0.15 0.15
+Kd 0.88000000 0.90000000 0.88000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl steel
+Ka 0.15 0.15 0.15
+Kd 0.62000000 0.68000000 0.70000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl equipment
+Ka 0.15 0.15 0.15
+Kd 0.88000000 0.88000000 0.84000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl dark
+Ka 0.15 0.15 0.15
+Kd 0.22000000 0.25000000 0.25000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl walkway
+Ka 0.15 0.15 0.15
+Kd 0.31000000 0.36000000 0.32000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl mortar
+Ka 0.15 0.15 0.15
+Kd 0.57000000 0.40000000 0.30000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl vent
+Ka 0.15 0.15 0.15
+Kd 0.84000000 0.70000000 0.19000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl concrete
+Ka 0.15 0.15 0.15
+Kd 0.79000000 0.80000000 0.77000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl bearing_wall
+Ka 0.15 0.15 0.15
+Kd 0.69000000 0.48000000 0.34000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
