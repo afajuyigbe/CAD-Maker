@@ -1,0 +1,109 @@
+{
+  "7145-01.dxf": {
+    "entities": {
+      "INSERT": 2,
+      "LINE": 19109,
+      "SOLID": 981,
+      "CIRCLE": 2,
+      "TEXT": 40
+    },
+    "text_preserved": true,
+    "audit_errors": 0,
+    "audit_fixes": 3,
+    "image_references": [],
+    "units": 4
+  },
+  "7145-02.dxf": {
+    "entities": {
+      "INSERT": 2,
+      "LINE": 13797,
+      "SOLID": 981,
+      "CIRCLE": 3,
+      "TEXT": 76,
+      "IMAGE": 2,
+      "IMAGEDEF": 2
+    },
+    "text_preserved": true,
+    "audit_errors": 0,
+    "audit_fixes": 3,
+    "image_references": [
+      "7145-tower-view.png",
+      "7145-fourth-floor-interior.png"
+    ],
+    "units": 4
+  },
+  "7145-drawing-set.dxf": {
+    "entities": {
+      "INSERT": 4,
+      "LINE": 32906,
+      "SOLID": 1962,
+      "CIRCLE": 5,
+      "TEXT": 116,
+      "IMAGE": 2,
+      "IMAGEDEF": 2
+    },
+    "text_preserved": true,
+    "audit_errors": 0,
+    "audit_fixes": 3,
+    "image_references": [
+      "7145-tower-view.png",
+      "7145-fourth-floor-interior.png"
+    ],
+    "units": 4
+  },
+  "7145-tower-model.dxf": {
+    "entities": {
+      "3DFACE": 9368
+    },
+    "text_preserved": true,
+    "audit_errors": 0,
+    "audit_fixes": 3,
+    "image_references": [],
+    "units": 4
+  },
+  "review_checks": {
+    "PDF_pages": 2,
+    "A3_landscape": true,
+    "metadata_and_text_bounds": "pass",
+    "internal_clear_mm": 5200,
+    "base_external_width_mm": 8000,
+    "base_wall_mm": 1400,
+    "first_floor_wall_approx_mm": [
+      550,
+      600
+    ],
+    "nominal_shaft_model_wall_mm": 650,
+    "plinth_top": "First-floor level, 5775 mm",
+    "embedded_beams": 7,
+    "spaces": 8,
+    "spacing_mm": 650,
+    "edge_beams": false,
+    "scan_sheet": "Integrated on sheet 7145-01; no separate scan sheet",
+    "clear_heights_mm": [
+      5600,
+      2400,
+      2600,
+      5500,
+      2800,
+      4100
+    ],
+    "wall_profile": "Lower plinth only: three 150 mm steps at 20-course intervals and 300 mm base return; upper shaft constant",
+    "roof_sheet_details": "Flange-9 section, standalone wall-offset detail, repeated 650 dimension chain and spacing note removed",
+    "interior_view": "Perspective: 3700 mm tank height, exposed brick band to roof soffit; no floor beams or access opening",
+    "slabs": "175 mm shown separately from clear heights",
+    "primary_beam_location": "Fourth-floor floor / third-floor roof",
+    "primary_beam_model_top_mm": 20725.0,
+    "scan_locations": [
+      {
+        "number": 1,
+        "type": "soffit",
+        "target": "Roof over fourth floor"
+      }
+    ],
+    "allocated_panels": 9,
+    "allocated_RRUs": 15,
+    "allocated_dish_mm": 300,
+    "OBJ_MTL": "Export authorised by engineer; matching OBJ/MTL independently validated",
+    "STEP_mesh_bounds_match": true
+  }
+}

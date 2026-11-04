@@ -1,0 +1,56 @@
+{
+  "internal_clear": 5200,
+  "roof_level": 25000,
+  "slab_thickness": 175,
+  "parapet": 550,
+  "fourth_floor_level_from_roof_and_clear_height": 20725.0,
+  "fourth_floor_clear_height": 4100,
+  "primary_beam_level": "Fourth-floor floor / third-floor roof",
+  "primary_beam_top": 20725.0,
+  "primary_beam_soffit": 20215.0,
+  "fourth_floor_floor_type": "Steel; deck build-up unmeasured",
+  "tank_panel_height": 3700,
+  "beam_count": 7,
+  "beam_spacing": 650,
+  "spaces": 8,
+  "edge_beams": false,
+  "roof_embedded_section": "Not measured; position bands only",
+  "measured_profiles": [
+    {
+      "depth": 510,
+      "width": 190,
+      "flange": 20
+    },
+    {
+      "depth": 152,
+      "width": 125,
+      "flange": 9
+    }
+  ],
+  "rotation_deg": 3.1647599319016346,
+  "wall_profile": {
+    "outward_step_mm": 150.0,
+    "small_step_count": 3,
+    "location": "Lower plinth below lowest arched openings",
+    "courses_per_step": 20,
+    "base_return_mm": 300.0,
+    "visual_course_pitch_mm": 72.1875,
+    "course_pitch_status": "Unmeasured; visual model proxy only",
+    "base_external_width_mm": 8000.0,
+    "base_wall_mm": 1400.0,
+    "plinth_top_first_floor_mm": 5775.0,
+    "top_wall_envelope_mm": 650.0,
+    "first_floor_wall_approx_mm": [
+      550,
+      600
+    ],
+    "top_wall_envelope_status": "Nominal 650 closes exact base/clear widths and returns; first-floor thickness described approximately 550/600"
+  },
+  "visual_only": [
+    "External wall envelope/facade proportions",
+    "Arch sizes and recess depths",
+    "Hatch/stair and tank panel modules",
+    "Unmeasured steel web thicknesses"
+  ],
+  "clear_height_note": "Survey floor-to-ceiling readings retained separately; not forced into GA floor-to-floor levels"
+}

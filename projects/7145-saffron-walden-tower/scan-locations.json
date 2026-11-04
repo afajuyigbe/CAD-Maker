@@ -1,0 +1,15 @@
+{
+  "drawing_title": "Roof Support Layout",
+  "drawing_number": "7145-01",
+  "locations": [
+    {
+      "number": 1,
+      "scan_type": "soffit",
+      "description": "Roof soffit over fourth floor",
+      "type_status": "Engineer-confirmed",
+      "marker_position": "Place on fourth-floor roof plan; not on detail callouts1\u20133"
+    }
+  ],
+  "integrated_scan_marker": true,
+  "separate_scan_sheet": false
+}

@@ -1,0 +1,91 @@
+{
+  "sheet": 2,
+  "scale_status": "NTS",
+  "clear_height_dimensions": [
+    {
+      "room": "Ground floor",
+      "value_mm": 5600,
+      "from": "floor top",
+      "to": "ceiling soffit",
+      "sheet_floor_y": 257.0,
+      "sheet_ceiling_y": 209.4
+    },
+    {
+      "room": "First floor - lower",
+      "value_mm": 2400,
+      "from": "floor top",
+      "to": "ceiling soffit",
+      "sheet_floor_y": 207.9125,
+      "sheet_ceiling_y": 187.5125
+    },
+    {
+      "room": "First floor - upper",
+      "value_mm": 2600,
+      "from": "floor top",
+      "to": "ceiling soffit",
+      "sheet_floor_y": 186.21249999999998,
+      "sheet_ceiling_y": 164.11249999999998
+    },
+    {
+      "room": "Second floor",
+      "value_mm": 5500,
+      "from": "floor top",
+      "to": "ceiling soffit",
+      "sheet_floor_y": 162.62499999999997,
+      "sheet_ceiling_y": 115.87499999999997
+    },
+    {
+      "room": "Third floor",
+      "value_mm": 2800,
+      "from": "floor top",
+      "to": "ceiling soffit",
+      "sheet_floor_y": 114.38749999999997,
+      "sheet_ceiling_y": 90.58749999999998
+    },
+    {
+      "room": "Fourth floor",
+      "value_mm": 4100,
+      "from": "floor top",
+      "to": "ceiling soffit",
+      "sheet_floor_y": 89.28749999999998,
+      "sheet_ceiling_y": 54.43749999999998
+    }
+  ],
+  "concrete_slab_thickness_mm": 175,
+  "unknown_build_ups": [
+    "Intermediate timber deck",
+    "Fourth-floor steel deck"
+  ],
+  "primary_beam_location": "Fourth-floor floor / third-floor roof",
+  "levels_sheet_y": {
+    "Ground-floor floor": 257.0,
+    "Ground floor ceiling": 209.4,
+    "First-floor floor": 207.9125,
+    "First floor - lower ceiling": 187.5125,
+    "Intermediate timber deck": 186.21249999999998,
+    "First floor - upper ceiling": 164.11249999999998,
+    "Second-floor floor": 162.62499999999997,
+    "Second floor ceiling": 115.87499999999997,
+    "Third-floor floor": 114.38749999999997,
+    "Third floor ceiling": 90.58749999999998,
+    "Fourth-floor floor": 89.28749999999998,
+    "Fourth floor ceiling": 54.43749999999998,
+    "Roof top": 52.94999999999998
+  },
+  "wall_profile": {
+    "outward_step_mm": 150,
+    "small_step_count": 3,
+    "location": "Lower plinth below lowest arched openings",
+    "courses_per_step": 20,
+    "base_return_mm": 300,
+    "vertical_step_positions": "Course-based; visual/NTS pitch only, not surveyed heights"
+  },
+  "base_external_width_mm": 8000,
+  "base_wall_mm": 1400,
+  "first_floor_wall_approx_mm": [
+    550,
+    600
+  ],
+  "model_nominal_shaft_wall_mm": 650,
+  "no_cumulative_AGL_levels_inferred": true
+}

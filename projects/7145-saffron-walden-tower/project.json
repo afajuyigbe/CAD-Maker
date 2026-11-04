@@ -1,0 +1,348 @@
+{
+  "workflow_id": "ka.roof-support-layout",
+  "workflow_version": "1.0",
+  "project_reference": "7145",
+  "project_name": "Saffron Walden Tower",
+  "site_address": [
+    "Mount Pleasant Road",
+    "Saffron Walden",
+    "Essex",
+    "CB11 4GA"
+  ],
+  "client": {
+    "name": "JetNSL",
+    "logo_asset": "assets/branding/jet-logo-ga-source.jpeg",
+    "source": "Previously supplied JetNSL/JET network solutions asset; user explicitly requested reuse"
+  },
+  "sheet_profile": {
+    "format": "A3 landscape",
+    "drawing_title": "Roof Support Layout",
+    "drawing_number": "7145-01",
+    "drawn_by": "AT",
+    "checked_by": "AF",
+    "revision": "1",
+    "issue_date": "2026-11-04",
+    "scale_status": "NTS; A3 sheet-space CAD",
+    "dimension_terminators": "Compact 45-degree diagonal ticks; 0.7 mm axis span, replacing open arrows"
+  },
+  "sources": [
+    {
+      "id": "GA-1A",
+      "filename": "CS_111051_TEF_8233_VF_75548_GA_REV_1A (1).pdf",
+      "pdf_pages": 20,
+      "sha256": "05560dce471b55aa4543b9e1c1de89d7269036b95a02e3ae229dcec15baf5afa"
+    },
+    {
+      "id": "SURVEY-2026-10-29",
+      "filename": "Survey Notes.pdf",
+      "pdf_pages": 4,
+      "sha256": "ba5c2ba34c82dfd76eaf67819ec1c9711ce17f663e908ad8406e74304b32bb53"
+    }
+  ],
+  "scope": {
+    "included": [
+      "Roof support layout PDF/DWG with integrated single soffit-scan marker",
+      "Dimensioned sectional elevation with floor-to-ceiling heights and separate 175 mm concrete slabs",
+      "3D rendered review including proposed telecoms equipment and supports",
+      "OBJ/MTL and full project package published to GitHub"
+    ],
+    "excluded_or_deferred": [],
+    "site_specific_limits": [
+      "No structural roles or hidden member sections inherited from earlier projects"
+    ]
+  },
+  "ga_reference": {
+    "source_id": "GA-1A",
+    "pdf_page": 4,
+    "drawing_revision": "1A",
+    "north_reference": "GA compass north up; handwritten square-floor sketch north points right; align by source references rather than copying page axes",
+    "graphic_transform": null
+  },
+  "entities": [
+    {
+      "id": "roof-deck",
+      "type": "concrete slab",
+      "source": "Survey line key solid line"
+    },
+    {
+      "id": "steel-floor",
+      "type": "steel floor",
+      "source": "Survey dashed line key"
+    },
+    {
+      "id": "timber-deck",
+      "type": "wooden deck",
+      "source": "Survey elevation marked intermediate deck"
+    },
+    {
+      "id": "decommissioned-fourth-floor-water-tank",
+      "type": "Existing decommissioned tank",
+      "features": "Ribbed metal wall panels visible in internal photograph",
+      "source": "Engineer identification",
+      "structural_role": "Do not assume building load-bearing or roof support"
+    },
+    {
+      "id": "fourth-floor-vertical-pipe",
+      "type": "Large flanged service pipe",
+      "source": "Internal photograph",
+      "structural_role": "Not identified as structural column"
+    }
+  ],
+  "claims": [],
+  "dimensions": [
+    {
+      "id": "clear-plan",
+      "value_mm": [
+        5200,
+        5200
+      ],
+      "reference": "Internal tower clear dimensions; survey says all the way to the top",
+      "status": "Survey written"
+    },
+    {
+      "id": "roof-slab",
+      "value_mm": 175,
+      "reference": "Slab thickness per survey elevation note",
+      "status": "Survey written"
+    },
+    {
+      "id": "parapet",
+      "value_mm": 550,
+      "reference": "Survey elevation parapet note",
+      "status": "Survey written"
+    },
+    {
+      "id": "primary-beam",
+      "raw": "510x190x20mm",
+      "reference": "E/W primary at fourth-floor FLOOR / third-floor ROOF; not at roof above fourth floor",
+      "status": "Survey measured envelope/flange; nearest standard section identification pending",
+      "flange_thickness_mm": 20
+    },
+    {
+      "id": "fourth-floor-member-1",
+      "raw": "152x125x9mm",
+      "status": "Survey measured envelope/flange; nearest standard section identification pending",
+      "flange_thickness_mm": 9
+    },
+    {
+      "id": "embedded-members-2",
+      "quantity": 7,
+      "spacing_mm": 650,
+      "reference": "Embedded members in roof slab over fourth floor",
+      "status": "Engineer-confirmed correction;8x650=5200",
+      "spaces": 8,
+      "edge_beams": false
+    },
+    {
+      "id": "internal-steel-wall-height",
+      "value_mm": 3700,
+      "reference": "Height of decommissioned water-tank metal wall panels at fourth floor",
+      "status": "Survey written",
+      "structural_role": "Not asserted as roof support"
+    },
+    {
+      "id": "clear-height-chain",
+      "raw_m": [
+        5.6,
+        2.4,
+        2.6,
+        5.5,
+        2.8,
+        4.1
+      ],
+      "reference": "Survey explicitly states height dimensions floor to ceiling; do not add these as floor-to-floor levels without build-ups",
+      "status": "Engineer-reiterated floor-to-ceiling dimensions; shown separately from slabs",
+      "value_mm": [
+        5600,
+        2400,
+        2600,
+        5500,
+        2800,
+        4100
+      ]
+    },
+    {
+      "id": "GA-roof-level",
+      "value_mm": 25000,
+      "reference": "Main roof AGL",
+      "status": "GA written, distinct from floor-clearance readings"
+    },
+    {
+      "id": "lower-plinth-wall-offsets",
+      "offsets_descending_mm": [
+        150,
+        150,
+        150,
+        300
+      ],
+      "vertical_spacing": "20 brick courses",
+      "location": "Lower plinth below lowest arched openings",
+      "course_pitch": "Not surveyed; visual model proxy 75 mm, no step elevations issued",
+      "status": "Engineer correction: 150, not 50"
+    },
+    {
+      "id": "base-external-width",
+      "value_mm": 8000,
+      "reference": "Outermost masonry faces at bottom",
+      "status": "Engineer clarified"
+    },
+    {
+      "id": "base-wall-thickness",
+      "value_mm": 1400,
+      "reference": "Bottom masonry wall; (8000-5200)/2",
+      "status": "Engineer clarified"
+    },
+    {
+      "id": "first-floor-wall-thickness",
+      "approx_range_mm": [
+        550,
+        600
+      ],
+      "model_nominal_mm": 650,
+      "reference": "By first-floor level; 650 nominal closes specified widths/returns",
+      "status": "Engineer approximate; model closure value distinguished"
+    }
+  ],
+  "decisions": [
+    {
+      "source": "User intake",
+      "record": "Project7145; JetNSL logo reuse; authorAT/checkerAF/revision1. Scan survey requires separate Scan Locations page. Proposed telecoms equipment/supports included. PDF/DWG and3Dreview first,OBJ/MTL afterapproval."
+    },
+    {
+      "source": "Engineer member clarification",
+      "record": "Circled1\u20133 are rooftop steel member/detail references, not scan IDs.20mm and9mm are flange thicknesses to help identify nearest standard sections. Eight embedded beams span wall to wall; set-out to follow survey/photo interpretation."
+    },
+    {
+      "source": "Engineer fourth-floor scan/tank clarification",
+      "record": "Exactly one scan location: soffit of fourth-floor roof. Ribbed metal panels are sides of decommissioned water tank formerly on fourth floor; do not classify as building load-bearing walls or assume roof support from tank panels."
+    },
+    {
+      "source": "Engineer final spacing correction and ok",
+      "record": "Seven internal embedded beams, eight spaces650mm across5200clear, no edge beams. Supersedes eight beams/850mm note. Proceed with layout and3Dreview."
+    },
+    {
+      "source": "Engineer review correction, 4 November 2026",
+      "record": "Two-sheet set. Add complete sectional elevation with six supplied floor-to-ceiling clear heights; show 175 mm concrete slabs separately, not included in clear heights. Primary 510 x 190, flange 20, belongs at fourth-floor FLOOR / third-floor ROOF, not roof above fourth floor. Fourth-floor roof members remain separate. Integrate scan 1 soffit marker on roof support layout; remove standalone scan sheet."
+    },
+    {
+      "source": "Engineer wall-profile correction and locator question, 4 November 2026",
+      "record": "Apply the wall-offset sketch to the tower envelope in elevation and model. Photos/GA identify stepped widening in lower plinth below lowest arched openings, separate from cornices. Interpret three 50 mm returns at 20-course intervals and one 300 mm base return; upper shaft remains vertical. Absolute step levels unmeasured; 75 mm course pitch is a visual/NTS proxy only, not an engineering height. Remove standalone wall-offset detail and flange-9 section. Remove marked-up repeated 650 dimension chain while retaining eight-spaces note and overall 5200 dimensions."
+    },
+    {
+      "source": "Engineer presentation/interior correction, 4 November 2026",
+      "record": "Remove page 1 original note 2 and all eight-spaces/650/no-edge-beams prose, including plan footer. Plinth small offsets are 150 mm (supersedes prior 50 mm interpretation); base return remains 300 mm. Remove page 2 B1 section sketch but retain its 510 x 190 / 20 mm flange in note 2. Remove original page 2 note 4 about plinth offsets. Rework fourth-floor interior to show 3700 mm former tank with exposed brick band to roof; omit floor beams and slice/access opening from explanatory view."
+    },
+    {
+      "source": "Engineer dimension-arrow correction",
+      "record": "Replace open V arrowheads with compact diagonal ticks on all sheet dimensions. Reduce the separate 175 slab terminators to the same compact tick size. Inspect closely spaced slab/floor datums for overlap."
+    },
+    {
+      "source": "Engineer final width clarification and floor-level correction",
+      "record": "8000 mm is external width at the bottom. With 5200 clear, base walls are 1400 mm. Wall thickness reduces to approximately 550/600 mm by FIRST floor, not top floor. Three 150 returns plus 300 base return sum 750 per side, giving nominal model shaft wall 650 mm for exact width closure. Preserve approximate engineer label and record nominal closure explicitly. Anchor top of lower-plinth steps at first-floor level. Engineer requests full GitHub publication including OBJ/MTL after these corrections."
+    }
+  ],
+  "questions": [],
+  "unresolved_items": [],
+  "validation": {
+    "PDF_pages": 2,
+    "A3_landscape": true,
+    "metadata_and_text_bounds": "pass",
+    "internal_clear_mm": 5200,
+    "base_external_width_mm": 8000,
+    "base_wall_mm": 1400,
+    "first_floor_wall_approx_mm": [
+      550,
+      600
+    ],
+    "nominal_shaft_model_wall_mm": 650,
+    "plinth_top": "First-floor level, 5775 mm",
+    "embedded_beams": 7,
+    "spaces": 8,
+    "spacing_mm": 650,
+    "edge_beams": false,
+    "scan_sheet": "Integrated on sheet 7145-01; no separate scan sheet",
+    "clear_heights_mm": [
+      5600,
+      2400,
+      2600,
+      5500,
+      2800,
+      4100
+    ],
+    "wall_profile": "Lower plinth only: three 150 mm steps at 20-course intervals and 300 mm base return; upper shaft constant",
+    "roof_sheet_details": "Flange-9 section, standalone wall-offset detail, repeated 650 dimension chain and spacing note removed",
+    "interior_view": "Perspective: 3700 mm tank height, exposed brick band to roof soffit; no floor beams or access opening",
+    "slabs": "175 mm shown separately from clear heights",
+    "primary_beam_location": "Fourth-floor floor / third-floor roof",
+    "primary_beam_model_top_mm": 20725.0,
+    "scan_locations": [
+      {
+        "number": 1,
+        "type": "soffit",
+        "target": "Roof over fourth floor"
+      }
+    ],
+    "allocated_panels": 9,
+    "allocated_RRUs": 15,
+    "allocated_dish_mm": 300,
+    "OBJ_MTL": "Export authorised by engineer; matching OBJ/MTL independently validated",
+    "STEP_mesh_bounds_match": true
+  },
+  "performance": {
+    "started_at": null,
+    "first_review_at": null,
+    "issued_at": null,
+    "clarification_rounds": 0,
+    "rework_reasons": [
+      "First review omitted dimensioned elevation",
+      "Primary beam floor-level classification was ambiguous on roof sheet",
+      "Standalone single-scan sheet unnecessary; engineer requested integrated marker"
+    ]
+  },
+  "deliverables": {
+    "pdf": "drawings/7145-review-drawing-set.pdf",
+    "dwg": "drawings/7145-drawing-set.dwg",
+    "preview": "drawings/7145-sheet-01.png",
+    "cad_coordinate_space": "A3 sheet-space mm; separate full-size 3D model mm, Z up",
+    "superseded_outputs": [
+      "Standalone 7145-03 scan sheet withdrawn; scan marker integrated in 7145-01"
+    ],
+    "sheet_count": 2,
+    "obj": "drawings/7145-saffron-walden-tower.obj",
+    "mtl": "drawings/7145-saffron-walden-tower.mtl",
+    "complete_package": "7145-complete-package.zip",
+    "github_branch": "review/7145-saffron-walden-tower"
+  },
+  "survey": {
+    "is_scan_survey": true,
+    "scan_locations_sheet_required": false,
+    "scan_locations": [
+      {
+        "number": 1,
+        "type": "soffit",
+        "target": "Soffit of roof over fourth floor",
+        "source": "Engineer clarification",
+        "extent": "Fourth-floor roof soffit; single scan location",
+        "position_status": "Target confirmed; marker placement to reference roof/floor plan"
+      }
+    ],
+    "scan_types_confirmed": true,
+    "scan_location_display": "Integrated on roof support layout, sheet 7145-01"
+  },
+  "review_status": "Engineer requested final corrected exports and publication",
+  "review_items": [
+    "Standard steel section designation unconfirmed; measured envelopes retained",
+    "Unmeasured facade/support set-out and connection details are visual interpretations; see README",
+    "Interior illustration omits access assembly and pipe for clarity; unbroken view-only floor surface excluded from full-size model exports."
+  ],
+  "export_authorisation": {
+    "date": "2026-11-04",
+    "source": "User: make these changes and upload the full pack including obj and mtl to github; subsequent base/first-floor clarification"
+  },
+  "publication": {
+    "repository": "afajuyigbe/CAD-Maker",
+    "branch": "review/7145-saffron-walden-tower",
+    "scope": "Only project 7145 package and its supplied branding assets",
+    "authorisation": "Explicit engineer instruction to upload full pack including OBJ/MTL"
+  }
+}

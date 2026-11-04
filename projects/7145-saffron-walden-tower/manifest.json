@@ -1,0 +1,235 @@
+{
+  "project": "7145",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7804,
+      "sha256": "7796bf6cebeacc5ec971f177340070e05d559be69958c8e2c7e23b56c884b221"
+    },
+    {
+      "path": "drawings/7145-01.dwg",
+      "bytes": 1170855,
+      "sha256": "d62890779996346749ec11e34508ab52e035b8c24f3489a044f4cf7d0cddfe5b"
+    },
+    {
+      "path": "drawings/7145-01.dxf",
+      "bytes": 4127024,
+      "sha256": "36e27d810cf0b59980c1ca29d3ac2cfb5099d8e1716a83c475547d8c923a61e5"
+    },
+    {
+      "path": "drawings/7145-01.pdf",
+      "bytes": 176294,
+      "sha256": "32b8992b072f6c2a054837cbea59910dd2da99353f1ca4abbe07791d0b6551d6"
+    },
+    {
+      "path": "drawings/7145-02.dwg",
+      "bytes": 877517,
+      "sha256": "e573465d317ebadf88ce82497f8fd108be2dda8b725b4d8327016e6acf9d0c7a"
+    },
+    {
+      "path": "drawings/7145-02.dxf",
+      "bytes": 2853031,
+      "sha256": "7ad2309907b07de779eb7308424b44d4b6c22ddb009d75e6369238611ed479e4"
+    },
+    {
+      "path": "drawings/7145-02.pdf",
+      "bytes": 204407,
+      "sha256": "6646a9ff2cb6cb3ba2ae7582a0802bdf41e57d8c17fb4ca7772007ec35016570"
+    },
+    {
+      "path": "drawings/7145-drawing-set.dwg",
+      "bytes": 2023799,
+      "sha256": "79fd0f6d934d2d30ab897649439607b465a03b636aedb50bbba61454f8616d3d"
+    },
+    {
+      "path": "drawings/7145-drawing-set.dxf",
+      "bytes": 7000847,
+      "sha256": "14e52294c55e383aeb8997f5d370d6641339cf706801984d91ffc9a3b81f8d3a"
+    },
+    {
+      "path": "drawings/7145-fourth-floor-interior.png",
+      "bytes": 83089,
+      "sha256": "750911350e8ebbc20ae1fa433c4b4e8325f75efcca140a47114e06d72ce786ab"
+    },
+    {
+      "path": "drawings/7145-review-drawing-set.pdf",
+      "bytes": 350201,
+      "sha256": "3b036d8ba5b0dabedc6fc73ab5f20ac1699cbb715d6cd690f96b05e0f39ee066"
+    },
+    {
+      "path": "drawings/7145-saffron-walden-tower.mtl",
+      "bytes": 1534,
+      "sha256": "a4ab926ff1e7b0d77c963835c2300a938de5614cdb16f5d24c1c8e9c7366e085"
+    },
+    {
+      "path": "drawings/7145-saffron-walden-tower.obj",
+      "bytes": 1834177,
+      "sha256": "3bca970e2e56ef712e324a1d23afec5302565b46c7192e5c6e929ab5b082de8e"
+    },
+    {
+      "path": "drawings/7145-sheet-01.png",
+      "bytes": 358505,
+      "sha256": "335c67f05487e6f21d00f1274ed750db1924ca638f65bcb9a50db18277cb5bcc"
+    },
+    {
+      "path": "drawings/7145-sheet-02.png",
+      "bytes": 262760,
+      "sha256": "50a042a97807ff3e7a37c73405f0367b8517eca4e6b264947c806b0b0a9a46b6"
+    },
+    {
+      "path": "drawings/7145-tower-model.dwg",
+      "bytes": 869544,
+      "sha256": "929bde50c8a4fbc9049c44c0b318b5ba2e8c2950ac3a765ea5d546a3d4efe25f"
+    },
+    {
+      "path": "drawings/7145-tower-model.dxf",
+      "bytes": 2977677,
+      "sha256": "5fac78a571a7c733ef213349c5d98b4c806d89ad10a41807f165b6c5fb289714"
+    },
+    {
+      "path": "drawings/7145-tower-model.step",
+      "bytes": 31527606,
+      "sha256": "077cd2c76efae040479e9306eda1136638177d0b19614e9e58fb52aba606a9da"
+    },
+    {
+      "path": "drawings/7145-tower-view.png",
+      "bytes": 83308,
+      "sha256": "3f9c2dbe291bb05e3c40ad7e7d0bf049ca9f2c8ab431571b0cc01e99a20a4a66"
+    },
+    {
+      "path": "drawings/obj-validation.json",
+      "bytes": 704,
+      "sha256": "22abcc2e2eca93d8e9fcb9b264b414ddf847d45238f9ed421dedf6945ad21326"
+    },
+    {
+      "path": "generate.py",
+      "bytes": 23242,
+      "sha256": "ef72efd416f31671e1c9168bbf9ded34bcbfdede0d0a4e7d390b446d46724409"
+    },
+    {
+      "path": "interpretation/7145-01-cad-check.pdf",
+      "bytes": 329368,
+      "sha256": "5d3fbb5dbee8f0039f3ff08913f88edffba30df723b50a437aaa4a33877212e3"
+    },
+    {
+      "path": "interpretation/7145-01-cad-check.png",
+      "bytes": 264868,
+      "sha256": "3694507a03e26686bf2172452b11741339f6048222f711ad78f0547b3efcd8cc"
+    },
+    {
+      "path": "interpretation/7145-02-cad-check.pdf",
+      "bytes": 8423619,
+      "sha256": "c22db401e7c93986fa0fea93360f8a83ce1496a8cb65ee08dd65b63b78593984"
+    },
+    {
+      "path": "interpretation/7145-02-cad-check.png",
+      "bytes": 227185,
+      "sha256": "8d69d0fc0f51a08af479afbc4bdbc033c1810643cb3dbcffa7b55616101d32ae"
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/7145-01.dxf",
+      "bytes": 4794764,
+      "sha256": "71ae47aa74b8dff111de83cf938bff9dbea087776b49995325d300f5a46b3323"
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/7145-02.dxf",
+      "bytes": 3337419,
+      "sha256": "239aa7c30b2ffbc2f1f71176cb33af88b822901ddc8471a50ba1305a81bf38be"
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/7145-drawing-set.dxf",
+      "bytes": 8150201,
+      "sha256": "1bec78dd29758c9b858a650925ec15a622f70a23df05c8c2f8d400e20cd24dad"
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/7145-tower-model.dxf",
+      "bytes": 3286514,
+      "sha256": "1d8e3645b2750716c0b38c2903db34234fc59fdd171db90250282bec89eb40c0"
+    },
+    {
+      "path": "interpretation/elevation-datums.json",
+      "bytes": 2581,
+      "sha256": "c712b9ad0f5d2ae8e5f1bf20248f4d99be43bb91f76bb37e073e1513d7540f62"
+    },
+    {
+      "path": "interpretation/validation.json",
+      "bytes": 2743,
+      "sha256": "c259926032fdbf18157f1262a4ec344c4aaa726020631abf2a9820a9156974a4"
+    },
+    {
+      "path": "model/7145-fourth-floor-interior-projection.json",
+      "bytes": 711363,
+      "sha256": "e6bd0f1590158f320f001fbc7c8816e82daf9a935e812aa42bf4792daabc4032"
+    },
+    {
+      "path": "model/7145-fourth-floor-interior.png",
+      "bytes": 92061,
+      "sha256": "b5aa5e19e69a5a74f353ab0b77e91ca4bb9d6dbe9b1093edc704fab535904705"
+    },
+    {
+      "path": "model/7145-tower-view-projection.json",
+      "bytes": 469069,
+      "sha256": "67d691c889540f988676e86df299be0c1e281b3933f54f60cd9ddb85de088bc4"
+    },
+    {
+      "path": "model/7145-tower-view.png",
+      "bytes": 89214,
+      "sha256": "403ee027a87961ee1b8ee9736fc2ef307d3da9c97c7c0f1cfa49002b5ca65292"
+    },
+    {
+      "path": "model/build.py",
+      "bytes": 17157,
+      "sha256": "eeaaefbf96c93f34c8277c9960f057ce5afab38f67dfedf022808a149b19537a"
+    },
+    {
+      "path": "model/export_obj.py",
+      "bytes": 3993,
+      "sha256": "51a5f1da9cedf74212be3235334b864e7aca983a5614fa09762f4e95c1bdefc8"
+    },
+    {
+      "path": "model/mesh.json",
+      "bytes": 2246538,
+      "sha256": "ed25729f2fbb7dd178cbaed1feb2067ede85230a1ee2420bc61e80597256657e"
+    },
+    {
+      "path": "model/parameters.json",
+      "bytes": 1735,
+      "sha256": "2d660ffd5a9ffdb80dbcd51f83031fdb965c2edb76412638c606f910b70812da"
+    },
+    {
+      "path": "model/render.py",
+      "bytes": 4592,
+      "sha256": "a9b52dd0f3603c1eebd020cd8908e8ac81db508f352179c085b420767cdfe6b6"
+    },
+    {
+      "path": "model/wall_profile.py",
+      "bytes": 1369,
+      "sha256": "8f025635a2020d737644e77069b7ec40aec6801e540544c106cdba3655fa49a6"
+    },
+    {
+      "path": "project.json",
+      "bytes": 14157,
+      "sha256": "05a3f5ae8f97dc9ec098e03f8dac649b55f499842fa145dfbf7aa7773e9b2b71"
+    },
+    {
+      "path": "scan-locations.json",
+      "bytes": 412,
+      "sha256": "44cec46b947fe34fca3bfb307450b1a3279cd797a8cc6ee220c4e8edce3a41df"
+    },
+    {
+      "path": "sources/CS_111051_TEF_8233_VF_75548_GA_REV_1A (1).pdf",
+      "bytes": 6924868,
+      "sha256": "05560dce471b55aa4543b9e1c1de89d7269036b95a02e3ae229dcec15baf5afa"
+    },
+    {
+      "path": "sources/Survey Notes.pdf",
+      "bytes": 382328,
+      "sha256": "ba5c2ba34c82dfd76eaf67819ec1c9711ce17f663e908ad8406e74304b32bb53"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 8032,
+      "sha256": "2d1b50286fae089486b2b50e612bafdcb2971bb79de92df72158e6fbbe09d6af"
+    }
+  ]
+}

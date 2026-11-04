@@ -1,0 +1,113 @@
+# Project 7145 Saffron Walden Tower; flat colours; no external textures
+
+newmtl brick
+Ka 0.15 0.15 0.15
+Kd 0.52000000 0.34000000 0.22000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl trim
+Ka 0.15 0.15 0.15
+Kd 0.62000000 0.46000000 0.31000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl recess
+Ka 0.15 0.15 0.15
+Kd 0.28000000 0.22000000 0.17000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl glass
+Ka 0.15 0.15 0.15
+Kd 0.24000000 0.30000000 0.31000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl steel
+Ka 0.15 0.15 0.15
+Kd 0.56000000 0.61000000 0.61000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl proposed
+Ka 0.15 0.15 0.15
+Kd 0.60000000 0.48000000 0.35000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl roof
+Ka 0.15 0.15 0.15
+Kd 0.69000000 0.69000000 0.64000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl concrete
+Ka 0.15 0.15 0.15
+Kd 0.73000000 0.73000000 0.69000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl tank
+Ka 0.15 0.15 0.15
+Kd 0.42000000 0.27000000 0.18000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl tank_rib
+Ka 0.15 0.15 0.15
+Kd 0.50000000 0.34000000 0.23000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl pipe
+Ka 0.15 0.15 0.15
+Kd 0.25000000 0.26000000 0.23000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl wood
+Ka 0.15 0.15 0.15
+Kd 0.34000000 0.26000000 0.17000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl mortar
+Ka 0.15 0.15 0.15
+Kd 0.53000000 0.39000000 0.28000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2
+
+newmtl guard
+Ka 0.15 0.15 0.15
+Kd 0.45000000 0.49000000 0.48000000
+Ks 0.05 0.05 0.05
+Ns 10
+d 1
+illum 2

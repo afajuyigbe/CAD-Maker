@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "geometry_source_sha256": "ed25729f2fbb7dd178cbaed1feb2067ede85230a1ee2420bc61e80597256657e",
+  "vertices": 36019,
+  "polygon_faces": 8501,
+  "groups": 150,
+  "materials_used": [
+    "brick",
+    "glass",
+    "guard",
+    "mortar",
+    "pipe",
+    "proposed",
+    "recess",
+    "roof",
+    "steel",
+    "tank",
+    "tank_rib",
+    "trim",
+    "wood"
+  ],
+  "units": "mm",
+  "axes": "Xeast/Ynorth/Zup",
+  "textures": "None; self-contained flat colours",
+  "readback": "Independent OBJ/MTL lexical readback: vertices, face multiset, valid indices, nonzero face area, materials and relative library path checked",
+  "excluded_view_only_groups": [
+    "interior_review_floor"
+  ]
+}
