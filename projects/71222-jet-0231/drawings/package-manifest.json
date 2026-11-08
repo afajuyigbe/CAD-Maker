@@ -1,0 +1,259 @@
+{
+  "project": "71222",
+  "revision": 1,
+  "date": "2026-11-08",
+  "sheets": 3,
+  "description": "Confirmed 800 mm castellated depth, 210 x 18 mm flanges, upper-left / lower-central CHS90 and right-hand beam-only arrangement; distinct B1/B2 symbols and no in-plan member tags",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "371f5f870f92f8e6739ff83853ad3047e093c391e3ee3901c0b4d5e4e4490753",
+      "bytes": 6588
+    },
+    {
+      "path": "drawings/71222-01.dwg",
+      "sha256": "21e8c69ffc8435d01f0adf1480d5c88beda18dc84366155c25806758987654da",
+      "bytes": 57287
+    },
+    {
+      "path": "drawings/71222-01.dxf",
+      "sha256": "1e4024997dfece7acd8914a2a6166badb5c843ab052738f233eb6901fb953e51",
+      "bytes": 160488
+    },
+    {
+      "path": "drawings/71222-01.pdf",
+      "sha256": "1a5eeee012ccaa68e4ddd4c38e111e61eb28f14bda594f682578416e4be9f30d",
+      "bytes": 41237
+    },
+    {
+      "path": "drawings/71222-02.dwg",
+      "sha256": "42883c0dce8f2629b2d40f300ffddaa254ae034d9ff716eccb63075e0ad582fd",
+      "bytes": 61794
+    },
+    {
+      "path": "drawings/71222-02.dxf",
+      "sha256": "e3c7bb2e4a56caf0e814d40ec7db92b14a629485bf65c2fa40d0e2e23ee41193",
+      "bytes": 175468
+    },
+    {
+      "path": "drawings/71222-02.pdf",
+      "sha256": "7e3db455b3991bfcf0f81699fbdccbe1a92784043509d3fda2092dacc2adf8f7",
+      "bytes": 41594
+    },
+    {
+      "path": "drawings/71222-03.dwg",
+      "sha256": "d62cc4df368ee9677bb7a6daea54e174679e2150ba965962be6b66dbe5691241",
+      "bytes": 2140424
+    },
+    {
+      "path": "drawings/71222-03.dxf",
+      "sha256": "27b1a5d3e441e3ed5b8969b49e48c43952088588dc2a784ea20931ddb83b59e3",
+      "bytes": 6987701
+    },
+    {
+      "path": "drawings/71222-03.pdf",
+      "sha256": "3dd9c4822b7bd2b2fc5c98225f5a342b60aef6e66641afd74bd15dd7ff0c13d1",
+      "bytes": 259944
+    },
+    {
+      "path": "drawings/71222-drawing-set.dwg",
+      "sha256": "dcef97bbd4c8adb72863c4997a563c1b9de0c9c1e2eca2528392f448e449bc19",
+      "bytes": 2250542
+    },
+    {
+      "path": "drawings/71222-drawing-set.dxf",
+      "sha256": "b2de8821643dd8eb10884d3b6a390264029cfece68c9739c4a765011b764cb4f",
+      "bytes": 7338314
+    },
+    {
+      "path": "drawings/71222-review-drawing-set.pdf",
+      "sha256": "567df1487bf9b2d5d0ef97b68b3cbfa6fbf218c30ebd0612c34d99157e562967",
+      "bytes": 297913
+    },
+    {
+      "path": "drawings/71222-roof-arrangement.png",
+      "sha256": "baa969ec9cd96512f16cbba26439b09955abfa949e23152853ffe7376a0547a5",
+      "bytes": 68265
+    },
+    {
+      "path": "drawings/71222-roof-supports.png",
+      "sha256": "e033e5897e8d7b82d1fc6277202df9495ba41c51dfd42ca40f7c17a4c6b53a8a",
+      "bytes": 93717
+    },
+    {
+      "path": "drawings/71222-sheet-01.png",
+      "sha256": "baec45beb93c189dbe798226bff6bacd05ce944b2b2fd1473f7efcd281c114f8",
+      "bytes": 110883
+    },
+    {
+      "path": "drawings/71222-sheet-02.png",
+      "sha256": "8fe63325a90bf569677e5c981c86576391cb0598b5a0338763c033d21c33e66a",
+      "bytes": 90950
+    },
+    {
+      "path": "drawings/71222-sheet-03.png",
+      "sha256": "09ceeb5c045fe45aecbd9a3cfc85a162aeb46682ce6ebcd8880b401ec4aa76cf",
+      "bytes": 398530
+    },
+    {
+      "path": "drawings/71222-theatre-context.png",
+      "sha256": "1c535b7ee4c08a7ace70bd980826d628a5f95cc3936d335dbfacf5ae4f27fecb",
+      "bytes": 87383
+    },
+    {
+      "path": "drawings/71222-visual-model.dwg",
+      "sha256": "8ff82cd2ab6840c78ccce3b6d7c5eca548d95e954235bebebc7e0f4051f57e93",
+      "bytes": 555372
+    },
+    {
+      "path": "drawings/71222-visual-model.dxf",
+      "sha256": "0b411ae5c4c72300bd32a8bc9ff0c71b0fe702f10a095a31b9df04f662ce1645",
+      "bytes": 2031165
+    },
+    {
+      "path": "drawings/71222-visual-model.step",
+      "sha256": "fed0bc1cdbdc042ceac4082c49e3844de3f41fc419c0af5d8b3a508a59dcea4e",
+      "bytes": 23643735
+    },
+    {
+      "path": "generate.py",
+      "sha256": "273de5a56aacea011921663e0961a3bad7e78e410b6899e4ea3a81a9f0bf97c7",
+      "bytes": 18611
+    },
+    {
+      "path": "interpretation/71222-01-cad-check.pdf",
+      "sha256": "52a27a82c49ef81e948f671aff3ede15477a330502bb80b0dfb64b8b31805b64",
+      "bytes": 181737
+    },
+    {
+      "path": "interpretation/71222-01-cad-check.png",
+      "sha256": "9776bf6d4bd8582274531018fbbed564cebd112cfc5505fc68971f3015d8c8db",
+      "bytes": 101960
+    },
+    {
+      "path": "interpretation/71222-02-cad-check.pdf",
+      "sha256": "37bce39d642f9571cd4ce7266360f940a291f667e62a06577d7cf434c0fb7492",
+      "bytes": 172434
+    },
+    {
+      "path": "interpretation/71222-02-cad-check.png",
+      "sha256": "614c0876851f12575b25ea7bb2dc8c4a411c3978bcee54c1b4a9689ef02eff7d",
+      "bytes": 82342
+    },
+    {
+      "path": "interpretation/71222-03-cad-check.pdf",
+      "sha256": "8720e37914b792354e358dd366211723cd33c0399fda9327b78c7db85d3ea467",
+      "bytes": 17428787
+    },
+    {
+      "path": "interpretation/71222-03-cad-check.png",
+      "sha256": "ef6bee9a14e92c6a578d55f9d989ebbc6940a6570dd60f199af4fcfdfe3e5a07",
+      "bytes": 334760
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/71222-01.dxf",
+      "sha256": "80992f1a1a6b1c1fa67e42b58383bf561f8c9e357b8e2db18ca3aedce232bd1f",
+      "bytes": 179258
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/71222-02.dxf",
+      "sha256": "1102519b59443c7dc030a3b53ded4255c27cfbf5fa09a045fc0567fe34da0654",
+      "bytes": 197277
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/71222-03.dxf",
+      "sha256": "84169fb80a7057c5b8a83b4722fdef9886d19072b55da7a58bae2cf93df059e5",
+      "bytes": 8256234
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/71222-drawing-set.dxf",
+      "sha256": "52159b3797c4d896922716e71c98a4f9fdf23d1dfba6b8b8b040311306d18f47",
+      "bytes": 8642165
+    },
+    {
+      "path": "interpretation/dwg-roundtrip/71222-visual-model.dxf",
+      "sha256": "346807202c405576dd9f3f75edf982ef473ae6a2e4340dacb0550f9966e73f76",
+      "bytes": 2230083
+    },
+    {
+      "path": "interpretation/parameters.json",
+      "sha256": "e6a1f6ceb343f54e4c36e6145e6ef55a31d5666847113f3b2de09a4bcb9c7153",
+      "bytes": 6233
+    },
+    {
+      "path": "interpretation/validation.json",
+      "sha256": "7b99549a711794b9eadfef033c0a9644ca61baeaa57b51b6cf032efc506be3a1",
+      "bytes": 4092
+    },
+    {
+      "path": "model/71222-roof-arrangement-projection.json",
+      "sha256": "f255942ec9175e09af84865092e6764073e0d760843cf9a9c3c05f2634cb6a04",
+      "bytes": 1133021
+    },
+    {
+      "path": "model/71222-roof-arrangement.png",
+      "sha256": "bec65f34632d3c0c71c4cec348d7b0e30b087a54c64fe5a71aa6cfa2df4a98e0",
+      "bytes": 71908
+    },
+    {
+      "path": "model/71222-roof-supports-projection.json",
+      "sha256": "1ef1329b8d247bd259eee22b875fd56a0f624af1eb4601e634c36d8bbb4b9764",
+      "bytes": 902859
+    },
+    {
+      "path": "model/71222-roof-supports.png",
+      "sha256": "f86cebe53762cc78ca07fc858ab4ef5e899f353f64f7ff25242247cb39211f1d",
+      "bytes": 97462
+    },
+    {
+      "path": "model/71222-theatre-context-projection.json",
+      "sha256": "07608da1243c410f1fb7e0965316d1b6314c8898d4ce2def0b0c80a7e65ab9d2",
+      "bytes": 1168093
+    },
+    {
+      "path": "model/71222-theatre-context.png",
+      "sha256": "30acad7323e0131c09d9bc30751edd2be14b1652e4d0d412278ea8a9efa6b246",
+      "bytes": 87849
+    },
+    {
+      "path": "model/build.py",
+      "sha256": "7af1b14ccd4cfabedba26cbfcac2f03dd197f7d797b11cdfb5ded596ef265d3a",
+      "bytes": 11870
+    },
+    {
+      "path": "model/mesh.json",
+      "sha256": "a51da08604fc2d24d3c6da99d99e8439df0575ae5de4e3e1f5085a3ccbc11e80",
+      "bytes": 1963646
+    },
+    {
+      "path": "model/parameters.json",
+      "sha256": "e6a1f6ceb343f54e4c36e6145e6ef55a31d5666847113f3b2de09a4bcb9c7153",
+      "bytes": 6233
+    },
+    {
+      "path": "model/render.py",
+      "sha256": "37df186a2bc12439fc37f429e5bb0c7716af20d9d74063d7bd893d2219c12513",
+      "bytes": 4610
+    },
+    {
+      "path": "project.json",
+      "sha256": "5c7583e481b2d3b4adfab7d848772480eb416aa66867d17195a782b34680b8c8",
+      "bytes": 18995
+    },
+    {
+      "path": "sources/register.json",
+      "sha256": "26760b9f1db3bf01bfa54abda62ab6f070637fe45b80b563a1c685aeef9997b5",
+      "bytes": 3239
+    },
+    {
+      "path": "validate.py",
+      "sha256": "1717af0d53d4d35558ccf4759e65980f3c76b3c92a0a71a77b4a98ad0c47e665",
+      "bytes": 10950
+    },
+    {
+      "path": "assets/branding/ka-logo-survey-source.jpeg",
+      "sha256": "b05256d6e8703543f590bc7912b1fb07ae687ab85079a3314163a92d7ba42473",
+      "bytes": 10998
+    }
+  ]
+}

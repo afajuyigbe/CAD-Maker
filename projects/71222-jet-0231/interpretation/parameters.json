@@ -1,0 +1,259 @@
+{
+  "width_mm": 21300,
+  "nominal_depth_mm": 12500,
+  "main_depth_mm": 10600,
+  "corridor_depth_mm": 1900,
+  "north_from_local_y_deg": 39,
+  "castellated_axes_x_fraction": [
+    0.22065727699530516,
+    0.3615023474178404,
+    0.5023474178403756,
+    0.6431924882629108,
+    0.784037558685446
+  ],
+  "secondary_axes_y_fraction": [
+    0.1792452830188679,
+    0.3443396226415094,
+    0.5094339622641509,
+    0.6745283018867925,
+    0.839622641509434
+  ],
+  "grid_status": "Closed21300width chain; four3000castellatedbays. Main10600depth closed with1700upperbracebay. External12500chain closed as authorised.",
+  "PV_rows": 3,
+  "PV_module_count_status": "Illustrative subdivisions only",
+  "visual_proxies": {
+    "roof_level": 18000,
+    "timber_cladding_base": 10000,
+    "context_low_roof_level": 7500,
+    "roof_deck_thickness": 35,
+    "castellated_web_thickness": 8,
+    "I_beam_flange_thickness": 12,
+    "CHS_diameter": 90,
+    "gallery_clear_height": 3400,
+    "B1_depth": 250,
+    "B1_width": 200,
+    "B2_depth": 200,
+    "B2_width": 150
+  },
+  "member_size_status": "CB800deep,flange210x18 confirmed; CHS90; B1200x250 andthreeB2200x150. Web,Iflange details andpreciseB1/B2roof-offsetdatum remain unspecified.",
+  "context_status": "Photographic visual proportions, not surveyed geometry",
+  "castellated_axes_x_mm": [
+    4700,
+    7700,
+    10700,
+    13700,
+    16700
+  ],
+  "secondary_axes_y_mm": [
+    1900,
+    3650,
+    5400,
+    7150,
+    8900
+  ],
+  "main_span_depth_mm": 10600,
+  "B2_axes_x_mm": [
+    2200,
+    19200,
+    20500
+  ],
+  "full_web_castellated_axis_x_mm": 20800,
+  "right_end_residual_mm": 500,
+  "section_readings": {
+    "I_beam": "200 x 250",
+    "B2": "200 x 150",
+    "CHS": "diameter 90",
+    "castellated": "Depth800;flange210wide x18thick",
+    "B1_roof_offset": 750,
+    "B2_roof_offset": 350,
+    "offset_datum": "Top/centreline to confirm"
+  },
+  "last_B2_to_full_web_mm": 300,
+  "width_chain_mm": [
+    2200,
+    2500,
+    3000,
+    3000,
+    3000,
+    3000,
+    2500,
+    1300,
+    300,
+    500
+  ],
+  "equipment": {
+    "parapet_width_mm": 300,
+    "parapet_height_mm": 300,
+    "outer_west_x_mm": 0,
+    "outer_east_x_mm": 21300,
+    "outer_south_y_mm": 0,
+    "outer_north_y_mm": 12500,
+    "edge_basis": "Closed nominal external equipment reference rectangle21300x12500; setbacks use outside building edges.",
+    "PV_left_setback_mm": 3500,
+    "PV_right_setback_mm": 2900,
+    "PV_x0_mm": 3500,
+    "PV_x1_mm": 18400,
+    "PV_north_setback_reading_mm": 2100,
+    "PV_rows_north_to_south": [
+      [
+        8550,
+        10400
+      ],
+      [
+        4900,
+        6600
+      ],
+      [
+        1650,
+        3550
+      ]
+    ],
+    "PV_vertical_chain_reading_mm": [
+      2100,
+      1850,
+      1950,
+      1700,
+      1400,
+      1900,
+      1650
+    ],
+    "PV_vertical_chain_status": "Engineer authorised forced closure at12500; middle clear gap1400 normalised to1350. Other readings and edge setbacks preserved.",
+    "hatch_size_mm": [
+      1300,
+      1300
+    ],
+    "opening_upstand_mm": 300,
+    "first_hatch_west_setback_mm": 12800,
+    "first_second_clear_gap_mm": 4000,
+    "hatch_north_datum_status": "Engineer1500 from farther external corridor wall. Dimension to the south face of the upstand, as sketch extension endpoints; opening overall1300, physical clear aperture reduced by visual100mm frame.",
+    "openings": [
+      [
+        12800,
+        11000,
+        1300,
+        1300,
+        "hatch"
+      ],
+      [
+        18100,
+        11000,
+        1300,
+        1300,
+        "skylight"
+      ],
+      [
+        19700,
+        11000,
+        1300,
+        1300,
+        "skylight"
+      ]
+    ],
+    "third_opening_status": "Graphical position pending measured individual setback; same1300overall footprint; no invented dimensions for its unmeasured gap.",
+    "safety_inset_mm": 1500,
+    "safety_path_mm": [
+      [
+        14100,
+        11000
+      ],
+      [
+        19800,
+        11000
+      ],
+      [
+        19800,
+        1500
+      ],
+      [
+        3500,
+        1500
+      ]
+    ],
+    "safety_basis": "Engineer-confirmed1500 fromoutsidebuildingedgesatnorth/east/south; normalised closedroofreference.",
+    "first_skylight_east_offset_mm": 3200,
+    "opening_horizontal_closure_mm": 0,
+    "opening_gap_model_mm": 4000,
+    "opening_gap_source_mm": 3900,
+    "opening_horizontal_status": "Engineer authorised forced closure:3900 source gap normalised to4000, retaining firstH12800,1300size,SL3200rightsetback andoverall21300.",
+    "PV_vertical_chain_mm": [
+      2100,
+      1850,
+      1950,
+      1700,
+      1350,
+      1900,
+      1650
+    ]
+  },
+  "main_depth_chain_mm": [
+    1700,
+    1750,
+    1750,
+    1750,
+    1750,
+    1900
+  ],
+  "sections": {
+    "castellated": {
+      "depth_mm": 800,
+      "flange_width_mm": 210,
+      "flange_thickness_mm": 18,
+      "source": "Engineer6November2026",
+      "web_thickness_status": "Unmeasured; visualproxy only"
+    },
+    "B1": {
+      "raw_size_mm": [
+        200,
+        250
+      ],
+      "source": "Engineer: all orange exceptthreeB2"
+    },
+    "B2": {
+      "raw_size_mm": [
+        200,
+        150
+      ],
+      "quantity": 3
+    },
+    "CHS": {
+      "diameter_mm": 90,
+      "location": "West diagonal bay upper; central castellated bays lower at B1 beam level; no CHS in right-hand I-beam bay"
+    }
+  },
+  "lower_B1_west_y_mm": [
+    1900,
+    5400,
+    8900
+  ],
+  "lower_B1_east_y_mm": [
+    1900,
+    3650,
+    5400,
+    7150,
+    8900
+  ],
+  "CHS_attachment": "West x0-4700 upper flange zone; centre x4700-16700 at lower B1 beam centreline (existing schematic offset); east x16700-20800 I-beams only. No connection fixings inferred.",
+  "CHS_zones": {
+    "west_x_mm": [
+      0,
+      4700
+    ],
+    "central_x_mm": [
+      4700,
+      16700
+    ],
+    "right_beam_only_x_mm": [
+      16700,
+      20800
+    ],
+    "central_level_basis": "Existing schematic B1 centre: roof reference minus 750 minus half 250 depth"
+  },
+  "drawing_symbols": {
+    "B1": "Double continuous",
+    "B2": "Double short dash (2 / 1.2 mm paper pattern)",
+    "CB": "Paired long dash",
+    "CHS": "Single dash-dot",
+    "FW": "Heavy continuous",
+    "plan_member_tags": false
+  }
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1",
+    "type": "Inline conversation image",
+    "description": "Street facade / raised timber-clad structure",
+    "local_binary_available": false
+  },
+  {
+    "id": "2",
+    "type": "Inline conversation image",
+    "description": "Rooftop panels and open hatch",
+    "local_binary_available": false
+  },
+  {
+    "id": "3",
+    "type": "Inline conversation image",
+    "description": "External roof sketch on second-floor plan",
+    "local_binary_available": false
+  },
+  {
+    "id": "4",
+    "type": "Inline conversation image",
+    "description": "Internal dimension sketch",
+    "local_binary_available": false
+  },
+  {
+    "id": "5",
+    "type": "Inline conversation image",
+    "description": "Roof-support grid and section annotations",
+    "local_binary_available": false
+  },
+  {
+    "id": "6",
+    "type": "Inline conversation image",
+    "description": "Portrait interior castellated beam photo",
+    "local_binary_available": false
+  },
+  {
+    "id": "7",
+    "type": "Inline conversation image",
+    "description": "Rooftop panorama",
+    "local_binary_available": false
+  },
+  {
+    "id": "8",
+    "type": "Inline conversation image",
+    "description": "Wide interior / roof-deck and fly equipment",
+    "local_binary_available": false
+  },
+  {
+    "id": "9",
+    "type": "Inline conversation image",
+    "description": "Interior wall, gallery, roof I-beams and braces",
+    "local_binary_available": false
+  },
+  {
+    "id": "10",
+    "type": "Inline conversation image",
+    "description": "Oblique aerial building context",
+    "local_binary_available": false
+  },
+  {
+    "id": "11",
+    "type": "Inline conversation image",
+    "description": "Aerial with engineer north arrow",
+    "local_binary_available": false
+  },
+  {
+    "id": "12",
+    "type": "Enlarged inline roof-support sketch",
+    "description": "Readable four3000 bays,2200/2500 west offsets,2500/1300 east offsets; CHS90;Ibeam200x250;B2 200x150; blue section detail still needs typed confirmation",
+    "local_binary_available": false
+  },
+  {
+    "id": "13",
+    "type": "Enlarged external-roof equipment sketch",
+    "description": "PVedge3500/2900; safety1500;parapet300x300; hatch/skylight1300square x300 high; hatchwest12800, gap3900; PVverticalchainand1.5hatchnotedatumqueried",
+    "local_binary_available": false
+  },
+  {
+    "id": "14",
+    "type": "Inline close rooftop photograph of skylight pair",
+    "description": "Two separate glazed skylights adjacent to parapet, white raised frames; inset glass rather than plain unglazed openings",
+    "local_binary_available": false
+  },
+  {
+    "id": "15",
+    "type": "Engineerannotated interior photo",
+    "description": "Top CHS over lower B1/B2; red labels identify two Ibeam levels",
+    "local_binary_available": false
+  },
+  {
+    "id": "16",
+    "type": "Repeated steel markup with engineer confirmation",
+    "description": "CB800depth,210flange,18flangethickness; allgreenCHSattop;allorangeB1exceptthreeB2",
+    "local_binary_available": false
+  },
+  {
+    "id": "17",
+    "type": "Engineer written correction",
+    "description": "8 November: upper CHS only left diagonal bay; centre lower at beam level; right I-beams only",
+    "local_binary_available": false
+  }
+]

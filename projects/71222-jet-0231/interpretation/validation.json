@@ -1,0 +1,194 @@
+{
+  "71222-01.dxf": {
+    "entities": {
+      "INSERT": 2,
+      "LINE": 202,
+      "SOLID": 375,
+      "CIRCLE": 2,
+      "TEXT": 64
+    },
+    "text_and_layouts_retained": true,
+    "units": "mm",
+    "audit_errors": 0,
+    "readback_material_placeholder_fixes": 3,
+    "relative_images": []
+  },
+  "71222-02.dxf": {
+    "entities": {
+      "INSERT": 2,
+      "LINE": 304,
+      "SOLID": 375,
+      "CIRCLE": 2,
+      "TEXT": 65
+    },
+    "text_and_layouts_retained": true,
+    "units": "mm",
+    "audit_errors": 0,
+    "readback_material_placeholder_fixes": 3,
+    "relative_images": []
+  },
+  "71222-03.dxf": {
+    "entities": {
+      "INSERT": 2,
+      "LINE": 37001,
+      "SOLID": 375,
+      "CIRCLE": 3,
+      "TEXT": 46,
+      "IMAGE": 3,
+      "IMAGEDEF": 3
+    },
+    "text_and_layouts_retained": true,
+    "units": "mm",
+    "audit_errors": 0,
+    "readback_material_placeholder_fixes": 3,
+    "relative_images": [
+      "71222-theatre-context.png",
+      "71222-roof-supports.png",
+      "71222-roof-arrangement.png"
+    ]
+  },
+  "71222-drawing-set.dxf": {
+    "entities": {
+      "INSERT": 6,
+      "LINE": 37507,
+      "SOLID": 1125,
+      "CIRCLE": 7,
+      "TEXT": 175,
+      "IMAGE": 3,
+      "IMAGEDEF": 3
+    },
+    "text_and_layouts_retained": true,
+    "units": "mm",
+    "audit_errors": 0,
+    "readback_material_placeholder_fixes": 3,
+    "relative_images": [
+      "71222-theatre-context.png",
+      "71222-roof-supports.png",
+      "71222-roof-arrangement.png"
+    ]
+  },
+  "71222-visual-model.dxf": {
+    "entities": {
+      "3DFACE": 6182
+    },
+    "text_and_layouts_retained": true,
+    "units": "mm",
+    "audit_errors": 0,
+    "readback_material_placeholder_fixes": 3,
+    "relative_images": []
+  },
+  "review_checks": {
+    "status": "Review draft; unresolved engineering details listed below",
+    "PDF_pages": 3,
+    "metadata": "71222 / Jet 0231 / Jansen SL / S.T. / K.S. / Rev1",
+    "roof_depth_mm": 12500,
+    "main_depth_mm": 10600,
+    "corridor_mm": 1900,
+    "width_mm": 21300,
+    "castellated_beams": 5,
+    "castellated_profile_mm": {
+      "depth": 800,
+      "flange_width": 210,
+      "flange_thickness": 18
+    },
+    "CHS_level": "Upper west diagonal bay; lower central bays at B1 level; no CHS in east I-beam bay",
+    "B1_lower_cross_members": {
+      "west": 3,
+      "east": 5
+    },
+    "B2_members": 3,
+    "castellated_spaces_mm": [
+      3000,
+      3000,
+      3000,
+      3000
+    ],
+    "width_chain_mm": [
+      2200,
+      2500,
+      3000,
+      3000,
+      3000,
+      3000,
+      2500,
+      1300,
+      300,
+      500
+    ],
+    "last_B2_to_full_web_mm": 300,
+    "full_web_to_wall_mm": 500,
+    "CHS_outer_diameter_mm": 90,
+    "member_line_patterns": {
+      "CASTELLATED": [
+        [
+          "CB_LONG_DASH",
+          50
+        ]
+      ],
+      "I_BEAMS": [
+        [
+          "CONTINUOUS",
+          35
+        ]
+      ],
+      "B2_BEAMS": [
+        [
+          "B2_SHORT_DASH",
+          40
+        ]
+      ],
+      "CHS_BRACES": [
+        [
+          "CHS_DASH_DOT",
+          30
+        ]
+      ],
+      "FULL_WEB": [
+        [
+          "CONTINUOUS",
+          80
+        ]
+      ]
+    },
+    "equipment_setbacks_mm": {
+      "PV_west": 3500,
+      "PV_east": 2900,
+      "hatch_west": 12800,
+      "skylight_east": 3200,
+      "safety": 1500
+    },
+    "PV_depth_chain_mm": [
+      2100,
+      1850,
+      1950,
+      1700,
+      1350,
+      1900,
+      1650
+    ],
+    "opening_chain_mm": [
+      12800,
+      1300,
+      4000,
+      3200
+    ],
+    "parapet_mm": [
+      300,
+      300
+    ],
+    "upstand_mm": [
+      1300,
+      1300,
+      300
+    ],
+    "PV_rows": 3,
+    "telecoms": "Excluded as instructed",
+    "scan_locations": "Excluded as instructed",
+    "STEP_mesh_bounds": "Match",
+    "unresolved": [
+      "Unsupplied web/I-flange thicknesses and exact B1/B2 roof-offset reference",
+      "Unmeasured castellated hole geometry and connection details"
+    ],
+    "model_limits": "Surrounding theatre heights, proxy steel thicknesses, PV/opening details and graphical north not surveyed"
+  }
+}
