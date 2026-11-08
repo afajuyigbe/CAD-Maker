@@ -12,6 +12,8 @@ site's dimensions, building geometry, structural classifications, member sizes,
 flat numbers, personnel, client or revision as defaults. The template and rules are
 reusable; prior site records are examples, not evidence for the new site.
 
+At intake, ask whether the survey is a scan survey and whether a separate Scan Locations sheet is required, unless already stated. Confirm numbered locations before asking the engineer to classify topside, soffit, both or general scans. See the scan-survey section of the roof workflow.
+
 For bespoke items (chimneys, tripods, buildings, water towers and similar), read
 `docs/bespoke-site-items-workflow.md` and `docs/bespoke-site-items-rules.json`.
 Use `templates/bespoke-site-item.json` for a new item. Before starting each item, ask which outputs are needed unless already explicit.
@@ -40,3 +42,18 @@ is a specification and reusable working instruction, not a claim that arbitrary
 site interpretation is already automated. Preserve original sources and decisions.
 When asked to clear superseded documents, clear the scoped generated deliverables;
 do not erase evidence, other projects or rewrite Git history without instruction.
+
+For whole-building visual models, read `docs/whole-building-visual-model-workflow.md`.
+Submit the 3D geometry/rooftop review for engineer approval before finalising or
+issuing OBJ/MTL. This is the engineer's explicit review gate, not a default approval
+requirement for other work. Preserve measured facts and qualify photographic estimates.
+
+## Delivery folder preference
+
+The engineer requested on 8 November 2026 that final delivery use a dedicated
+`delivery/` folder containing exactly four files: the complete drawing-set PDF,
+one combined DWG, the OBJ model and its matching MTL. Keep scripts, source data,
+validation reports, previews and other intermediate formats outside that folder.
+Make the DWG self-contained and keep OBJ/MTL together. Apply this preference to
+future deliveries unless the engineer specifies otherwise; respect any explicit
+hold on model export.

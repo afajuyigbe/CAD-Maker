@@ -1,0 +1,33 @@
+{
+  "OBJ_vertices": 29980,
+  "OBJ_faces": 7528,
+  "OBJ_materials": [
+    "PV",
+    "PV_grid",
+    "brick",
+    "dark",
+    "glass",
+    "metal",
+    "paving",
+    "render",
+    "roof",
+    "timber",
+    "white"
+  ],
+  "OBJ_mesh_match": true,
+  "units": "mm",
+  "up_axis": "Z",
+  "DWG_vector_view_rectangles": 232706,
+  "external_image_dependencies": 0,
+  "DWG_roundtrip_entities": {
+    "INSERT": 6,
+    "LINE": 37507,
+    "SOLID": 233831,
+    "CIRCLE": 7,
+    "TEXT": 175
+  },
+  "DWG_text_retained": true,
+  "DWG_external_images": 0,
+  "PDF_pages": 3,
+  "delivery_file_count": 4
+}

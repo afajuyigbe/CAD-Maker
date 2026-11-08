@@ -1,0 +1,78 @@
+# Project 71222 / Jet 0231. Flat materials; no external textures.
+newmtl timber
+Ka 0 0 0
+Kd 0.48 0.35 0.25
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl brick
+Ka 0 0 0
+Kd 0.52 0.29 0.23
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl render
+Ka 0 0 0
+Kd 0.8 0.78 0.7
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl roof
+Ka 0 0 0
+Kd 0.66 0.68 0.66
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl metal
+Ka 0 0 0
+Kd 0.77 0.8 0.79
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl dark
+Ka 0 0 0
+Kd 0.17 0.18 0.18
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl glass
+Ka 0 0 0
+Kd 0.24 0.34 0.38
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl PV
+Ka 0 0 0
+Kd 0.13 0.23 0.32
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl PV_grid
+Ka 0 0 0
+Kd 0.56 0.64 0.68
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl paving
+Ka 0 0 0
+Kd 0.72 0.7 0.66
+Ks 0 0 0
+d 1
+illum 1
+
+newmtl white
+Ka 0 0 0
+Kd 0.88 0.89 0.86
+Ks 0 0 0
+d 1
+illum 1
+

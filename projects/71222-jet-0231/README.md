@@ -1,3 +1,5 @@
+Delivery: use the **[delivery](delivery/)** folder. It contains only the complete drawing PDF, self-contained combined DWG, OBJ and matching MTL. Other folders contain working records.
+
 # 71222 – Jet 0231
 
 Revision 1, 8 November 2026. Client Jansen SL; drawn S.T.; nominated checker K.S.

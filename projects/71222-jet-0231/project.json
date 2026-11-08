@@ -420,6 +420,10 @@
     {
       "date": "2026-11-08",
       "record": "Differentiate B1 double continuous and B2 double short dash in plan and key. Remove in-plan member tags; classification by matching key."
+    },
+    {
+      "date": "2026-11-08",
+      "record": "Engineer explicitly requests OBJ/MTL for current corrected model and a delivery folder containing exactly four files: full PDF, combined DWG, OBJ, MTL. This authorises current model export."
     }
   ],
   "questions": [
@@ -572,5 +576,7 @@
     "scan_types_confirmed": false
   },
   "review_status": "Corrected CHS levels by bay: upper west, lower centre, none east",
-  "date": "2026-11-08"
+  "date": "2026-11-08",
+  "delivery_folder": "delivery",
+  "delivery_format": "Exactly four files: PDF, DWG, OBJ, MTL"
 }
